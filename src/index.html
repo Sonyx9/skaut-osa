@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{ROBOTS}}<title>Skauting v Liberci {{RANGE}} – pracovní časová osa</title>
+<meta name="description" content="Pracovní časová osa skautingu v Liberci a okolí {{RANGE}}: česká, německá a židovská linka, u každého záznamu zdroj a stav ověření.">
+<meta name="theme-color" content="#f7f6f2">
+<link rel="icon" href="data:,">
+<style>
+{{CSS}}
+</style>
+</head>
+<body>
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <!-- Ikony: Lucide (lucide.dev), licence ISC -->
+  <symbol id="i-overeno" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-dp" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol>
+  <symbol id="i-neovereno" viewBox="0 0 24 24"><path d="M10.1 2.182a10 10 0 0 1 3.8 0"/><path d="M13.9 21.818a10 10 0 0 1-3.8 0"/><path d="M17.609 3.721a10 10 0 0 1 2.69 2.7"/><path d="M2.182 13.9a10 10 0 0 1 0-3.8"/><path d="M20.279 17.609a10 10 0 0 1-2.7 2.69"/><path d="M21.818 10.1a10 10 0 0 1 0 3.8"/><path d="M3.721 6.391a10 10 0 0 1 2.7-2.69"/><path d="M6.391 20.279a10 10 0 0 1-2.69-2.7"/></symbol>
+  <symbol id="i-otevrene" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></symbol>
+  <symbol id="i-pametnik" viewBox="0 0 24 24"><path d="M12 19v3"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><rect x="9" y="2" width="6" height="13" rx="3"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+</svg>
+
+<a class="skip" href="#osa">Přeskočit na časovou osu</a>
+
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Pracovní verze · k ověření · neveřejné</p>
+    <h1>Skauting v Liberci {{RANGE}}</h1>
+    <p class="lead">Chronologie skautských oddílů v Liberci a okolí od prvního německého oddílu po zánik činnosti v roce 1938. U každého záznamu je uvedený zdroj a stav ověření; co prameny nevysvětlí, zůstává otevřené.</p>
+    <dl class="stats">
+      <div><dt>Záznamů</dt><dd>{{COUNT}}</dd></div>
+      <div><dt>Ověřeno v prameni</dt><dd>{{OK}}</dd></div>
+      <div><dt>Převzato z DP 2021</dt><dd>{{DP}}</dd></div>
+      <div><dt>Neověřeno</dt><dd>{{UNVERIFIED}}</dd></div>
+      <div><dt>Nové proti DP 2021</dt><dd>{{NEW}}</dd></div>
+      <div><dt>Rozpor s DP 2021</dt><dd>{{CONFLICT}}</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="filters" id="filters" hidden>
+  <div class="wrap filters__inner">
+    <div class="filters__row">
+      <label class="search" for="q">
+        <span class="visually-hidden">Hledat v záznamech</span>
+        <svg aria-hidden="true"><use href="#i-search"/></svg>
+        <input id="q" type="search" placeholder="Hledat jméno, místo nebo pramen" autocomplete="off">
+      </label>
+      <button type="button" class="fbtn fbtn--toggle" id="only-new" aria-pressed="false">Jen nové proti DP</button>
+      <button type="button" class="fbtn fbtn--reset" id="reset">Zrušit filtry</button>
+    </div>
+    <details class="filters__more" id="more">
+      <summary>Filtrovat podle linky a ověření</summary>
+      <div class="filters__row" role="group" aria-label="Linka">
+        <span class="filters__label" aria-hidden="true">Linka</span>{{LINE_BUTTONS}}
+      </div>
+      <div class="filters__row" role="group" aria-label="Stav ověření">
+        <span class="filters__label" aria-hidden="true">Ověření</span>{{VERIFY_BUTTONS}}
+      </div>
+    </details>
+    <p class="filters__count" id="count" aria-live="polite"></p>
+  </div>
+</div>
+
+<nav class="years-nav" aria-label="Roky">
+  <div class="wrap"><ol>{{YEAR_NAV}}</ol></div>
+</nav>
+
+<main id="osa" class="wrap timeline">
+{{SECTIONS}}
+  <p class="empty" id="empty" hidden>Filtru neodpovídá žádný záznam.</p>
+</main>
+
+<footer class="page-foot">
+  <div class="wrap">
+    <h2>Jak číst osu</h2>
+    <dl class="legend">
+      <div><dt><span class="mark mark--event" aria-hidden="true"></span>Plný bod</dt><dd>datum, kdy se věc stala</dd></div>
+      <div><dt><span class="mark mark--press" aria-hidden="true"></span>Prázdný bod</dt><dd>datum vydání zprávy v tisku, nebo známe jen rok</dd></div>
+      <div><dt><span class="tag tag--overeno"><svg aria-hidden="true"><use href="#i-overeno"/></svg>Ověřeno v prameni</span></dt><dd>přečteno v plném znění pramene</dd></div>
+      <div><dt><span class="tag tag--dp"><svg aria-hidden="true"><use href="#i-dp"/></svg>Převzato z DP 2021</span></dt><dd>z diplomové práce, v prameni znovu neověřeno</dd></div>
+      <div><dt><span class="tag tag--neovereno"><svg aria-hidden="true"><use href="#i-neovereno"/></svg>Neověřeno</span></dt><dd>z úryvku fulltextu nebo z webu, před citací otevřít sken</dd></div>
+      <div><dt><span class="tag tag--dp-ne">Nové proti DP</span></dt><dd>v diplomové práci (kap. 1920–1938) chybí</dd></div>
+    </dl>
+    <p class="foot-note">Zdroje: Naše hory, Reichenberger Zeitung, Reichenberger Tagesbote a adresáře Liberce (Kramerius KVK Liberec), V. Drbohlav – Drobečky z historie skautingu na Liberecku, J. Mareš – Junák v Liberci 1920–1952 (SOČ 2007), diplomová práce L. Kouly (TUL 2021). Sestaveno {{DATE}}.</p>
+  </div>
+</footer>
+
+<script>
+{{JS}}
+</script>
+</body>
+</html>
