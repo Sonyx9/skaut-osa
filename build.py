@@ -84,6 +84,90 @@ def iso(r):
     return r["date"]
 
 
+def parse_cards(path):
+    """Karty osob/míst: sekce '## Název' s odrážkami '- klíč: hodnota'."""
+    cards = []
+    p = Path(path)
+    if not p.exists():
+        return cards
+    cur = None
+    for line in p.read_text(encoding="utf-8").splitlines():
+        if line.startswith("## "):
+            cur = {"name": line[3:].strip()}
+            cards.append(cur)
+        elif cur is not None:
+            m = re.match(r"^-\s*([^:]+):\s*(.*)$", line)
+            if m:
+                cur[m.group(1).strip()] = m.group(2).strip()
+    for c in cards:
+        if not c.get("id") or not c.get("hledat"):
+            raise SystemExit(f"Karta „{c['name']}“ nemá id nebo hledat.")
+        c["re"] = re.compile(c["hledat"])
+        c["events"] = []
+    return cards
+
+
+def link_cards(rows, people, places):
+    seen = {}
+    for r in rows:
+        k = seen[r["date"]] = seen.get(r["date"], 0) + 1
+        r["id"] = f"e{r['date']}" + (f"-{k}" if k > 1 else "")
+        plain = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", r["text"])
+        r["people"] = [c for c in people if c["re"].search(plain)]
+        r["places"] = [c for c in places if c["re"].search(plain)]
+        for c in r["people"] + r["places"]:
+            c["events"].append(r)
+
+
+def chips(r):
+    out = []
+    if r.get("people"):
+        out.append('<span class="ev__rel-k">Osoby:</span> ' + ", ".join(
+            f'<a href="osobnosti.html#{c["id"]}">{html.escape(c["name"])}</a>' for c in r["people"]))
+    if r.get("places"):
+        out.append('<span class="ev__rel-k">Místa:</span> ' + ", ".join(
+            f'<a href="mapa.html#{c["id"]}">{html.escape(c["name"])}</a>' for c in r["places"]))
+    return f'<p class="ev__rel">{" · ".join(out)}</p>' if out else ""
+
+
+def event_list(c):
+    lis = []
+    for r in c["events"]:
+        txt = inline_md(re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", r["text"]))
+        lis.append(f'<li><a href="index.html#{r["id"]}"><time datetime="{iso(r)}">{human_date(r)}</time></a> {txt}</li>')
+    n = len(lis)
+    if not n:
+        return '<p class="card__none">V časové ose zatím žádný záznam.</p>'
+    word = "záznam" if n == 1 else "záznamy" if n < 5 else "záznamů"
+    return f'<details class="card__events"><summary>V časové ose: {n} {word}</summary><ol>{"".join(lis)}</ol></details>'
+
+
+def card_html(c, kind):
+    line = c.get("proud", "kontext")
+    meta = []
+    if c.get("přezdívka"):
+        meta.append(f'„{html.escape(c["přezdívka"])}“')
+    if c.get("období"):
+        meta.append(html.escape(c["období"]))
+    if kind == "place" and c.get("přesnost"):
+        meta.append("poloha: " + html.escape(c["přesnost"]))
+    role = c.get("role") or c.get("typ", "")
+    return (f'<article class="card" id="{c["id"]}" data-l="{line}">'
+            f'<p class="card__kicker"><span class="dot" data-l="{line}" aria-hidden="true"></span>{LINES.get(line, line)}'
+            f'{" · " + html.escape(role) if role else ""}</p>'
+            f'<h2 class="card__name">{html.escape(c["name"])}</h2>'
+            f'<p class="card__meta">{" · ".join(meta)}</p>'
+            f'<p class="card__desc">{inline_md(c.get("popis", ""))}</p>{event_list(c)}</article>')
+
+
+def render_page(tpl, header, css, robots_meta, base, title, desc, lead, main, foot, script="", extra=""):
+    return (tpl.replace("{{ROBOTS}}", robots_meta).replace("{{TITLE}}", html.escape(title))
+            .replace("{{DESC}}", html.escape(desc)).replace("{{LEAD}}", lead)
+            .replace("{{EXTRA_HEAD}}", extra).replace("{{CSS}}", css).replace("{{HEADER}}", header)
+            .replace("{{MAIN}}", main).replace("{{FOOT}}", foot).replace("{{SCRIPT}}", script)
+            .replace("{{BASE}}", base).replace("{{DATE}}", datetime.date.today().strftime("%-d. %-m. %Y")))
+
+
 def picture(fe, name, sizes, cls="", lazy=True, base=""):
     im = fe["images"][name]
     load = ' loading="lazy" decoding="async"' if lazy else ' fetchpriority="high"'
@@ -117,7 +201,7 @@ def render_event(r, fe, side, base):
     attrs = (f'data-l="{r["line"]}" data-v="{vkey}" data-dp="{html.escape(r["dp"])}" data-s="{search}"')
     body = (f'<p class="ev__text">{inline_md(r["text"])}</p>'
             f'<p class="ev__tags">{"".join(tags)}</p>'
-            f'<p class="ev__src"><span>Zdroj:</span> {inline_md(r["source"])}</p>')
+            f'<p class="ev__src"><span>Zdroj:</span> {inline_md(r["source"])}</p>{chips(r)}')
     f = feature_for(r, fe)
     if f:
         fig = ""
@@ -125,16 +209,19 @@ def render_event(r, fe, side, base):
             fig = (f'<figure class="feat__fig">{picture(fe, f["img"], "(min-width: 900px) 540px, 100vw", base=base)}'
                    f'<figcaption>{html.escape(fe["credit"])}</figcaption></figure>')
         cls = "feat" + (" feat--img" if fig else " feat--text") + (" feat--rev" if side else "")
-        return (f'<li class="ev ev--{r["precision"]} {cls}" {attrs}>{fig}<div class="feat__body">'
+        return (f'<li id="{r["id"]}" class="ev ev--{r["precision"]} {cls}" {attrs}>{fig}<div class="feat__body">'
                 f'<p class="ev__meta"><time datetime="{iso(r)}">{when}</time>{when_note}</p>'
                 f'<h3 class="feat__title">{html.escape(f["title"])}</h3>{body}</div></li>')
-    return (f'<li class="ev ev--{r["precision"]}" {attrs}>'
+    return (f'<li id="{r["id"]}" class="ev ev--{r["precision"]}" {attrs}>'
             f'<p class="ev__meta"><time datetime="{iso(r)}">{when}</time>{when_note}</p>'
             f'<div class="ev__main">{body}</div></li>')
 
 
-def build(data, out, robots, production, base=""):
+def build(data, out, robots, production, base="", people_path=None, places_path=None):
     rows = parse(data)
+    people = parse_cards(people_path or ROOT / "data" / "osobnosti.md")
+    places = parse_cards(places_path or ROOT / "data" / "mista.md")
+    link_cards(rows, people, places)
     fe = json.loads((ROOT / "src" / "featured.json").read_text(encoding="utf-8"))
     chapters = fe["chapters"]
     years = {}
@@ -187,12 +274,21 @@ def build(data, out, robots, production, base=""):
         for k, v in (("overeno", "Ověřeno"), ("dp", "Z DP 2021"), ("neovereno", "Neověřeno")))
 
     tpl = (ROOT / "src" / "index.html").read_text(encoding="utf-8")
+    logo = (ROOT / "src" / "logo.svg.html").read_text(encoding="utf-8")
+    header_tpl = (ROOT / "src" / "header.html").read_text(encoding="utf-8").replace("{{LOGO}}", logo).replace("{{BASE_PAGE}}", "")
+
+    def header(cur):
+        h = header_tpl
+        for k in ("OSA", "OSOBY", "MAPA"):
+            h = h.replace("{{CUR_%s}}" % k, ' aria-current="page"' if k == cur else "")
+        return h
     css = (ROOT / "src" / "styles.css").read_text(encoding="utf-8")
     js = (ROOT / "src" / "app.js").read_text(encoding="utf-8")
     robots_meta = "" if production else '<meta name="robots" content="noindex, nofollow">\n'
 
     page = (tpl
             .replace("{{ROBOTS}}", robots_meta)
+            .replace("{{HEADER}}", header("OSA"))
             .replace("{{CSS}}", css)
             .replace("{{JS}}", js)
             .replace("{{RANGE}}", f"{first}–{last}")
@@ -221,6 +317,40 @@ def build(data, out, robots, production, base=""):
     if not base:
         for d in ("img", "fonts"):
             shutil.copytree(ROOT / "src" / d, out.parent / d, dirs_exist_ok=True)
+    page_tpl = (ROOT / "src" / "page.html").read_text(encoding="utf-8")
+    groups = [(k, v) for k, v in LINES.items() if any(c.get("proud") == k for c in people)]
+    people_main = "".join(
+        f'<section class="cards-sec"><h2 class="cards-sec__h">{v}</h2><div class="cards">'
+        + "".join(card_html(c, "person") for c in people if c.get("proud") == k) + '</div></section>'
+        for k, v in groups)
+    (out.parent / "osobnosti.html").write_text(render_page(
+        page_tpl, header("OSOBY"), css, robots_meta, base, "Osobnosti",
+        "Karty lidí, kteří vedli skauting v Liberci 1913–1939: Pfadfinder, junáci, skautky a židovští skauti.",
+        f"{len(people)} lidí, kteří liberecký skauting zakládali a vedli. U každého je přehled záznamů z časové osy, ve kterých se objevuje. Popisy vycházejí jen z osy a průběžně se doplňují.",
+        people_main, "Popisy označené 🤖 sepsal Claude z časové osy, čekají na kontrolu."), encoding="utf-8")
+
+    mapped = [c for c in places if c.get("souřadnice")]
+    unmapped = [c for c in places if not c.get("souřadnice")]
+    pts = [dict(id=c["id"], name=c["name"], l=c.get("proud", "kontext"), typ=c.get("typ", ""),
+                lat=float(c["souřadnice"].split(",")[0]), lon=float(c["souřadnice"].split(",")[1]),
+                approx=c.get("přesnost", "").startswith(("přibližně", "neurčeno")), n=len(c["events"])) for c in mapped]
+    places_main = ('<div id="map" class="map" role="region" aria-label="Mapa míst"></div>'
+                   '<p class="map__note">Plný bod = místo známe přesně nebo aspoň obec; kroužek = poloha je přibližná. Kliknutím na bod se dostanete na kartu místa.</p>'
+                   f'<section class="cards-sec"><h2 class="cards-sec__h">Místa na mapě ({len(mapped)})</h2><div class="cards">'
+                   + "".join(card_html(c, "place") for c in mapped) + '</div></section>'
+                   + (f'<section class="cards-sec"><h2 class="cards-sec__h">Zatím bez polohy ({len(unmapped)})</h2><div class="cards">'
+                      + "".join(card_html(c, "place") for c in unmapped) + '</div></section>' if unmapped else ""))
+    leaflet_css = (ROOT / "src" / "vendor" / "leaflet" / "leaflet.css").read_text(encoding="utf-8")
+    leaflet_js = (ROOT / "src" / "vendor" / "leaflet" / "leaflet.js").read_text(encoding="utf-8")
+    map_js = (ROOT / "src" / "map.js").read_text(encoding="utf-8")
+    script = (f"<script>{leaflet_js}</script>\n<script>var PLACES = {json.dumps(pts, ensure_ascii=False)};\n{map_js}</script>")
+    (out.parent / "mapa.html").write_text(render_page(
+        page_tpl, header("MAPA"), css, robots_meta, base, "Mapa míst",
+        "Mapa míst libereckého skautingu 1913–1939: heimy, klubovny, tábořiště, srazy a výlety.",
+        f"Heimy, klubovny, tábořiště, srazy a výlety ze záznamů časové osy – {len(places)} míst, {len(mapped)} z nich na mapě.",
+        places_main, "Mapové podklady © přispěvatelé OpenStreetMap (ODbL). Knihovna Leaflet (BSD-2).",
+        script, f"<style>{leaflet_css}</style>\n"), encoding="utf-8")
+
     if robots:
         (out.parent / "robots.txt").write_text(
             "User-agent: *\nAllow: /\n" if production else "User-agent: *\nDisallow: /\n",
@@ -235,5 +365,7 @@ if __name__ == "__main__":
     ap.add_argument("--out", default=str(ROOT / "dist" / "index.html"))
     ap.add_argument("--no-robots", action="store_true", help="nezapisovat robots.txt (lokální náhled)")
     ap.add_argument("--asset-base", default="", help="URL webu, odkud brát obrázky a písma (náhled v trezoru)")
+    ap.add_argument("--people", default=None, help="soubor s kartami osobností (výchozí data/osobnosti.md)")
+    ap.add_argument("--places", default=None, help="soubor s místy (výchozí data/mista.md)")
     a = ap.parse_args()
-    build(a.data, a.out, not a.no_robots, os.environ.get("PRODUCTION") == "1", a.asset_base)
+    build(a.data, a.out, not a.no_robots, os.environ.get("PRODUCTION") == "1", a.asset_base, a.people, a.places)
