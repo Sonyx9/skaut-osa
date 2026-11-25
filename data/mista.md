@@ -200,14 +200,14 @@ Místo = sekce `## Název`. Pole: id, typ (heim, klubovna, tábor, sraz, výlet,
 - hledat: Drábsk
 - popis: 🤖 Výlet růžodolských skautek v dubnu 1936.
 
-## Jugendheim na Theodorplatz
+## Liebiegův Jugendheim (Theodorplatz 8, později Goethe-Heim)
 - id: jugendheim
 - typ: heim
 - proud: de
 - souřadnice:
 - přesnost: neurčeno
-- hledat: Jugendheim
-- popis: 🤖 Místo ustavujícího shromáždění spolku Pfadfinderverein v lednu 1914 a přednášek Pfadfinderschaft ještě v roce 1929. Kde přesně stál, je třeba dohledat.
+- hledat: Jugendheim|Goethe-?[Hh]eim
+- popis: 🤖 Jugendanstalten firmy Johann Liebieg & Comp. pro děti dělníků firmy, Theodorplatz 8 (vede učitel Adolf Ressel). Tady vznikl v lednu 1914 spolek Pfadfinderverein a Pfadfinderschaft „Jeschken“ zde pořádala večery ještě ve 20. letech. Roku 1932 dům i s hostincem „Stadt Braunau“ koupil spolek Volksbildungsheim a zřídil Goethe-Heim, kde se 1938 konal poslední Heimabend Pfadfinderů. Dnešní adresu je třeba dohledat.
 
 ## Most u Liebieghöhe
 - id: liebieghohe
