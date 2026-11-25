@@ -15,7 +15,9 @@ PRODUCTION=1 python3 build.py    # produkce: bez noindex
 python3 build.py --data "Časová osa – události.md" --out "Časová osa.html" --no-robots   # lokální náhled v trezoru
 ```
 
-Zdrojáky jsou v `src/` (`index.html` šablona, `styles.css`, `app.js`); build je vloží do jednoho souboru. Všechny události jsou ve statickém HTML, JavaScript jen filtruje.
+Zdrojáky jsou v `src/` (`index.html` šablona, `styles.css`, `app.js`); build je vloží do jednoho souboru a vedle něj zkopíruje `src/img/` (WebP 700 a 1400 px) a `src/fonts/` (Barlow, self-hosted). Milníky s velkým blokem, obrázky a kapitoly (bubliny, tmavé předěly) se nastavují v `src/featured.json` – klíčem je datum řádku z tabulky.
+
+Náhled v trezoru bez kopírování obrázků: `--asset-base https://sonyx9.github.io/skaut-osa/`. Všechny události jsou ve statickém HTML, JavaScript jen filtruje.
 
 ## Nasazení
 
@@ -25,4 +27,4 @@ Jednorázově v repu: **Settings → Pages → Build and deployment → Source: 
 
 ## Licence a atribuce
 
-Ikony: [Lucide](https://lucide.dev) (ISC).
+Ikony: [Lucide](https://lucide.dev) (ISC). Písmo: Barlow a Barlow Condensed (SIL OFL 1.1, `src/fonts/OFL-Barlow.txt`). Kresby a strany kronik: Kronika dívčí družiny Racků, Horní Růžodol – Severočeské muzeum v Liberci (zveřejnění ověřit u muzea).

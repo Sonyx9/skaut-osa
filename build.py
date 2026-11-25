@@ -9,6 +9,8 @@ Staging je výchozí (noindex + robots.txt Disallow). Produkční build: PRODUCT
 Všechny události jsou ve statickém HTML; JavaScript jen filtruje.
 """
 import argparse
+import json
+import shutil
 import datetime
 import html
 import os
@@ -82,9 +84,24 @@ def iso(r):
     return r["date"]
 
 
-def render_event(r):
+def picture(fe, name, sizes, cls="", lazy=True, base=""):
+    im = fe["images"][name]
+    load = ' loading="lazy" decoding="async"' if lazy else ' fetchpriority="high"'
+    return (f'<img class="{cls}" src="{base}img/{name}-1400.webp" '
+            f'srcset="{base}img/{name}-700.webp 700w, {base}img/{name}-1400.webp 1400w" sizes="{sizes}" '
+            f'width="{im["w"]}" height="{im["h"]}" alt="{html.escape(im["alt"])}"{load}>')
+
+
+def feature_for(r, fe):
+    f = fe["features"].get(r["date"])
+    if f and (not f.get("match") or f["match"] in r["text"]):
+        return f
+    return None
+
+
+def render_event(r, fe, side, base):
     vkey, vlabel = VERIFY.get(r["verify"], ("neovereno", "Neověřeno"))
-    tags = [f'<span class="tag tag--line" data-l="{r["line"]}">{LINES[r["line"]]}</span>',
+    tags = [f'<span class="tag tag--line" data-l="{r["line"]}"><span class="dot" data-l="{r["line"]}" aria-hidden="true"></span>{LINES[r["line"]]}</span>',
             f'<span class="tag tag--{vkey}"><svg aria-hidden="true"><use href="#i-{vkey}"/></svg>{vlabel}</span>']
     if r["dp"] in DP:
         tags.append(f'<span class="tag tag--dp-{r["dp"]}">{DP[r["dp"]]}</span>')
@@ -97,29 +114,61 @@ def render_event(r):
         when_note = ""
     plain = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", f'{when} {r["text"]} {r["source"]}')
     search = html.escape(EMOJI.sub("", plain).lower(), quote=True)
-    return (
-        f'<li class="ev ev--{r["precision"]}" data-l="{r["line"]}" data-v="{vkey}" '
-        f'data-dp="{html.escape(r["dp"])}" data-s="{search}">'
-        f'<p class="ev__meta"><time datetime="{iso(r)}">{when}</time>{when_note}</p>'
-        f'<p class="ev__text">{inline_md(r["text"])}</p>'
-        f'<p class="ev__tags">{"".join(tags)}</p>'
-        f'<p class="ev__src"><span>Zdroj:</span> {inline_md(r["source"])}</p>'
-        f'</li>'
-    )
+    attrs = (f'data-l="{r["line"]}" data-v="{vkey}" data-dp="{html.escape(r["dp"])}" data-s="{search}"')
+    body = (f'<p class="ev__text">{inline_md(r["text"])}</p>'
+            f'<p class="ev__tags">{"".join(tags)}</p>'
+            f'<p class="ev__src"><span>Zdroj:</span> {inline_md(r["source"])}</p>')
+    f = feature_for(r, fe)
+    if f:
+        fig = ""
+        if f.get("img"):
+            fig = (f'<figure class="feat__fig">{picture(fe, f["img"], "(min-width: 900px) 540px, 100vw", base=base)}'
+                   f'<figcaption>{html.escape(fe["credit"])}</figcaption></figure>')
+        cls = "feat" + (" feat--img" if fig else " feat--text") + (" feat--rev" if side else "")
+        return (f'<li class="ev ev--{r["precision"]} {cls}" {attrs}>{fig}<div class="feat__body">'
+                f'<p class="ev__meta"><time datetime="{iso(r)}">{when}</time>{when_note}</p>'
+                f'<h3 class="feat__title">{html.escape(f["title"])}</h3>{body}</div></li>')
+    return (f'<li class="ev ev--{r["precision"]}" {attrs}>'
+            f'<p class="ev__meta"><time datetime="{iso(r)}">{when}</time>{when_note}</p>'
+            f'<div class="ev__main">{body}</div></li>')
 
 
-def build(data, out, robots, production):
+def build(data, out, robots, production, base=""):
     rows = parse(data)
+    fe = json.loads((ROOT / "src" / "featured.json").read_text(encoding="utf-8"))
+    chapters = fe["chapters"]
     years = {}
     for r in rows:
         years.setdefault(r["date"][:4], []).append(r)
 
-    year_nav = "".join(f'<li><a href="#r{y}">{y}</a></li>' for y in years)
+    year_nav = "".join(f'<li data-y="{y}"><a href="#r{y}">{y}</a></li>' for y in years)
+    chapter_nav = "".join(
+        f'<li data-y="{y}"><a class="bubble{" bubble--dark" if c.get("dark") else ""}" href="#r{y}">'
+        f'<span class="bubble__y">{y}</span><span class="bubble__l">{html.escape(c["label"])}</span></a></li>'
+        for y, c in chapters.items() if y in years)
+    side = [0]
+
+    def ev(r):
+        if feature_for(r, fe):
+            side[0] ^= 1
+        return render_event(r, fe, side[0], base)
+
+    def head(y):
+        c = chapters.get(y)
+        if not c:
+            return f'<header class="year__head"><h2 id="h{y}" class="year__num">{y}</h2></header>'
+        dark = " year__head--dark" if c.get("dark") else ""
+        return (f'<header class="year__head year__head--chapter{dark}"><h2 id="h{y}" class="year__num">{y}</h2>'
+                f'<p class="year__title">{html.escape(c["title"])}</p></header>')
+
     sections = "".join(
-        f'<section class="year" id="r{y}" aria-labelledby="h{y}">'
-        f'<h2 id="h{y}">{y}</h2><ol class="events">{"".join(render_event(r) for r in evs)}</ol></section>'
+        f'<section class="year" id="r{y}" aria-labelledby="h{y}">{head(y)}'
+        f'<ol class="events">{"".join(ev(r) for r in evs)}</ol></section>'
         for y, evs in years.items()
     )
+    hero = fe["hero"]
+    hero_html = (picture(fe, hero["main"], "(min-width: 900px) 560px, 100vw", "hero__main", lazy=False, base=base)
+                 + "".join(picture(fe, n, "200px", f"hero__small hero__small--{i}", base=base) for i, n in enumerate(hero["small"])))
 
     counts = {k: 0 for k in ("overeno", "dp", "neovereno")}
     for r in rows:
@@ -154,6 +203,11 @@ def build(data, out, robots, production):
             .replace("{{NEW}}", str(new))
             .replace("{{CONFLICT}}", str(conflict))
             .replace("{{YEAR_NAV}}", year_nav)
+            .replace("{{CHAPTER_NAV}}", chapter_nav)
+            .replace("{{HERO_IMG}}", hero_html)
+            .replace("{{CREDIT}}", html.escape(fe["credit"]))
+            .replace("{{BASE}}", base)
+            .replace("{{YEARS}}", str(int(last) - int(first) + 1))
             .replace("{{LINE_BUTTONS}}", line_buttons)
             .replace("{{VERIFY_BUTTONS}}", verify_buttons)
             .replace("{{SECTIONS}}", sections)
@@ -164,6 +218,9 @@ def build(data, out, robots, production):
     out = Path(out)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(page, encoding="utf-8")
+    if not base:
+        for d in ("img", "fonts"):
+            shutil.copytree(ROOT / "src" / d, out.parent / d, dirs_exist_ok=True)
     if robots:
         (out.parent / "robots.txt").write_text(
             "User-agent: *\nAllow: /\n" if production else "User-agent: *\nDisallow: /\n",
@@ -177,5 +234,6 @@ if __name__ == "__main__":
     ap.add_argument("--data", default=str(ROOT / "data" / "casova-osa.md"))
     ap.add_argument("--out", default=str(ROOT / "dist" / "index.html"))
     ap.add_argument("--no-robots", action="store_true", help="nezapisovat robots.txt (lokální náhled)")
+    ap.add_argument("--asset-base", default="", help="URL webu, odkud brát obrázky a písma (náhled v trezoru)")
     a = ap.parse_args()
-    build(a.data, a.out, not a.no_robots, os.environ.get("PRODUCTION") == "1")
+    build(a.data, a.out, not a.no_robots, os.environ.get("PRODUCTION") == "1", a.asset_base)

@@ -12,7 +12,7 @@
 
   var events = Array.prototype.slice.call(document.querySelectorAll(".ev"));
   var years = Array.prototype.slice.call(document.querySelectorAll(".year"));
-  var navItems = Array.prototype.slice.call(document.querySelectorAll(".years-nav li"));
+  var navItems = Array.prototype.slice.call(document.querySelectorAll("li[data-y]"));
   var buttons = Array.prototype.slice.call(panel.querySelectorAll(".fbtn[data-group]"));
   var q = document.getElementById("q");
   var onlyNew = document.getElementById("only-new");
@@ -43,11 +43,13 @@
       if (ok) shown++;
     });
 
-    years.forEach(function (section, i) {
+    var visible = {};
+    years.forEach(function (section) {
       var any = section.querySelector(".ev:not([hidden])") !== null;
       section.hidden = !any;
-      if (navItems[i]) navItems[i].hidden = !any;
+      if (any) visible[section.id.slice(1)] = true;
     });
+    navItems.forEach(function (li) { li.hidden = !visible[li.dataset.y]; });
 
     empty.hidden = shown !== 0;
     count.textContent = shown === events.length
