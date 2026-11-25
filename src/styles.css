@@ -115,20 +115,22 @@ h1 { margin: 0 0 24px; font: 800 clamp(52px, 8vw, 84px)/.95 var(--display); text
 .year__head--dark .year__num { color: var(--accent); font-size: 88px; }
 .year__head--dark .year__title { color: #fff; font-size: 34px; }
 .events { margin: 0; padding: 0; list-style: none; }
-.ev { --c: var(--l-kontext); display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 4px 32px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+.ev { --c: var(--l-kontext); display: grid; grid-template-columns: 150px minmax(0, 1fr) 220px; gap: 4px 28px; padding: 16px 0; border-bottom: 1px solid var(--line); }
 .ev[data-l="cz-svaz"], .dot[data-l="cz-svaz"] { --c: var(--l-cz-svaz); }
 .ev[data-l="cz-soc"], .dot[data-l="cz-soc"] { --c: var(--l-cz-soc); }
 .ev[data-l="de"], .dot[data-l="de"] { --c: var(--l-de); }
 .ev[data-l="zid"], .dot[data-l="zid"] { --c: var(--l-zid); }
 .ev[data-l="kontext"], .dot[data-l="kontext"] { --c: var(--l-kontext); }
-.ev__meta { display: flex; flex-direction: column; gap: 2px; margin: 0; }
+.ev__meta { display: grid; grid-template-columns: 10px minmax(0, 1fr); align-items: baseline; gap: 2px 10px; margin: 0; }
+.ev__meta .dot { transform: translateY(-1px); }
+.ev__meta .when-note { grid-column: 2; }
 .ev__meta time { font-weight: 600; color: #111; }
 .when-note { font-size: 13px; color: var(--muted); }
 .ev__main { max-width: var(--text); }
 .ev__text { margin: 0 0 8px; }
 .ev__text .q, .ev__src .q { color: var(--l-cz-soc); font-weight: 600; }
 .ev__tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 6px; }
-.ev__src { margin: 0; font-size: 14px; color: var(--muted); overflow-wrap: anywhere; }
+.ev__src { margin: 0; font-size: 13px; line-height: 1.5; color: var(--muted); overflow-wrap: anywhere; }
 .ev__src > span { font-weight: 600; }
 .tag { display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 14px; background: var(--sand); font-size: 13px; line-height: 1.6; color: var(--text-c); }
 .tag svg { width: 14px; height: 14px; }
@@ -231,3 +233,29 @@ h1 { margin: 0 0 24px; font: 800 clamp(52px, 8vw, 84px)/.95 var(--display); text
 .map__note { margin: 8px 0 0; font-size: 14px; color: var(--muted); }
 .map__pop a { color: #111; }
 .leaflet-container svg { width: auto; height: auto; fill: initial; stroke: initial; stroke-width: initial; }
+
+/* Podle návrhu: milníky s velkým datem a žlutým tlačítkem */
+.feat .ev__src { font-size: 13px; margin-top: 12px; }
+.feat__kicker { display: flex; align-items: center; gap: 8px; margin: 0 0 8px; font-size: 14px; font-weight: 600; color: var(--c); }
+.feat__date { margin: 0 0 16px; font: 800 48px/1 var(--display); color: #111; }
+.feat__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 20px 0 0; }
+.btn-src { display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border-radius: 22px; background: var(--accent); color: #111; font: 700 15px/1 var(--display); letter-spacing: .08em; text-transform: uppercase; text-decoration: none; }
+.btn-src:hover { background: #e9b949; }
+.ev__main .ev__tags { margin-top: 2px; }
+.foot-cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; margin-bottom: 32px; font-size: 15px; }
+.foot-cols h3 { margin: 0 0 8px; font: 800 22px/1.1 var(--display); color: #111; }
+.foot-cols p { margin: 0; }
+@media (max-width: 899px) {
+  .ev:not(.feat) { grid-template-columns: 150px minmax(0, 1fr); }
+  .ev:not(.feat) > .ev__src { grid-column: 2; }
+  .foot-cols { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+}
+@media (max-width: 599px) {
+  .ev:not(.feat) { grid-template-columns: minmax(0, 1fr); }
+  .ev:not(.feat) > .ev__src { grid-column: 1; }
+  .feat__date { font-size: 40px; }
+}
+.legend--compact { grid-template-columns: minmax(0, 1fr) !important; gap: 8px; margin: 0; }
+.legend--compact dd { font-size: 14px; }
+.ev__meta { align-content: start; }
+.legend--compact div { flex-direction: column; align-items: flex-start; gap: 2px; }

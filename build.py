@@ -63,7 +63,7 @@ def parse(path):
 def inline_md(s):
     """Escapuje text, převede [text](url) na odkaz a ❓ na štítek otevřené otázky."""
     s = html.escape(s, quote=False)
-    s = re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)",
+    s = re.sub(r"\[((?:[^\[\]]|\[[^\]]*\])+)\]\((https?://[^)\s]+)\)",
                r'<a href="\2" rel="noopener" target="_blank">\1</a>', s)
     s = s.replace("❓", '<strong class="q">Otevřené:</strong>')
     return EMOJI.sub("", s).strip()
@@ -183,10 +183,28 @@ def feature_for(r, fe):
     return None
 
 
+PREC = {"událost": "událost", "tisk": "zpráva v tisku", "rok": "rok"}
+
+
+def src_button(source):
+    m = re.search(r"\]\((https?://[^)\s]+)\)", source)
+    if not m:
+        return ""
+    url = m.group(1)
+    if "kramerius" in url or "ceskadigitalniknihovna" in url:
+        label = "Zdroj v Krameriu"
+    elif "ndk.cz" in url:
+        label = "Zdroj v NDK"
+    elif "mzk.cz" in url:
+        label = "Zdroj v MZK"
+    else:
+        label = "Otevřít zdroj"
+    return f'<a class="btn-src" href="{html.escape(url)}" rel="noopener" target="_blank">{label}</a>'
+
+
 def render_event(r, fe, side, base):
     vkey, vlabel = VERIFY.get(r["verify"], ("neovereno", "Neověřeno"))
-    tags = [f'<span class="tag tag--line" data-l="{r["line"]}"><span class="dot" data-l="{r["line"]}" aria-hidden="true"></span>{LINES[r["line"]]}</span>',
-            f'<span class="tag tag--{vkey}"><svg aria-hidden="true"><use href="#i-{vkey}"/></svg>{vlabel}</span>']
+    tags = [f'<span class="tag tag--{vkey}"><svg aria-hidden="true"><use href="#i-{vkey}"/></svg>{vlabel}</span>']
     if r["dp"] in DP:
         tags.append(f'<span class="tag tag--dp-{r["dp"]}">{DP[r["dp"]]}</span>')
     when = human_date(r)
@@ -199,9 +217,7 @@ def render_event(r, fe, side, base):
     plain = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", f'{when} {r["text"]} {r["source"]}')
     search = html.escape(EMOJI.sub("", plain).lower(), quote=True)
     attrs = (f'data-l="{r["line"]}" data-v="{vkey}" data-dp="{html.escape(r["dp"])}" data-s="{search}"')
-    body = (f'<p class="ev__text">{inline_md(r["text"])}</p>'
-            f'<p class="ev__tags">{"".join(tags)}</p>'
-            f'<p class="ev__src"><span>Zdroj:</span> {inline_md(r["source"])}</p>{chips(r)}')
+    dot = f'<span class="dot" data-l="{r["line"]}" aria-hidden="true"></span>'
     f = feature_for(r, fe)
     if f:
         fig = ""
@@ -210,11 +226,16 @@ def render_event(r, fe, side, base):
                    f'<figcaption>{html.escape(fe["credit"])}</figcaption></figure>')
         cls = "feat" + (" feat--img" if fig else " feat--text") + (" feat--rev" if side else "")
         return (f'<li id="{r["id"]}" class="ev ev--{r["precision"]} {cls}" {attrs}>{fig}<div class="feat__body">'
-                f'<p class="ev__meta"><time datetime="{iso(r)}">{when}</time>{when_note}</p>'
-                f'<h3 class="feat__title">{html.escape(f["title"])}</h3>{body}</div></li>')
+                f'<p class="feat__kicker" data-l="{r["line"]}">{dot}{LINES[r["line"]]} · {PREC.get(r["precision"], r["precision"])}</p>'
+                f'<h3 class="feat__date"><time datetime="{iso(r)}">{when}</time></h3>'
+                f'<p class="ev__text">{inline_md(r["text"])}</p>'
+                f'<p class="feat__actions">{src_button(r["source"])}{"".join(tags)}</p>'
+                f'<p class="ev__src"><span>Zdroj:</span> {inline_md(r["source"])}</p>{chips(r)}</div></li>')
     return (f'<li id="{r["id"]}" class="ev ev--{r["precision"]}" {attrs}>'
-            f'<p class="ev__meta"><time datetime="{iso(r)}">{when}</time>{when_note}</p>'
-            f'<div class="ev__main">{body}</div></li>')
+            f'<p class="ev__meta">{dot}<time datetime="{iso(r)}">{when}</time>{when_note}</p>'
+            f'<div class="ev__main"><p class="ev__text">{inline_md(r["text"])}</p>'
+            f'<p class="ev__tags">{"".join(tags)}</p>{chips(r)}</div>'
+            f'<p class="ev__src">{inline_md(r["source"])}</p></li>')
 
 
 def build(data, out, robots, production, base="", people_path=None, places_path=None):
