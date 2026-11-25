@@ -157,7 +157,7 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - období: 1933–1937
 - role: župní zpravodaj Riegrovy župy
 - hledat: Sláva Řehák|S\. Řehák
-- popis: 🤖 Župní zpravodaj Riegrovy župy, ke které liberecké oddíly patřily.
+- popis: 🤖 Župní zpravodaj Riegrovy župy, ke které liberecké oddíly patřily. Podle jičínské skautské kroniky (Jičínský deník 2007) spoluzakládal v roce 1912 jako gymnazista první skautskou družinu v Jičíně – jednu z prvních mimo Prahu –, 1919 byl zvolen místonáčelníkem Svazu, později učil na Raisově učitelském ústavu v Jičíně a 1926–1932 vedl župu.
 
 ## Alfred Rabl
 - id: alfred-rabl
@@ -174,3 +174,12 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - role: předseda Techeleth-Lawan
 - hledat: Fantl
 - popis: 🤖 Dr. Leo Fantl, předseda liberecké místní skupiny svazu židovských skautů Techeleth-Lawan (1935–1937).
+
+## Zdislav Mazáček
+- id: zdislav-mazacek
+- přezdívka: Trhan
+- proud: cz-svaz
+- období: 1920–?
+- role: obnovitel skautingu v Jičíně, od 1920 v Růžodole
+- hledat: Mazáč
+- popis: 🤖 Válečný invalida, který v roce 1919 na pozvání Slávy Řeháka obnovil skautský oddíl v Jičíně. Na podzim 1919 přešel do Dolního Bousova a v roce 1920 byl přeložen do (Horního) Růžodolu u Liberce. Co v Liberci dělal, zatím nevíme – hledat v Drbohlavovi a Marešovi.
