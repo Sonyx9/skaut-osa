@@ -157,7 +157,7 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - období: 1933–1937
 - role: župní zpravodaj Riegrovy župy
 - hledat: Sláva Řehák|S\. Řehák
-- popis: 🤖 Župní zpravodaj Riegrovy župy, ke které liberecké oddíly patřily. Podle jičínské skautské kroniky (Jičínský deník 2007) spoluzakládal v roce 1912 jako gymnazista první skautskou družinu v Jičíně – jednu z prvních mimo Prahu –, 1919 byl zvolen místonáčelníkem Svazu, později učil na Raisově učitelském ústavu v Jičíně a 1926–1932 vedl župu.
+- popis: 🤖 Župní zpravodaj Riegrovy župy, ke které liberecké oddíly patřily. Podle jičínské skautské kroniky (Jičínský deník 2007) spoluzakládal v roce 1912 jako gymnazista první skautskou družinu v Jičíně – jednu z prvních mimo Prahu –, 1919 byl zvolen místonáčelníkem Svazu, později učil na Raisově učitelském ústavu v Jičíně a 1926–1932 vedl župu. ❓ Místonáčelníkem podle Jičínského deníku 1919, podle Vlasaté (BP TUL 2013) 1922. 1931 vedl Tábor slovanských skautů v Praze (Řád stříbrného vlka), 1933 výpravu na jamboree v Gödöllő, 1935 na Slovanské jamboree ve Spale. Jako velitel Junáka zatčen gestapem 1. 9. 1939, vězněn v Buchenwaldu. (Bohuslav Řehák, 1895–1967.)
 
 ## Alfred Rabl
 - id: alfred-rabl
@@ -182,4 +182,4 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - období: 1920–?
 - role: obnovitel skautingu v Jičíně, od 1920 v Růžodole
 - hledat: Mazáč
-- popis: 🤖 Válečný invalida, který v roce 1919 na pozvání Slávy Řeháka obnovil skautský oddíl v Jičíně. Na podzim 1919 přešel do Dolního Bousova a v roce 1920 byl přeložen do (Horního) Růžodolu u Liberce. Co v Liberci dělal, zatím nevíme – hledat v Drbohlavovi a Marešovi.
+- popis: 🤖 Válečný invalida, který v roce 1919 na pozvání Slávy Řeháka obnovil skautský oddíl v Jičíně. Na podzim 1919 přešel do Dolního Bousova a v roce 1920 byl přeložen do (Horního) Růžodolu u Liberce. Odborný učitel, známý turista a horolezec (na vrcholy Prachovských skal upevňoval české praporky). Že „v roce 1920 odešel do Liberce“, potvrzuje i Řehák (1937) citovaný Vlasatou (BP TUL 2013). Co v Liberci dělal, zatím nevíme – v dosud přepsaných částech Drbohlava a Mareše ani v libereckém tisku se nevyskytuje.
