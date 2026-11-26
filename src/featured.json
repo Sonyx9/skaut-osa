@@ -206,7 +206,7 @@
   },
   {
    "from": 1938,
-   "to": 1940,
+   "to": 1945,
    "label": "Mnichov",
    "title": "Mobilizace, Mnichov a konec",
    "date": "1938-09-23",
@@ -409,6 +409,46 @@
      "key": "Karpaš|Vinklát|Hurikán|Lhotová|Stanislav|Gold"
     }
    ]
+  }
+ ],
+ "eras": [
+  {
+   "from": 1911,
+   "to": 1945,
+   "title": "Od Pfadfinderů po Mnichov a válku",
+   "lead": "Němečtí Pfadfinder a Wandervogel, první čeští junáci a skautky, dělničtí a židovští skauti – až po konec činnosti po Mnichovu.",
+   "href": "epocha-1911-1945.html",
+   "img": "rz-1913"
+  },
+  {
+   "from": 1945,
+   "to": 1950,
+   "title": "Obnova a první zákaz",
+   "lead": "Návrat českých skautů do Liberce po válce, nové oddíly a srazy – až do zrušení Junáka na počátku 50. let."
+  },
+  {
+   "from": 1950,
+   "to": 1970,
+   "title": "Mezi zákazy",
+   "lead": "Oddíly přežívající v turistice a Pionýru, obnova Junáka v roce 1968 a nový zákaz v roce 1970."
+  },
+  {
+   "from": 1970,
+   "to": 1989,
+   "title": "Druhý zákaz",
+   "lead": "Skautské oddíly pod jinou hlavičkou, tábory a předávání tradice dalším generacím."
+  },
+  {
+   "from": 1989,
+   "to": 1999,
+   "title": "Obnova Junáka",
+   "lead": "Obnova skautingu v Liberci po listopadu 1989, návrat starých vůdců a vznik nových středisek."
+  },
+  {
+   "from": 2000,
+   "to": "dnes",
+   "title": "Současnost",
+   "lead": "Liberecká střediska, krajská rada a skauting dnes."
   }
  ]
 }

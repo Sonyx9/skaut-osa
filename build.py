@@ -431,12 +431,27 @@ def build(data, out, robots, production, base="", people_path=None, places_path=
             .replace("{{DATE}}", datetime.date.today().strftime("%-d. %-m. %Y")))
     page = fill(tpl, "OSA", period_nav_osa)
     home = fill((ROOT / "src" / "home.html").read_text(encoding="utf-8"), "HOME", "")
-    if "{{" in page or "{{" in home:
+    era_tiles = []
+    for i, er in enumerate(fe.get("eras", []), 1):
+        yrs = f'{er["from"]}–{er["to"]}'
+        if er.get("href"):
+            img = picture(fe, er["img"], "(min-width: 900px) 360px, 100vw", base=base) if er.get("img") else ""
+            era_tiles.append(f'<li class="era era--open"><a href="{er["href"]}">{img}<span class="era__body">'
+                             f'<span class="era__n">{i}. epocha</span><span class="era__y">{yrs}</span>'
+                             f'<span class="era__t">{html.escape(er["title"])}</span><span class="era__l">{html.escape(er["lead"])}</span>'
+                             f'<span class="era__go">Otevřít epochu</span></span></a></li>')
+        else:
+            era_tiles.append(f'<li class="era era--soon"><span class="era__body"><span class="era__n">{i}. epocha</span>'
+                             f'<span class="era__y">{yrs}</span><span class="era__t">{html.escape(er["title"])}</span>'
+                             f'<span class="era__l">{html.escape(er["lead"])}</span><span class="era__tag">Připravujeme</span></span></li>')
+    epochy = fill((ROOT / "src" / "epochy.html").read_text(encoding="utf-8"), "HOME", "").replace("{{ERAS}}", "".join(era_tiles))
+    if "{{" in page or "{{" in home or "{{" in epochy:
         raise SystemExit("V šabloně zůstal nenahrazený zástupný text.")
 
     out = Path(out)
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(home, encoding="utf-8")
+    out.write_text(epochy, encoding="utf-8")
+    (out.parent / "epocha-1911-1945.html").write_text(home, encoding="utf-8")
     (out.parent / "osa.html").write_text(page, encoding="utf-8")
     if not base:
         for d in ("img", "fonts"):
@@ -449,7 +464,7 @@ def build(data, out, robots, production, base="", people_path=None, places_path=
         for k, v in groups)
     (out.parent / "osobnosti.html").write_text(render_page(
         page_tpl, header("OSOBY"), css, robots_meta, base, "Osobnosti",
-        "Karty lidí, kteří vedli skauting v Liberci 1913–1939: Pfadfinder, junáci, skautky a židovští skauti.",
+        "Karty lidí, kteří vedli skauting v Liberci od roku 1911: Pfadfinder, junáci, skautky a židovští skauti.",
         f"{len(people)} lidí, kteří liberecký skauting zakládali a vedli. U každého je přehled záznamů z časové osy, ve kterých se objevuje. Popisy vycházejí jen z osy a průběžně se doplňují.",
         people_main, "Popisy označené 🤖 sepsal Claude z časové osy, čekají na kontrolu."), encoding="utf-8")
 
@@ -470,7 +485,7 @@ def build(data, out, robots, production, base="", people_path=None, places_path=
     script = (f"<script>{leaflet_js}</script>\n<script>var PLACES = {json.dumps(pts, ensure_ascii=False)};\n{map_js}</script>")
     (out.parent / "mapa.html").write_text(render_page(
         page_tpl, header("MAPA"), css, robots_meta, base, "Mapa míst",
-        "Mapa míst libereckého skautingu 1913–1939: heimy, klubovny, tábořiště, srazy a výlety.",
+        "Mapa míst libereckého skautingu od roku 1911: heimy, klubovny, tábořiště, srazy a výlety.",
         f"Heimy, klubovny, tábořiště, srazy a výlety ze záznamů časové osy – {len(places)} míst, {len(mapped)} z nich na mapě.",
         places_main, "Mapové podklady © přispěvatelé OpenStreetMap (ODbL). Knihovna Leaflet (BSD-2).",
         script, f"<style>{leaflet_css}</style>\n"), encoding="utf-8")
