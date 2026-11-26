@@ -406,3 +406,12 @@ Místo = sekce `## Název`. Pole: id, typ (heim, klubovna, tábor, sraz, výlet,
 - přesnost: přibližně
 - hledat: Březov|Maják
 - popis: 🤖 1968–70 klubovna 10. přístavu vodních skautů Maják v přízemním dřevěném objektu bývalého agitačního střediska naproti restauraci Březová alej (sál, klubovna, plynové topení). Po 1989 město objekt prodalo. ❓ Souřadnice ověřit.
+
+## Skautská studánka
+- id: skautska-studanka
+- typ: sraz
+- proud: cz-svaz
+- souřadnice: 
+- přesnost: přibližně (Jizerské hory nad Libercem, na žluté značce mezi Strážním bukem a Mlynářovým křížem – souřadnice doplnit)
+- hledat: Skautsk[áé] studánk
+- popis: 🤖 Lesní studánku s dřevěnou stříškou obnovil v roce 1968 ruprechtický oddíl Josefa Chrousta – Brouka, nad ni osadil betonovou dlaždici se skautskou lilií. Za normalizace místo ilegálních setkání, 3. 3. 1990 tu padly první polistopadové sliby a vůdci tu slibují dodnes. (DP 2021; Marečková 2012) ❓ Souřadnice doplnit.

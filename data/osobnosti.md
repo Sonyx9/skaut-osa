@@ -464,10 +464,10 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 ## Josef Chroust
 - id: josef-chroust
 - proud: cz-svaz
-- období: 1946–1947
-- role: vůdce 9. oddílu v Ruprechticích, „Brouk“
+- období: 1946–1970
+- role: vůdce ruprechtického oddílu, „Brouk“; obnovitel Skautské studánky
 - hledat: Chroust|Brouk
-- popis: 🤖 Skautoval od 1930, do Liberce přišel 1946 s manželkou Miroslavou (Majka, učitelka); vedl 9. oddíl při ruprechtické škole, tábor 1947 v Raspenavě. (Mareš 2007)
+- popis: 🤖 Skautoval od 1930, do Liberce přišel 1946 s manželkou Miroslavou (Majka, učitelka); vedl 9. oddíl při ruprechtické škole, tábor 1947 v Raspenavě. (Mareš 2007) V roce 1968 vede ruprechtický oddíl (DP 2021: 8. oddíl) a s chlapci obnovuje Skautskou studánku, betonovou dlaždici s lilií vymodeloval sám. (DP 2021; Marečková 2012)
 
 ## Miroslav Knytl
 - id: miroslav-knytl
@@ -504,10 +504,10 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 ## Jindřich Slezák
 - id: jindrich-slezak
 - proud: cz-svaz
-- období: 1947–1949
-- role: zástupce vůdce 1. oddílu, „Jindra“
+- období: 1947–1970
+- role: zástupce vůdce 1. oddílu, 1968–70 jeho vůdce, „Jindra“
 - hledat: Slezák
-- popis: 🤖 1947 hledá a připravuje tábořiště v Tatrách, 1948–49 zástupce vůdce 1. oddílu, 1. 10. 1949 narukoval; po zákazu horolezec, vodák a lyžař. (Mareš 2007)
+- popis: 🤖 1947 hledá a připravuje tábořiště v Tatrách, 1948–49 zástupce vůdce 1. oddílu, 1. 10. 1949 narukoval; po zákazu horolezec, vodák a lyžař. (Mareš 2007) V roce 1968 obnovuje 1. oddíl v Domě pionýrů a mládeže a vede ho do konce srpna 1970; po okupaci se vedení podle jeho vzpomínek schází konspiračně. (sborník 50 let 1. oddílu; DP 2021)
 
 ## Josef Vyhlídko
 - id: josef-vyhlidko
@@ -540,3 +540,21 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - role: autor junáckých příruček
 - hledat: Kratochvíl
 - popis: 🤖 Liberečan, skautuje od 1937; 1946 zástupce vůdce 2. oddílu („Gigo“ – ❓ tatáž osoba); 1970 vydal příručky „Skautská praxe“ a „Čtení o sekeře“ (junácká edice Podještědské oblasti, 49. oddíl oldskautů), instruktor Severočeské lesní školy. (Vpřed 8. 5. a 29. 5. 1970, úryvky)
+
+## Miloš Zapletal
+- id: milos-zapletal
+- přezdívka: Zet
+- proud: cz-svaz
+- období: 1963–1970
+- role: vůdce oddílu, autor časopisu Rádce skautské družiny
+- hledat: Zapletal|Zet\b
+- popis: 📘 V roce 1963 zakládá na liberecké škole „turistický kroužek“ – skautský oddíl pod jiným jménem. V létě 1968 chystá založení oddílu, puťák po Střele přeruší okupace; oddíl přesto vznikne. V letech 1968–70 píše většinu kapesního časopisu Rádce skautské družiny, po zákazu působí v TOM. (DP 2021 podle I. Jiráska, Zet – pět životů, 2010; Marečková 2012)
+
+## Jan Šolc
+- id: jan-solc-kol
+- přezdívka: Kol
+- proud: cz-svaz
+- období: 1968–1970
+- role: vůdce 2. oddílu skautů
+- hledat: Jan Šolc – Kol|Šolc – Kol
+- popis: 📘 Ročník 1938, v letech 1968–70 vede 2. oddíl skautů (do zákazu 40 členů). Po listopadu 1989 poslanec za OF, v 90. letech v Kanceláři prezidenta republiky. Nezaměňovat s MUDr. Janem Šolcem (1947). (DP 2021; Paměť národa)
