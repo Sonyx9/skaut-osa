@@ -549,7 +549,7 @@ def build(data, out, robots, production, base="", people_path=None, places_path=
                         + f'<ul class="srcs">{"".join(items)}</ul></section>')
     (out.parent / "zdroje.html").write_text(render_page(
         page_tpl, header("ZDROJE"), css, robots_meta, base, "Zdroje",
-        "Prameny a literatura k časové ose skautingu v Liberci 1912–1952: dobový tisk, skautské časopisy, almanachy, kroniky a odborné práce.",
+        "Prameny a literatura k časové ose skautingu v Liberci 1912–1970: dobový tisk, skautské časopisy, almanachy, kroniky a odborné práce.",
         "Z čeho časová osa vychází. U každého pramene je, kde se dá najít, a kolikrát se v ose objevuje – kliknutím se zobrazí příslušné záznamy.",
         "".join(src_secs), "Seznam se doplňuje s každým novým pramenem."), encoding="utf-8")
 

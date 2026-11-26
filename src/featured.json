@@ -265,6 +265,34 @@
       "date": "1952-06-27",
       "dark": true,
       "text": "Za vůdcovské zkoušky na chatě v Polesí u Rynoltic stojí liberečtí skautští vedoucí 27. června 1952 před Státním soudem v kauze „Jaroslav Tomsa a spol.“ Tomsa dostal čtyři roky za velezradu; rozsudky zrušily soudy až v letech 1968–1973."
+    },
+    {
+      "era": 3,
+      "from": 1953,
+      "to": 1967,
+      "label": "Mezi zákazy",
+      "title": "Skauting pod cizí hlavičkou",
+      "date": "1965",
+      "text": "Tomsa se v roce 1956 vrací z vězení, bývalí skauti vedou pionýrské a turistické oddíly „Modrý kruh“. Tisk opakovaně varuje před „skautskými“ prvky v Pionýru – a jindy se ptá, proč je nepřevzít."
+    },
+    {
+      "era": 3,
+      "from": 1968,
+      "to": 1968,
+      "label": "Obnova 1968",
+      "title": "Pražské jaro a obnova Junáka",
+      "date": "1968-04-09",
+      "text": "Na jaře 1968 svolává Jaroslav Tomsa skauty do kinosálu Botanické zahrady, obnovuje se oblast, okres i oddíly – vodní skauti, Hrádek nad Nisou, Český Dub. K 50. výročí republiky vztyčují junáci vlajku na Liberecké výšině."
+    },
+    {
+      "era": 3,
+      "from": 1969,
+      "to": 1970,
+      "label": "Druhý zákaz",
+      "title": "Normalizace a konec v roce 1970",
+      "date": "1970-08-31",
+      "dark": true,
+      "text": "V roce 1969 vzniká přístav Maják a Junák spolupracuje s Pionýrem. Po táborech v létě 1970 končí oddíly 31. srpna – část přechází do Pionýra a turistických oddílů tělovýchovy."
     }
   ],
   "sources": [
@@ -351,6 +379,20 @@
           "d": "Jednotlivé zprávy o libereckých junácích.",
           "key": "Mladá fronta|Pojizerské listy, \\[",
           "where": "Česká digitální knihovna / Kramerius KVK"
+        },
+        {
+          "n": "Vpřed – okresní noviny Liberecka (1960–1990)",
+          "d": "okresní týdeník KSČ a ONV Liberec; zprávy o obnově Junáka 1968–1970 (v Krameriu KVK jen ve studovně)",
+          "key": "Vpřed",
+          "where": "Kramerius KVK Liberec",
+          "url": "https://kramerius.kvkli.cz/"
+        },
+        {
+          "n": "Cesta míru (1952–1960)",
+          "d": "krajský týdeník KSČ v Liberci – proces 1952 a kritika skautských prvků v Pionýru",
+          "key": "Cesta míru",
+          "where": "Kramerius KVK Liberec",
+          "url": "https://kramerius.kvkli.cz/"
         }
       ]
     },
@@ -534,6 +576,20 @@
           "key": "Maják Liberec",
           "where": "majak-liberec.cz",
           "url": "https://www.majak-liberec.cz/o-nas/"
+        },
+        {
+          "n": "Flotila Liberec – Po obnovení Junáka (1968–1976)",
+          "d": "web přístavu vodních skautů – kronika 1968–1976",
+          "key": "Flotila Liberec",
+          "where": "flotila-liberec.cz",
+          "url": "http://www.flotila-liberec.cz/vodni-skauti-liberec/historie-1968-1976"
+        },
+        {
+          "n": "R. Anděl – J. Janáček: Jaroslav Tomsa",
+          "d": "Česká beseda Liberec – životopis Jaroslava Tomsy",
+          "key": "Anděl – J. Janáček",
+          "where": "vlastní fotokopie",
+          "url": ""
         }
       ]
     }
@@ -560,14 +616,17 @@
         "small": []
       },
       "page_lead": "Obnova Junáka v Liberci po válce, oddíly, smečky a kluby oldskautů, vrchol v roce 1947, přechod pod Svaz mládeže a proces s libereckými vedoucími.",
-      "status": "V procesu",
-      "status_note": "Na epoše právě pracujeme. Kostra je převzatá z diplomové práce (2021), postupně ji ověřujeme a doplňujeme ze Stráže severu 1945–1951 a z diplomové práce Ivy Krupauerové o procesu 1952."
+      "status_note": "Epocha je ověřená v pramenech: Stráž severu 1945–1951, SOČ Jana Mareše (2007), Drbohlavovy Drobečky, sborník 50 let 1. oddílu, diplomová práce Ivy Krupauerové o procesu 1952 a almanach oblastního srazu 1947. Další doplnění už jen z archivů."
     },
     {
       "from": 1952,
       "to": 1970,
       "title": "Mezi zákazy",
-      "lead": "Oddíly přežívající v turistice a Pionýru, obnova Junáka v roce 1968 a nový zákaz v roce 1970."
+      "lead": "Oddíly přežívající v turistice a Pionýru, obnova Junáka v roce 1968 a nový zákaz v roce 1970.",
+      "href": "epocha-1952-1970.html",
+      "status": "V procesu",
+      "page_lead": "Po procesu a vězení vedoucích přežívá skautská práce v Pionýru, turistice a „Modrých kruzích“. Na jaře 1968 se Junák v Liberci obnovuje, vznikají střediska i přístav vodních skautů – a v srpnu 1970 přichází další konec.",
+      "status_note": "Na epoše právě pracujeme. Velká část záznamů z let 1961–1970 pochází jen z úryvků okresních novin Vpřed, které jsou v digitální knihovně přístupné pouze ve studovně; čekají na ověření v celém textu."
     },
     {
       "from": 1970,

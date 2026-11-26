@@ -41,7 +41,7 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - období: 1919–1952
 - role: zakladatel, rádce, jednatel sboru, vůdce vlčat, zástupce okresního zpravodaje; 1945–1948 oblastní velitel Podještědské oblasti a II. zemský místonáčelník
 - hledat: Jaroslava? Tomsa|Jaroslava Tomsy|Jar\. Tomsa|J\. Tomsa|prof\. Tomsa|br\. Tomsa|Tomsy \(Toma
-- popis: 🤖 Kolem čtrnáctiletého „Toma“ se koncem roku 1919 zformovala první česká skautská skupina v Liberci; od něj také pocházejí první zprávy o skautingu ve městě. Byl rádcem 1. oddílu, pomáhal zakládat oddíly v Lomnici a v Hrádku, dirigoval skautský orchestr a byl jednatelem sboru. V roce 1924 se stal vůdcem smečky vlčat. V letech 1926–1933 studoval v Praze, v roce 1930 je doložen jako zástupce okresního zpravodaje. Po válce jako ředitel průmyslové školy vede obnovený Junák na Liberecku: oblastní velitel Podještědské oblasti (od 1945), II. zemský místonáčelník (1946), zkouší vůdce, získává povolení ke Kameni vítězů (1947). Po únoru 1948 je zbaven funkcí oblastního velitele i ředitele školy. 1949 ještě vede vlčata na táboře na Oravě. 29. 1. 1952 zatčen, 27. 6. 1952 odsouzen v procesu „Jaroslav Tomsa a spol.“ na 4 roky (Valdice do 1956). Na jaře 1968 svolává obnovu Junáka v Liberci a je zvolen do Náčelnictva chlapeckého kmene (Zachariáš 2005, s. 69). Podle vlastního přehledu (archiv Liberec DSC_0019): 1945 junácký kříž „Za vlast 1939–45“, oblastní velitel dekretem č. 361 z 6. 6. 1946, absolvent I. Severočeské LŠ ve Starých Splavech (14. 8. 1946), instruktor LŠ 1947, v srpnu 1947 na jamboree ve Francii jako člen náčelnictva. Ředitel průmyslovky 1945–48 (Mareš). Ve vězení 1952–56.
+- popis: 🤖 Kolem čtrnáctiletého „Toma“ se koncem roku 1919 zformovala první česká skautská skupina v Liberci; od něj také pocházejí první zprávy o skautingu ve městě. Byl rádcem 1. oddílu, pomáhal zakládat oddíly v Lomnici a v Hrádku, dirigoval skautský orchestr a byl jednatelem sboru. V roce 1924 se stal vůdcem smečky vlčat. V letech 1926–1933 studoval v Praze, v roce 1930 je doložen jako zástupce okresního zpravodaje. Po válce jako ředitel průmyslové školy vede obnovený Junák na Liberecku: oblastní velitel Podještědské oblasti (od 1945), II. zemský místonáčelník (1946), zkouší vůdce, získává povolení ke Kameni vítězů (1947). Po únoru 1948 je zbaven funkcí oblastního velitele i ředitele školy. 1949 ještě vede vlčata na táboře na Oravě. 29. 1. 1952 zatčen, 27. 6. 1952 odsouzen v procesu „Jaroslav Tomsa a spol.“ na 4 roky (Valdice do 1956). Na jaře 1968 svolává obnovu Junáka v Liberci a je zvolen do Náčelnictva chlapeckého kmene (Zachariáš 2005, s. 69). Podle vlastního přehledu (archiv Liberec DSC_0019): 1945 junácký kříž „Za vlast 1939–45“, oblastní velitel dekretem č. 361 z 6. 6. 1946, absolvent I. Severočeské LŠ ve Starých Splavech (14. 8. 1946), instruktor LŠ 1947, v srpnu 1947 na jamboree ve Francii jako člen náčelnictva. Ředitel průmyslovky 1945–48 (Mareš). Ve vězení 1952–56; poté mj. u J. Čapka a v knihovně VŠST, od 1967 tajemník České besedy. Na jaře 1968 svolává obnovu Junáka (Botanická zahrada), oblastní velitel do sněmu, člen náčelnictva; 14. 3. 1970 tajemník obnoveného Svojsíkova oddílu.
 
 ## Ladislav Tomsa
 - id: ladislav-tomsa
@@ -305,7 +305,7 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - id: miroslav-havranek
 - přezdívka: Žebro
 - proud: cz-svaz
-- období: 1946–1948
+- období: 1946–1968
 - role: okresní (okrskový) velitel Liberec
 - hledat: Havránk
 - popis: 🤖 Architekt, okresní velitel Junáka v Liberci (1947), na rok 1948 okrskový velitel. V září 1948 stojí v čele Junáckého klubu ve skupině SČM Liberec I a je zvolen místopředsedou okresního výboru SČM.
@@ -375,7 +375,7 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - období: 1946–1948
 - role: vůdce 15. klubu oldskautů, zástupce okrskového velitele
 - hledat: Sezim
-- popis: 🤖 Vůdce 15. klubu oldskautů (1946), který pečuje o 16. smečku vlčat; na rok 1948 zástupce okrskového velitele.
+- popis: 🤖 Vůdce 15. klubu oldskautů (1946), který pečuje o 16. smečku vlčat; na rok 1948 zástupce okrskového velitele. V květnu 1968 se stává okrskovým velitelem obnoveného Junáka v Liberci (Vpřed 28. 5. 1968).
 
 ## Jan Šmíd
 - id: jan-smid
@@ -508,3 +508,35 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - role: zástupce vůdce 1. oddílu, „Jindra“
 - hledat: Slezák
 - popis: 🤖 1947 hledá a připravuje tábořiště v Tatrách, 1948–49 zástupce vůdce 1. oddílu, 1. 10. 1949 narukoval; po zákazu horolezec, vodák a lyžař. (Mareš 2007)
+
+## Josef Vyhlídko
+- id: josef-vyhlidko
+- proud: cz-svaz
+- období: 1968–1970
+- role: okresní velitel Junáka v Liberci 1968
+- hledat: Vyhlídko
+- popis: 🤖 Prof. Josef Vyhlídko, okresní velitel Junáka v Liberci po obnově 1968; jednal o přičlenění českodubského střediska k okresu Liberec. (web skautů Český Dub)
+
+## Jiří Bartoš
+- id: jiri-bartos
+- proud: cz-svaz
+- období: 1946–1976
+- role: vodní skaut, „Taktik“ / „Tik“
+- hledat: Bartoš|Taktik
+- popis: 🤖 Vodní skaut od 1946; po zákazu kanoistický oddíl při DSO Lokomotiva, v 60. letech Modré kruhy. 27. 3. 1968 svolal obnovu 10. oddílu vodních skautů, 1968 vedl první tábor na Jizeře, přístavní Majáku; 1972 hlavní lodivod Flotily mládeže, 1976 odjíždí do Tunisu. (Flotila, Maják, Mareš)
+
+## Vladimír Cvrček
+- id: vladimir-cvrcek
+- proud: cz-svaz
+- období: 1947–1976
+- role: vodní skaut, vůdce vlčat Majáku, „Vezír“
+- hledat: Cvrček|Vezír
+- popis: 🤖 Narozen 1939, od 1947 u vodních skautů; 1968–70 vede vlčata přístavu Maják, 1970 měl rozhodovat zrušený celostátní závod vlčat; autor kroniky „50 let vodních skautů v Liberci“ (1996); 1976 hlavní lodivod Flotily. (Paměť národa, Flotila)
+
+## Zdeněk Kratochvíl
+- id: zdenek-kratochvil
+- proud: cz-svaz
+- období: 1946–1970
+- role: autor junáckých příruček
+- hledat: Kratochvíl
+- popis: 🤖 Liberečan, skautuje od 1937; 1946 zástupce vůdce 2. oddílu („Gigo“ – ❓ tatáž osoba); 1970 vydal příručky „Skautská praxe“ a „Čtení o sekeře“ (junácká edice Podještědské oblasti, 49. oddíl oldskautů), instruktor Severočeské lesní školy. (Vpřed 8. 5. a 29. 5. 1970, úryvky)

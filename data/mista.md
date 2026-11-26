@@ -297,7 +297,7 @@ Místo = sekce `## Název`. Pole: id, typ (heim, klubovna, tábor, sraz, výlet,
 - souřadnice: 50.7980, 14.8260
 - přesnost: obec
 - hledat: Polesí
-- popis: 🤖 Skautská chata (později v majetku Hlaváčkových), kde se v březnu 1951 konaly ilegální vůdcovské zkoušky – záminka procesu „Jaroslav Tomsa a spol.“. 1951 sem jezdily i skautky.
+- popis: 🤖 Skautská chata (později v majetku Hlaváčkových), kde se v březnu 1951 konaly ilegální vůdcovské zkoušky – záminka procesu „Jaroslav Tomsa a spol.“. 1951 sem jezdily i skautky. V létě 1969 tu má střediskový tábor obnovené středisko Junáka Hrádek nad Nisou (Vpřed 22. 7. 1969).
 
 ## Stará Lesná / Tatranská Lomnice
 - id: stara-lesna
@@ -397,3 +397,12 @@ Místo = sekce `## Název`. Pole: id, typ (heim, klubovna, tábor, sraz, výlet,
 - přesnost: přibližně
 - hledat: Mnichov|kormidel
 - popis: 🤖 Tábor 7. (vodního) oddílu 1948; ve skále je podle Mareše dodnes vytesané kormidelní kolo – ověřit v terénu. 1948 tu tábořil i 3. roj světlušek (Klášter Hradiště).
+
+## Klubovna Majáku u Březové aleje
+- id: majak-brezova-alej
+- typ: klubovna
+- proud: cz-svaz
+- souřadnice: 50.7745, 15.0710
+- přesnost: přibližně
+- hledat: Březov|Maják
+- popis: 🤖 1968–70 klubovna 10. přístavu vodních skautů Maják v přízemním dřevěném objektu bývalého agitačního střediska naproti restauraci Březová alej (sál, klubovna, plynové topení). Po 1989 město objekt prodalo. ❓ Souřadnice ověřit.
