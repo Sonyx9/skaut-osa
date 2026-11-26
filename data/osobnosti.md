@@ -183,3 +183,20 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - role: obnovitel skautingu v Jičíně, od 1920 v Růžodole
 - hledat: Mazáč
 - popis: 🤖 Válečný invalida, který v roce 1919 na pozvání Slávy Řeháka obnovil skautský oddíl v Jičíně. Na podzim 1919 přešel do Dolního Bousova a v roce 1920 byl přeložen do (Horního) Růžodolu u Liberce. Odborný učitel, známý turista a horolezec (na vrcholy Prachovských skal upevňoval české praporky). Že „v roce 1920 odešel do Liberce“, potvrzuje i Řehák (1937) citovaný Vlasatou (BP TUL 2013). Co v Liberci dělal, zatím nevíme – v dosud přepsaných částech Drbohlava a Mareše ani v libereckém tisku se nevyskytuje.
+
+## Heinz Rutha
+- id: heinz-rutha
+- proud: de
+- období: 1921–1937
+- role: zakladatel Jungenschaft, vůdce Ještědsko-jizerské turnerské župy
+- hledat: Rutha
+- popis: 🤖 Narozen 1897 v Lázních Kundraticích pod Ještědem, za války důstojník, potom architekt v Osečné. Před válkou byl ve Wandervogelu, v roce 1921 založil Jungenschaft (sudetoněmecký Jungenbund) a později ji převedl do turnerské mládeže Deutscher Turnverband. V roce 1933 patřil k zakladatelům Henleinovy Sudetoněmecké vlastenecké fronty a vedl Ještědsko-jizerskou turnerskou župu. V říjnu 1937 byl zatčen kvůli údajným homosexuálním deliktům a převezen do Liberce, 5. 11. 1937 zemřel ve vazbě v České Lípě (sebevražda). Zdroj: liberecký německý tisk 1934–1937 (KVK).
+
+## Ernst Tausig
+- id: ernst-tausig
+- přezdívka: Eliahu
+- proud: zid
+- období: 1914–1916
+- role: zakladatel a vůdce Blau-Weiß Reichenberg
+- hledat: Tausig
+- popis: 🤖 Narozen 28. 12. 1897 v Liberci. Jako středoškolák založil v roce 1914 místní skupinu židovského Wanderbundu Blau-Weiß a vedl její výpravy (Krkonoše, červenec 1914). Za války byl několikrát raněn a padl do zajetí, kde se začal učit hebrejsky. Potom vystudoval medicínu a žil v Izraeli jako Dr. Ernst Eliahu Tausig. Zemřel náhle 8. 12. 1964. Zdroj: Jüdische Zeitung 1914 a nekrolog v MB (Tel Aviv) 15. 1. 1965, Compact Memory.
