@@ -288,7 +288,7 @@ Místo = sekce `## Název`. Pole: id, typ (heim, klubovna, tábor, sraz, výlet,
 - souřadnice: 
 - přesnost: obec
 - hledat: Vápenk|Vápence
-- popis: 🤖 Junácký domov 2. střediska Podještědí nad stanicí tramvaje č. 3 „U Vápenky“ (1945), klubovna i vodních skautů.
+- popis: 🤖 Junácký domov 2. střediska Podještědí v bývalém jednopatrovém domě u stanice tramvaje č. 3 „U Vápenky“ (1945–1946): klubovny chlapců i dívek, rádcovský kurz (únor–březen 1946), kurz první pomoci, schůzky vodních skautů.
 
 ## Chata v Polesí u Rynoltic
 - id: polesi-rynoltice

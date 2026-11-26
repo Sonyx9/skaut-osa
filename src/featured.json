@@ -280,6 +280,13 @@
      "url": "https://kramerius.kvkli.cz/uuid/uuid:2cdf4578-ae6c-410f-8152-7089df24c757"
     },
     {
+     "n": "Severák (1945–1946)",
+     "d": "Týdeník Krajského výboru SČM v Liberci; junácké rubriky „Junák hlásí“ a „Buď připraven!“ (řídí Aja). Dostupné po přihlášení (DNNT).",
+     "key": "Severák",
+     "where": "Česká digitální knihovna",
+     "url": "https://www.ceskadigitalniknihovna.cz/uuid/uuid:de924eb0-d68f-11dc-81be-000d606f5dc6"
+    },
+    {
      "n": "Naše hory",
      "d": "český týdeník vycházející v Horním Růžodole; rubriky o skautech a junácích",
      "where": "Kramerius KVK Liberec",
@@ -332,6 +339,12 @@
      "key": "Marečková",
      "where": "web časopisu",
      "url": "https://krkonose.krnap.cz/apex/f?p=104:4:::NO:RP,4:P4_ID,P4_CP:2012-09-25,2"
+    },
+    {
+     "n": "Mladá fronta, Pojizerské listy a další regionální a celostátní tisk 1945–1952",
+     "d": "Jednotlivé zprávy o libereckých junácích.",
+     "key": "Mladá fronta|Pojizerské listy, \\[",
+     "where": "Česká digitální knihovna / Kramerius KVK"
     }
    ]
   },

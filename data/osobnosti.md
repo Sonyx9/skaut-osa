@@ -324,7 +324,7 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - období: 1945–1946
 - role: velitel II. střediska Podještědí
 - hledat: Unčovsk
-- popis: 🤖 Zakladatel 2. střediska „Podještědí“ (listopad 1945, domov U Vápenky), 1946 vede pracovní tábor na Souši. ❓ Křestní jméno.
+- popis: 🤖 Zakladatel a vedoucí 2. střediska „Podještědí“ (listopad 1945, domov U Vápenky; Severák 2. 3. 1946), 1946 vede pracovní tábor na Souši. ❓ Křestní jméno.
 
 ## Jindra Kňourková
 - id: jindra-knourkova
@@ -403,3 +403,20 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - role: člen 1. oddílu, obžalovaný v procesu 1952
 - hledat: Ježek|Muskwa
 - popis: 🤖 Člen 1. oddílu J. Čapka. V procesu „Jaroslav Tomsa a spol.“ 1952 odsouzen, odvolací soud ho zprostil. Později epidemiolog WHO; jeho vzpomínky (s I. Jirků) jsou pramenem Krupauerové.
+
+## Aja
+- id: aja
+- přezdívka: Aja
+- proud: cz-svaz
+- období: 1946
+- role: vedoucí dívčího oddílu II. střediska, redaktorka junácké rubriky Severáku
+- hledat: \bAj[aiu]\b|AJA
+- popis: 🤖 Vedoucí dívčího oddílu skautek II. střediska Podještědí; v roce 1946 řídí junácké rubriky „Junák hlásí“ a „Buď připraven!“ v týdeníku Severák. Severák ji chválí jako „udatnou Aju“ (Vlasta V. – podle Stráže severu zadržela pouličního zloděje). ❓ Celé jméno.
+
+## Nováková
+- id: novakova-1946
+- proud: cz-svaz
+- období: 1946
+- role: vedoucí dívčího střediska
+- hledat: sestra Nováková
+- popis: 🤖 Podle Severáku (2. 3. 1946) vedoucí dívčího střediska vedle br. Unčovského. ❓ Křestní jméno.
