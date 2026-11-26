@@ -105,5 +105,24 @@
 <script>
 {{JS}}
 </script>
+<a class="to-top" href="#" aria-label="Zpět nahoru"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg></a>
+<script>
+(function () {
+  var b = document.querySelector(".to-top"); if (!b) return;
+  var on = function () { b.classList.toggle("is-on", window.scrollY > 700); };
+  window.addEventListener("scroll", on, { passive: true }); on();
+  b.addEventListener("click", function (e) { e.preventDefault(); window.scrollTo({ top: 0, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); history.replaceState(null, "", location.pathname); });
+  var nav = document.querySelector(".years-nav"); if (!nav || !("IntersectionObserver" in window)) return;
+  var links = {}; nav.querySelectorAll("a[href^='#r']").forEach(function (a) { links[a.getAttribute("href").slice(2)] = a; });
+  var cur = null;
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (!e.isIntersecting) return;
+      var a = links[e.target.id.slice(1)]; if (!a || a === cur) return;
+      if (cur) cur.classList.remove("is-cur"); cur = a; a.classList.add("is-cur");
+      var ol = a.closest("ol"); ol.scrollLeft = a.offsetLeft - ol.clientWidth / 2 + a.offsetWidth / 2; });
+  }, { rootMargin: "-60px 0px -75% 0px" });
+  document.querySelectorAll("section.year").forEach(function (s) { io.observe(s); });
+})();
+</script>
 </body>
 </html>
