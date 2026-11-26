@@ -566,7 +566,7 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - období: 1968–1970
 - role: spoluzakladatel 12. oddílu, přírodovědec a spisovatel
 - hledat: Nevrlý|Nevrlého|Náčelník\b
-- popis: 🤖 V roce 1968 zakládá s Milošem Zapletalem 12. skautský oddíl, po roce 1970 působí v TOM. (rozhovor se Zapletalem 2008; Marečková 2012)
+- popis: 🤖 Biolog Severočeského muzea a okresní konzervátor státní ochrany přírody (Vpřed 1960–70, úryvky). V roce 1968 zakládá s Milošem Zapletalem 12. skautský oddíl, po roce 1970 působí v TOM. (rozhovor se Zapletalem 2008; Marečková 2012)
 
 ## Karel Pospíšil
 - id: karel-pospisil

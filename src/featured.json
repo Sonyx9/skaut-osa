@@ -510,6 +510,20 @@
         {
           "n": "Zápisy schůzí I. dívčího oddílu 1920–1922 a skautský deník M. Horáčkové 1921–22",
           "key": "Zápisy schůzí|Horáčkové"
+        },
+        {
+          "n": "Junácká hlídka (Vpřed 1990–91) a strojopisy „Skauting v Liberci včera a dnes“, „Skautská studánka“",
+          "d": "historické příspěvky z obnovy Junáka 1990",
+          "key": "Junácká hlídka|včera a dnes",
+          "where": "archiv Liberec, fotokopie",
+          "url": ""
+        },
+        {
+          "n": "Dokumenty 1. oddílu Junáka v Liberci 1968–1970",
+          "d": "dohoda o klubovně 1968, protokol o předání majetku 1970, výstřižky",
+          "key": "DSC_2219|DSC_2179|DSC_2226|Dokumenty 1. oddílu",
+          "where": "Severočeské muzeum, fotokopie",
+          "url": ""
         }
       ]
     },
@@ -597,6 +611,27 @@
           "key": "Anděl – J. Janáček",
           "where": "vlastní fotokopie",
           "url": ""
+        },
+        {
+          "n": "H. Tomášová: Skauting na Českodubsku – obnovení činnosti v letech 1968–1970 (BP TUL 2013)",
+          "d": "rozhovory s vedoucími českodubského střediska",
+          "key": "Tomášová",
+          "where": "DSpace TUL",
+          "url": "https://dspace.tul.cz/items/950d1d7e-6e63-4e07-a01b-8ef8110c2a9e"
+        },
+        {
+          "n": "M. Ježková: Vodní skauting jako volnočasová aktivita. Historie a současnost liberecké Flotily (DP TUL)",
+          "d": "chronologie vodních skautů, Maják 1968–70",
+          "key": "Ježková",
+          "where": "DSpace TUL",
+          "url": "https://dspace.tul.cz/items/b7cec0c6-1264-4c19-b395-32c7f42209db"
+        },
+        {
+          "n": "J. Knapík: Dětské organizace v českých zemích v letech 1968–1970 (Paginae historiae 2017)",
+          "d": "celostátní kontext obnovy a zániku Junáka",
+          "key": "Knapík",
+          "where": "Národní archiv",
+          "url": "https://www.nacr.cz/wp-content/uploads/2024/04/PH_25_2_2017_Knapik.pdf"
         }
       ]
     }
