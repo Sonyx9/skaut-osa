@@ -164,6 +164,13 @@ h1 { margin: 0 0 24px; font: 800 clamp(52px, 8vw, 84px)/.95 var(--display); text
 .feat .ev__meta time { font: 800 22px/1.2 var(--display); }
 .feat__title { margin: 0 0 16px; font: 800 44px/1.02 var(--display); color: #111; }
 .feat .ev__text { font-size: 18px; }
+.feat__prog { margin: 24px 0 0; padding: 20px 24px; background: var(--sand); border-left: 6px solid var(--accent); }
+.feat__prog-h { margin: 0 0 10px; font: 700 15px/1.2 var(--display); letter-spacing: .08em; text-transform: uppercase; color: #111; }
+.feat__prog ol { margin: 0; padding-left: 22px; }
+.feat__prog li { margin: 4px 0; font-size: 16px; }
+.feat__quote { margin: 24px 0 0; padding: 0 0 0 20px; border-left: 3px solid var(--ink, #111); }
+.feat__quote p { margin: 0; font-size: 19px; font-style: italic; line-height: 1.5; }
+.feat__quote footer { margin-top: 8px; font-size: 13px; color: var(--muted); }
 .empty { padding: 32px 0; color: var(--muted); }
 
 /* Patička */

@@ -1,33 +1,130 @@
 {
-  "_info": "Milníky s velkým blokem, obrázky a kapitoly. Klíč = datum řádku v tabulce přesně jak je v prvním sloupci.",
-  "images": {
-    "tabor-1932": {"alt": "Kresba skautského tábora v lese s letopočtem 1932", "w": 1400, "h": 933},
-    "lilie-1936": {"alt": "Kresba skautské lilie s nápisem 1936 Buď připraven", "w": 1400, "h": 933},
-    "racci-1937": {"alt": "Titulní list Družina Racků 1937, Riegrova župa", "w": 933, "h": 1400},
-    "racci-1930": {"alt": "Kronika družiny Racků, zápis o první schůzce oddílu", "w": 1400, "h": 933},
-    "jamboree-1931": {"alt": "Kronika s rukopisným zápisem o jamboree v Praze", "w": 1400, "h": 933},
-    "navarov-1932": {"alt": "Kronika s nákresem rozložení tábora u Navarova", "w": 1400, "h": 933},
-    "sotci-1932": {"alt": "Titulní list Kronika Šotků, 1. D. Horní Růžodol, 1932", "w": 933, "h": 1400}
+ "_info": "Milníky s velkým blokem, obrázky a kapitoly. Klíč = datum řádku v tabulce přesně jak je v prvním sloupci.",
+ "images": {
+  "tabor-1932": {
+   "alt": "Kresba skautského tábora v lese s letopočtem 1932",
+   "w": 1400,
+   "h": 933
   },
-  "credit": "Kronika dívčí družiny Racků, Horní Růžodol · Severočeské muzeum v Liberci",
-  "hero": {"main": "tabor-1932", "small": ["lilie-1936", "racci-1937"]},
-  "features": {
-    "1913-06-01": {"title": "Vzniká Reichenberger Pfadfinderkorps"},
-    "1919": {"title": "Kolem Jaroslava Tomsy se schází první čeští junáci", "match": "Tomsy"},
-    "1920-08-24": {"title": "Řádně založen dívčí oddíl"},
-    "1930-12-10": {"title": "Skautky v Horním Růžodole", "img": "racci-1930"},
-    "1931-06-28": {"title": "Na jamboree v Praze s Riegrovou župou", "img": "jamboree-1931"},
-    "1932": {"title": "Kronika Šotků", "img": "sotci-1932", "match": "Šotků"},
-    "1932-07-17": {"title": "Tábor u Navarova na Kamenici", "img": "navarov-1932", "match": "Návarova"},
-    "1938-09-23": {"title": "„Nenechte nikdy zaniknout skautskou myšlenku!“"}
+  "lilie-1936": {
+   "alt": "Kresba skautské lilie s nápisem 1936 Buď připraven",
+   "w": 1400,
+   "h": 933
   },
-  "chapters": {
-    "1913": {"label": "Pfadfinder", "title": "Pfadfinder barona Liebiega"},
-    "1919": {"label": "junáci", "title": "První čeští junáci"},
-    "1920": {"label": "skautky", "title": "Skautky, sbor a dělničtí skauti"},
-    "1923": {"label": "sbor", "title": "Sbor pod vedením R. Válka"},
-    "1930": {"label": "Růžodol", "title": "Dívčí oddíl v Horním Růžodole"},
-    "1938": {"label": "Mnichov", "title": "Rok 1938: mobilizace a Mnichov", "dark": true},
-    "1939": {"label": "konec", "title": "Konec činnosti v Liberci", "dark": true}
+  "racci-1937": {
+   "alt": "Titulní list Družina Racků 1937, Riegrova župa",
+   "w": 933,
+   "h": 1400
+  },
+  "racci-1930": {
+   "alt": "Kronika družiny Racků, zápis o první schůzce oddílu",
+   "w": 1400,
+   "h": 933
+  },
+  "jamboree-1931": {
+   "alt": "Kronika s rukopisným zápisem o jamboree v Praze",
+   "w": 1400,
+   "h": 933
+  },
+  "navarov-1932": {
+   "alt": "Kronika s nákresem rozložení tábora u Navarova",
+   "w": 1400,
+   "h": 933
+  },
+  "sotci-1932": {
+   "alt": "Titulní list Kronika Šotků, 1. D. Horní Růžodol, 1932",
+   "w": 933,
+   "h": 1400
   }
+ },
+ "credit": "Kronika dívčí družiny Racků, Horní Růžodol · Severočeské muzeum v Liberci",
+ "hero": {
+  "main": "tabor-1932",
+  "small": [
+   "lilie-1936",
+   "racci-1937"
+  ]
+ },
+ "features": {
+  "1913-06-01": {
+   "title": "Vzniká Reichenberger Pfadfinderkorps"
+  },
+  "1919": {
+   "title": "Kolem Jaroslava Tomsy se schází první čeští junáci",
+   "match": "Tomsy"
+  },
+  "1920-08-24": {
+   "title": "Řádně založen dívčí oddíl"
+  },
+  "1922-05-20": {
+   "title": "Náčelník Svojsík v Liberci",
+   "program_title": "Program skautského večera, Národní dům, 20. 5. 1922 ve 20 h",
+   "program": [
+    "Výchova občana republiky skautováním – projev A. B. Svojsíka",
+    "A. Dvořák: Slovanský tanec č. 1 C dur (skautský orchestr)",
+    "K. Haak: „Ven“ (skautský smíšený sbor)",
+    "Dobrou noc – rytmický rej se šátky (sestry ze Železného Brodu)",
+    "Zahrajem si na vojáky (vlčata)",
+    "J. Suk: „Jaro“ – sólo pro klavír",
+    "Motýli – rej (Menuet, Beethoven; sestry ze Železného Brodu)",
+    "Veselý výstup",
+    "M. W. Balfe: Cikánka (skautský orchestr)"
+   ],
+   "quote": "Nechť zástava Vaší cti, prapor Váš vesele vlaje nad Vašimi hlavami, zdobte jej povždy svěžími vavříny mužných ušlechtilých činů. Buďte připraveni!",
+   "quote_src": "A. B. Svojsík v dopise 1. oddílu k rozvinutí praporu, Liberec 21. 5. 1922 (opis u V. Drbohlava – Rozity)"
+  },
+  "1930-12-10": {
+   "title": "Skautky v Horním Růžodole",
+   "img": "racci-1930"
+  },
+  "1931-06-28": {
+   "title": "Na jamboree v Praze s Riegrovou župou",
+   "img": "jamboree-1931"
+  },
+  "1932": {
+   "title": "Kronika Šotků",
+   "img": "sotci-1932",
+   "match": "Šotků"
+  },
+  "1932-07-17": {
+   "title": "Tábor u Navarova na Kamenici",
+   "img": "navarov-1932",
+   "match": "Návarova"
+  },
+  "1938-09-23": {
+   "title": "„Nenechte nikdy zaniknout skautskou myšlenku!“"
+  }
+ },
+ "chapters": {
+  "1913": {
+   "label": "Pfadfinder",
+   "title": "Pfadfinder barona Liebiega"
+  },
+  "1919": {
+   "label": "junáci",
+   "title": "První čeští junáci"
+  },
+  "1920": {
+   "label": "skautky",
+   "title": "Skautky, sbor a dělničtí skauti"
+  },
+  "1923": {
+   "label": "sbor",
+   "title": "Sbor pod vedením R. Válka"
+  },
+  "1930": {
+   "label": "Růžodol",
+   "title": "Dívčí oddíl v Horním Růžodole"
+  },
+  "1938": {
+   "label": "Mnichov",
+   "title": "Rok 1938: mobilizace a Mnichov",
+   "dark": true
+  },
+  "1939": {
+   "label": "konec",
+   "title": "Konec činnosti v Liberci",
+   "dark": true
+  }
+ }
 }

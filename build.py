@@ -176,6 +176,18 @@ def picture(fe, name, sizes, cls="", lazy=True, base=""):
             f'width="{im["w"]}" height="{im["h"]}" alt="{html.escape(im["alt"])}"{load}>')
 
 
+def extras(f):
+    out = ""
+    if f.get("program"):
+        items = "".join(f"<li>{html.escape(i)}</li>" for i in f["program"])
+        out += (f'<div class="feat__prog"><p class="feat__prog-h">{html.escape(f.get("program_title", "Program"))}</p>'
+                f'<ol>{items}</ol></div>')
+    if f.get("quote"):
+        out += (f'<blockquote class="feat__quote"><p>„{html.escape(f["quote"])}“</p>'
+                f'<footer>{html.escape(f.get("quote_src", ""))}</footer></blockquote>')
+    return out
+
+
 def feature_for(r, fe):
     f = fe["features"].get(r["date"])
     if f and (not f.get("match") or f["match"] in r["text"]):
@@ -228,7 +240,7 @@ def render_event(r, fe, side, base):
         return (f'<li id="{r["id"]}" class="ev ev--{r["precision"]} {cls}" {attrs}>{fig}<div class="feat__body">'
                 f'<p class="feat__kicker" data-l="{r["line"]}">{dot}{LINES[r["line"]]} · {PREC.get(r["precision"], r["precision"])}</p>'
                 f'<h3 class="feat__date"><time datetime="{iso(r)}">{when}</time></h3>'
-                f'<p class="ev__text">{inline_md(r["text"])}</p>'
+                f'<p class="ev__text">{inline_md(r["text"])}</p>{extras(f)}'
                 f'<p class="feat__actions">{src_button(r["source"])}{"".join(tags)}</p>'
                 f'<p class="ev__src"><span>Zdroj:</span> {inline_md(r["source"])}</p>{chips(r)}</div></li>')
     return (f'<li id="{r["id"]}" class="ev ev--{r["precision"]}" {attrs}>'
