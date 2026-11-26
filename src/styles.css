@@ -382,3 +382,5 @@ h1 { margin: 0 0 24px; font: 800 clamp(52px, 8vw, 84px)/.95 var(--display); text
 .src__n { font-weight: 600; }
 @media (max-width: 899px) { .srcs { grid-template-columns: minmax(0, 1fr); } }
 .site-nav { gap: 24px; }
+.period--portrait .period__fig { justify-self: center; width: min(100%, 380px); }
+.period--portrait .period__fig img { aspect-ratio: 3 / 4; filter: grayscale(1); }

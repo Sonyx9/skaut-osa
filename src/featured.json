@@ -59,6 +59,12 @@
    "w": 1400,
    "h": 1050,
    "credit": "Župní sraz Riegrovy župy v Liberci 1933 (E-knihovna Archivu Junáka)"
+  },
+  "svojsik-portret": {
+   "alt": "Portrét A. B. Svojsíka, náčelníka Svazu junáků-skautů",
+   "w": 960,
+   "h": 1280,
+   "credit": "A. B. Svojsík, náčelník Svazu junáků-skautů (Wikimedia Commons)"
   }
  },
  "credit": "Kronika dívčí družiny Racků, Horní Růžodol · Severočeské muzeum v Liberci",
@@ -167,8 +173,9 @@
    "label": "první junáci",
    "title": "První čeští junáci a skautky",
    "date": "1922-05-20",
-   "img": "svojsik-1922",
-   "text": "Do Liberce přijíždí náčelník Svazu A. B. Svojsík. Skauti a skautky mu v Národním domě připravili odpolední besídky a večer s orchestrem, pěveckým sborem a vlčaty."
+   "img": "svojsik-portret",
+   "text": "Do Liberce přijíždí náčelník Svazu A. B. Svojsík. Skauti a skautky mu v Národním domě připravili odpolední besídky a večer s orchestrem, pěveckým sborem a vlčaty.",
+   "portrait": true
   },
   {
    "from": 1923,

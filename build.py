@@ -312,7 +312,7 @@ def build(data, out, robots, production, base="", people_path=None, places_path=
             fig = (f'<figure class="period__fig">{picture(fe, p["img"], "(min-width: 900px) 540px, 100vw", base=base)}'
                    f'<figcaption>{html.escape(im.get("credit", fe["credit"]))}</figcaption></figure>')
         f = feature_for(r, fe) or {}
-        cls = "period" + (" period--dark" if p.get("dark") else "") + (" period--rev" if i % 2 else "") + ("" if fig else " period--text")
+        cls = "period" + (" period--dark" if p.get("dark") else "") + (" period--rev" if i % 2 else "") + ("" if fig else " period--text") + (" period--portrait" if p.get("portrait") else "")
         pool = [x for y in ys for x in years[y] if x is not r]
         def score(x):
             v = VERIFY.get(x["verify"], ("neovereno",))[0]
