@@ -91,5 +91,9 @@
     apply();
   });
 
+  var params = new URLSearchParams(location.search);
+  if (params.get("q")) { q.value = params.get("q"); more.hidden = false; moreBtn.setAttribute("aria-expanded", "true"); }
+  var pr = params.get("proud");
+  if (pr) buttons.forEach(function (b) { if (b.dataset.group === "l" && b.dataset.key === pr) b.setAttribute("aria-pressed", "true"); });
   apply();
 })();

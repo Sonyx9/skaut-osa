@@ -44,7 +44,18 @@
 </section>
 
 <div class="band">
+  <p class="support wrap"><span>Časová osa vzniká za podpory <strong>Krajské rady Junáka v Liberci</strong> a&nbsp;<strong>Memoriae Loci</strong>.</span> <span class="support__wip">Pracovní verze – průběžně doplňujeme a ověřujeme.</span></p>
   <nav class="chapters wrap" aria-label="Období"><ol>{{PERIOD_NAV}}</ol></nav>
+  <div class="filters filters--home" id="home-filters" hidden>
+    <div class="wrap filters__inner">
+      <div class="filters__row filters__orgs" role="group" aria-label="Proud skautingu">
+        <span class="filters__label">Zobrazit:</span>
+        <button type="button" class="fbtn fbtn--all" id="all" aria-pressed="true">Vše</button>
+        {{LINE_BUTTONS}}
+        <a class="fbtn fbtn--more" href="osa.html">Další filtry na časové ose</a>
+      </div>
+    </div>
+  </div>
 </div>
 
 <main id="obdobi" class="wrap periods">
@@ -52,12 +63,13 @@
   <p class="periods__all"><a class="cta-mail" href="osa.html">Projít celou časovou osu ({{COUNT}} záznamů)</a></p>
 </main>
 
-<footer class="page-foot" id="zdroje">
+<footer class="page-foot" id="paticka">
   <div class="wrap">
     <div class="foot-cols">
       <div>
-        <h3>Zdroje</h3>
-        <p>Naše hory, Reichenberger Zeitung, Reichenberger Tagesbote a adresáře Liberce (Kramerius KVK Liberec), časopis Junák (MZK, NDK), V. Drbohlav – Drobečky z historie skautingu na Liberecku, J. Mareš – Junák v Liberci 1920–1952, kroniky oddílů (Severočeské muzeum), H. Gold (1934), diplomová práce L. Kouly (TUL 2021).</p>
+        <h3>O autorovi</h3>
+        <p><strong>Mgr. Lukáš Koula – Soník</strong> je skautem střediska Mustang Liberec od roku 1996 a voleným členem Krajské rady Junáka Libereckého kraje. Historii libereckého skautingu se věnuje od diplomové práce na Technické univerzitě v Liberci (2021). Projekt Ve jménu lilie vede v rámci Memoriae Loci, z. ú., kde předsedá správní radě.</p>
+        <p><a href="zdroje.html">Z jakých pramenů osa vychází</a></p>
       </div>
       <div>
         <h3>Značky ověření</h3>
@@ -71,16 +83,45 @@
       <div id="vite-vic">
         <h3>Víte víc?</h3>
         <p>Fotky, kroniky, legitimace a vzpomínky na liberecký skauting do roku 1939 hledáme dál. Máte doplnění nebo opravu? Napište.</p>
-        <a class="cta-mail" href="mailto:lukas.koula@skaut.cz?subject=Ve%20jm%C3%A9nu%20lilie%20%E2%80%93%20dopln%C4%9Bn%C3%AD%20%C4%8Dasov%C3%A9%20osy">Doplnit nebo upřesnit</a>
+        <a class="cta-mail" data-open="doplnit" href="mailto:lukas.koula@skaut.cz?subject=Ve%20jm%C3%A9nu%20lilie%20%E2%80%93%20dopln%C4%9Bn%C3%AD%20%C4%8Dasov%C3%A9%20osy">Doplnit nebo upřesnit</a>
       </div>
     </div>
-    <p class="foot-credit">Časová osa vzniká za podpory <strong>Krajské rady Junáka v Liberci</strong>. Autor: Mgr. Lukáš Koula, <a href="mailto:lukas.koula@skaut.cz">lukas.koula@skaut.cz</a>. Projekt Ve jménu lilie, Memoriae Loci.</p>
+    <p class="foot-credit">Časová osa vzniká za podpory <strong>Krajské rady Junáka v Liberci</strong> a <strong>Memoriae Loci</strong>. Autor: Mgr. Lukáš Koula, <a href="mailto:lukas.koula@skaut.cz">lukas.koula@skaut.cz</a>.</p>
     <p class="foot-note">Kresby a strany kronik: {{CREDIT}}. Písmo Barlow (SIL OFL). Sestaveno {{DATE}}.</p>
   </div>
 </footer>
 
 <script>
 {{JS}}
+</script>
+<script>
+(function () {
+  var d = document.getElementById("doplnit");
+  if (d && d.showModal) {
+    document.querySelectorAll("[data-open='doplnit']").forEach(function (a) {
+      a.addEventListener("click", function (e) { e.preventDefault(); d.showModal(); });
+    });
+    d.addEventListener("click", function (e) { if (e.target === d) d.close(); });
+  }
+  var hf = document.getElementById("home-filters"); if (!hf) return;
+  hf.hidden = false;
+  var all = document.getElementById("all");
+  var btns = Array.prototype.slice.call(hf.querySelectorAll(".fbtn[data-group='l']"));
+  var rows = Array.prototype.slice.call(document.querySelectorAll(".prow"));
+  function apply() {
+    var on = btns.filter(function (b) { return b.getAttribute("aria-pressed") === "true"; }).map(function (b) { return b.dataset.key; });
+    all.setAttribute("aria-pressed", on.length ? "false" : "true");
+    rows.forEach(function (r) { r.hidden = on.length > 0 && on.indexOf(r.dataset.l) === -1; });
+    document.querySelectorAll(".period__list").forEach(function (s) { s.hidden = !s.querySelector(".prow:not([hidden])"); });
+  }
+  btns.forEach(function (b) { b.addEventListener("click", function () {
+    var was = b.getAttribute("aria-pressed") === "true";
+    btns.forEach(function (o) { o.setAttribute("aria-pressed", "false"); });
+    if (!was) b.setAttribute("aria-pressed", "true");
+    apply();
+  }); });
+  all.addEventListener("click", function () { btns.forEach(function (o) { o.setAttribute("aria-pressed", "false"); }); apply(); });
+})();
 </script>
 <a class="to-top" href="#" aria-label="Zpět nahoru"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg></a>
 <script>

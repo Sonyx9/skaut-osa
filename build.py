@@ -190,6 +190,26 @@ def extras(f):
     return out
 
 
+def short_text(t, n=190):
+    t = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", t)
+    t = re.sub(r"❓.*$", "", t).strip()
+    if len(t) <= n:
+        return t
+    cut = t[:n].rsplit(" ", 1)[0].rstrip(",;:–- ")
+    return cut + "…"
+
+
+def short_src(source):
+    m = re.search(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", source)
+    plain = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", source)
+    name = re.split(r"[,(·]", plain)[0].strip()
+    if len(name) > 40:
+        name = name[:38].rsplit(" ", 1)[0] + "…"
+    if m:
+        return f'<a href="{html.escape(m.group(2))}" rel="noopener" target="_blank">{html.escape(name)}</a>'
+    return html.escape(name)
+
+
 def feature_for(r, fe):
     f = fe["features"].get(r["date"])
     if f and (not f.get("match") or f["match"] in r["text"]):
@@ -293,14 +313,41 @@ def build(data, out, robots, production, base="", people_path=None, places_path=
                    f'<figcaption>{html.escape(im.get("credit", fe["credit"]))}</figcaption></figure>')
         f = feature_for(r, fe) or {}
         cls = "period" + (" period--dark" if p.get("dark") else "") + (" period--rev" if i % 2 else "") + ("" if fig else " period--text")
+        pool = [x for y in ys for x in years[y] if x is not r]
+        def score(x):
+            v = VERIFY.get(x["verify"], ("neovereno",))[0]
+            return ((3 if feature_for(x, fe) else 0) + (2 if v == "overeno" else 0)
+                    + (1 if x["precision"] == "událost" else 0) + (1 if x["line"] != "kontext" else 0))
+        if p.get("more"):
+            picks = [by_date[d] for d in p["more"] if d in by_date]
+        else:
+            ranked = sorted(pool, key=lambda x: (-score(x), x["date"]))
+            picks = []
+            while len(picks) < 4 and len(picks) < len(ranked):
+                used = {x["line"] for x in picks}
+                nxt = next((x for x in ranked if x not in picks and x["line"] not in used), None) \
+                    or next(x for x in ranked if x not in picks)
+                picks.append(nxt)
+                if len({x["line"] for x in picks}) == len({x["line"] for x in ranked}):
+                    used = set()
+            picks.sort(key=lambda x: x["date"])
+        rows_html = "".join(
+            f'<li class="prow" data-l="{x["line"]}"><a class="prow__d" href="osa.html#{x["id"]}">'
+            f'<span class="dot" data-l="{x["line"]}" aria-hidden="true"></span><time datetime="{iso(x)}">{human_date(x)}</time></a>'
+            f'<span class="prow__t">{html.escape(short_text(x["text"]))}</span><span class="prow__s">{short_src(x["source"])}</span></li>'
+            for x in picks)
+        more_html = (f'<section class="period__list" aria-label="Další záznamy {p["from"]}–{p["to"]}">'
+                     f'<h3 class="period__list-h">Další záznamy {p["from"]}–{p["to"]}</h3><ul>{rows_html}</ul>'
+                     f'</section>') if picks else ""
         blocks.append(
+            f'<div class="period-wrap">'
             f'<article class="{cls}" id="p{p["from"]}" aria-labelledby="ph{p["from"]}">{fig}<div class="period__body">'
             f'<p class="period__kicker">{p["from"]}–{p["to"]} · {html.escape(p["title"])}</p>'
             f'<h2 class="period__date" id="ph{p["from"]}"><time datetime="{iso(r)}">{human_date(r)}</time></h2>'
             f'<p class="period__text">{inline_md(p.get("text") or r["text"])}</p>{extras(f) if p.get("extras") else ""}'
             f'<p class="period__actions">{src_button(r["source"])}'
             f'<a class="period__more" href="osa.html#r{ys[0]}">Celé období na časové ose ({n} záznamů)</a></p>'
-            f'</div></article>')
+            f'</div></article>{more_html}</div>')
     periods_html = "\n".join(blocks)
     chapter_nav = "".join(
         f'<li data-y="{y}"><a class="bubble{" bubble--dark" if c.get("dark") else ""}" href="#r{y}">'
@@ -352,7 +399,7 @@ def build(data, out, robots, production, base="", people_path=None, places_path=
 
     def header(cur):
         h = header_tpl
-        for k in ("OSA", "OSOBY", "MAPA"):
+        for k in ("OSA", "OSOBY", "MAPA", "ZDROJE"):
             h = h.replace("{{CUR_%s}}" % k, ' aria-current="page"' if k == cur else "")
         return h
     css = (ROOT / "src" / "styles.css").read_text(encoding="utf-8")
@@ -427,6 +474,31 @@ def build(data, out, robots, production, base="", people_path=None, places_path=
         f"Heimy, klubovny, tábořiště, srazy a výlety ze záznamů časové osy – {len(places)} míst, {len(mapped)} z nich na mapě.",
         places_main, "Mapové podklady © přispěvatelé OpenStreetMap (ODbL). Knihovna Leaflet (BSD-2).",
         script, f"<style>{leaflet_css}</style>\n"), encoding="utf-8")
+
+    plain_src = [re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", r["source"]) for r in rows]
+    src_secs = []
+    for sec in fe.get("sources", []):
+        items = []
+        for it in sec["items"]:
+            n = sum(1 for ps in plain_src if re.search(it["key"], ps))
+            q = it.get("q") or re.sub(r"[\\^$()]", "", it["key"].split("|")[0]).strip()
+            where = it.get("where", "")
+            if it.get("url"):
+                where = f'<a href="{html.escape(it["url"])}" rel="noopener" target="_blank">{html.escape(where or "otevřít")}</a>'
+            else:
+                where = html.escape(where)
+            cnt = (f'<a class="src__n" href="osa.html?q={html.escape(q)}">{n}&times; v ose</a>' if n else "")
+            items.append(f'<li class="src"><p class="src__name">{html.escape(it["n"])}</p>'
+                         + (f'<p class="src__d">{html.escape(it["d"])}</p>' if it.get("d") else "")
+                         + f'<p class="src__meta">{where}{" · " if where and cnt else ""}{cnt}</p></li>')
+        src_secs.append(f'<section class="cards-sec"><h2 class="cards-sec__h">{html.escape(sec["h"])}</h2>'
+                        + (f'<p class="src__lead">{html.escape(sec["lead"])}</p>' if sec.get("lead") else "")
+                        + f'<ul class="srcs">{"".join(items)}</ul></section>')
+    (out.parent / "zdroje.html").write_text(render_page(
+        page_tpl, header("ZDROJE"), css, robots_meta, base, "Zdroje",
+        "Prameny a literatura k časové ose skautingu v Liberci 1912–1940: dobový tisk, skautské časopisy, almanachy, kroniky a odborné práce.",
+        "Z čeho časová osa vychází. U každého pramene je, kde se dá najít, a kolikrát se v ose objevuje – kliknutím se zobrazí příslušné záznamy.",
+        "".join(src_secs), "Seznam se doplňuje s každým novým pramenem."), encoding="utf-8")
 
     if robots:
         (out.parent / "robots.txt").write_text(

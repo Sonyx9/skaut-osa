@@ -206,5 +206,191 @@
    "dark": true,
    "text": "Při mobilizaci rukuje vůdce 1. oddílu Jan Poštolka a posílá oddílu vzkaz na útržku z notesu: „Nenechte nikdy zaniknout skautskou myšlenku!“"
   }
+ ],
+ "sources": [
+  {
+   "h": "Dobový tisk",
+   "lead": "Noviny z let 1912–1940 v digitálních knihovnách. Většina libereckých titulů je volně v Krameriu Krajské vědecké knihovny v Liberci.",
+   "items": [
+    {
+     "n": "Naše hory",
+     "d": "český týdeník vycházející v Horním Růžodole; rubriky o skautech a junácích",
+     "where": "Kramerius KVK Liberec",
+     "url": "https://kramerius.kvkli.cz",
+     "key": "Naše hory"
+    },
+    {
+     "n": "Reichenberger Zeitung",
+     "d": "liberecký německý deník; Pfadfinder, Wandervogel, spolkové zprávy",
+     "where": "Kramerius KVK Liberec",
+     "url": "https://kramerius.kvkli.cz",
+     "key": "Reichenberger Zeitung"
+    },
+    {
+     "n": "Reichenberger Tagesbote",
+     "d": "německý deník; pohled většinové společnosti na české skauty",
+     "where": "Kramerius KVK Liberec",
+     "url": "https://kramerius.kvkli.cz",
+     "key": "Reichenberger Tagesbote"
+    },
+    {
+     "n": "Gablonzer Tagblatt, Friedländer Zeitung, Grenzland-Zeitung a další regionální německé listy",
+     "where": "Kramerius KVK Liberec",
+     "url": "https://kramerius.kvkli.cz",
+     "key": "Gablonzer|Friedländer|Grenzland|Deutsches Volksblatt|Die Wahrheit|Teplitz"
+    },
+    {
+     "n": "Pojizerské listy, Hlasy Pojizerské",
+     "d": "turnovský a pojizerský tisk",
+     "where": "Kramerius KVK Liberec",
+     "url": "https://kramerius.kvkli.cz",
+     "key": "Pojizersk"
+    },
+    {
+     "n": "Národní listy, Národní osvobození, Večerní České slovo, Rudý večerník",
+     "where": "Národní digitální knihovna",
+     "url": "https://ndk.cz",
+     "key": "Národní listy|Národní osvobození|Večerní České|Rudý večerník"
+    },
+    {
+     "n": "Jüdische Zeitung, Jüdische Rundschau",
+     "d": "židovský tisk o Blau-Weiß a Makkabi",
+     "where": "Compact Memory, UB Frankfurt",
+     "url": "https://sammlungen.ub.uni-frankfurt.de/cm",
+     "key": "Jüdische"
+    }
+   ]
+  },
+  {
+   "h": "Skautský tisk",
+   "lead": "Časopisy Svazu junáků-skautů a dalších skautských organizací.",
+   "items": [
+    {
+     "n": "Junák",
+     "d": "časopis pro skauty a skautky, 1915–1940",
+     "where": "MZK (DNNT) a E-knihovna Archivu Junáka",
+     "url": "https://www.digitalniknihovna.cz/mzk",
+     "key": "Junák \\(|Junák,|^Junák"
+    },
+    {
+     "n": "Vůdce / Činovník",
+     "d": "činovnický časopis Svazu 1919–1940: jmenování, pocty, zápisy Náčelnictva",
+     "where": "E-knihovna Archivu Junáka",
+     "key": "Vůdce"
+    },
+    {
+     "n": "Oheň",
+     "d": "časopis Skautů práce (komunistický skauting) 1922–1925",
+     "where": "E-knihovna Archivu Junáka",
+     "key": "Oheň"
+    },
+    {
+     "n": "Rozkvět",
+     "where": "Národní digitální knihovna",
+     "url": "https://ndk.cz",
+     "key": "Rozkvět"
+    }
+   ]
+  },
+  {
+   "h": "Adresáře, ročenky a úřední tisky",
+   "items": [
+    {
+     "n": "Jahrbuch und Wohnungs-Anzeiger der Stadt Reichenberg",
+     "d": "liberecké adresáře se spolkovým rejstříkem",
+     "where": "Kramerius KVK Liberec",
+     "url": "https://kramerius.kvkli.cz",
+     "key": "Jahrbuch und Wohnungs"
+    },
+    {
+     "n": "Výroční zprávy škol, ročenky Gebirgsvereinu, vlastivědné sborníky, Amtsblatt",
+     "where": "Kramerius KVK Liberec",
+     "url": "https://kramerius.kvkli.cz",
+     "key": "Jahres-Bericht|Gebirgsvereines|Heimatkunde|Neuer Führer|Amtsblatt"
+    }
+   ]
+  },
+  {
+   "h": "Almanachy a dokumenty",
+   "items": [
+    {
+     "n": "Župní sraz Riegrovy župy v Liberci 1933",
+     "d": "almanach se statí 13 let skautingu na Liberecku",
+     "where": "E-knihovna Archivu Junáka",
+     "url": "https://drive.google.com/file/d/1BgE1meyHGTgVwwgXYjLzGMWWXNZ2XfLJ/view",
+     "key": "Župní sraz Riegrovy"
+    },
+    {
+     "n": "F. Kučera (ed.): Skauting v menšinách, Louny 1931",
+     "d": "almanach Župy Přemysla Oráče se statí J. Břeně Skauting na Liberecku",
+     "where": "E-knihovna Archivu Junáka",
+     "url": "https://drive.google.com/file/d/1J_C_9JNNW3CAEbcArQhlGU9K-tqkdaNJ/view",
+     "key": "Skauting v menšinách|F. Kučera"
+    },
+    {
+     "n": "Oddíly registrované ve Svazu skautů RČS k 1. květnu 1922",
+     "where": "E-knihovna Archivu Junáka",
+     "url": "https://drive.google.com/file/d/1QDEabkST1MZBAqDc8g31sM-SCKL-ZHGS/view",
+     "key": "Oddíly registrované"
+    },
+    {
+     "n": "Branný sraz skautské župy Riegrovy v Jičíně 1937",
+     "where": "E-knihovna Archivu Junáka",
+     "url": "https://drive.google.com/file/d/1_p1RNdv6W5iaptvJXngDLAY0Iroh1QMc/view",
+     "key": "Branný sraz"
+    }
+   ]
+  },
+  {
+   "h": "Kroniky, zápisy a vzpomínky",
+   "items": [
+    {
+     "n": "V. Drbohlav – Rozita: Drobečky z historie skautingu na Liberecku",
+     "d": "vzpomínky a výpisy z dobových dokumentů, 1995–1998 (3. klub oldskautů Liberec)",
+     "key": "Drbohlav"
+    },
+    {
+     "n": "Kronika dívčího oddílu (družina Racků) Horní Růžodol 1930–1937",
+     "where": "Severočeské muzeum v Liberci",
+     "key": "Kronika dívčího oddílu"
+    },
+    {
+     "n": "Zápisy schůzí I. dívčího oddílu 1920–1922 a skautský deník M. Horáčkové 1921–22",
+     "key": "Zápisy schůzí|Horáčkové"
+    }
+   ]
+  },
+  {
+   "h": "Odborné práce a literatura",
+   "items": [
+    {
+     "n": "L. Koula: Vznik a vývoj skautských organizací v Liberci a okolí od roku 1920 po současnost",
+     "d": "diplomová práce, TUL 2021 – výchozí verze, kterou osa rozšiřuje a ověřuje",
+     "key": "DP 2021"
+    },
+    {
+     "n": "J. Mareš: Junák v Liberci 1920–1952",
+     "d": "středoškolská odborná práce, 2007 (SOkA Liberec)",
+     "key": "Mareš"
+    },
+    {
+     "n": "J. Vít, M. Vlasatá, Š. Vašátková",
+     "d": "bakalářské práce TUL o skautingu, Jičínsku a trampingu",
+     "url": "https://dspace.tul.cz",
+     "where": "DSpace TUL",
+     "key": "J. Vít|Vlasatá|Vašátková"
+    },
+    {
+     "n": "J. Jiráň: Skauting v meziválečném období (disertace 2023); H. Černá: YMCA 1919–1951 (DP 2009); T. Jelínek: německé organizace skautského typu",
+     "where": "E-knihovna Archivu Junáka",
+     "key": "Jiráň|Černá|Jelínek"
+    },
+    {
+     "n": "R. Karpaš a kol.: Kniha o Liberci (2004); P. D. Vinklát; B. Hurikán; M. Lhotová; V. Stanislav; H. Gold",
+     "d": "literatura o Liberci, trampingu, turistice a židovské komunitě",
+     "key": "Karpaš|Vinklát|Hurikán|Lhotová|Stanislav|Gold"
+    }
+   ]
+  }
  ]
 }
