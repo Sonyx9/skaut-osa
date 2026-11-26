@@ -410,3 +410,10 @@ h1 { margin: 0 0 24px; font: 800 clamp(52px, 8vw, 84px)/.95 var(--display); text
 
 .era__status, .status-tag { display: inline-block; margin-left: 10px; padding: 3px 9px; border-radius: 999px; background: var(--accent); color: #1a1a1a; font: 700 12px/1.2 var(--body, inherit); letter-spacing: .04em; text-transform: uppercase; vertical-align: middle; }
 .status-tag { font-size: 13px; margin-left: 12px; }
+/* stejná výška tlačítek v dlaždicích epoch */
+.era { display: flex; flex-direction: column; }
+.era > a { display: flex; flex-direction: column; flex: 1; }
+.era__body { flex: 1; }
+.era__n { display: flex; align-items: center; min-height: 22px; }
+.era__go, .era__tag { margin-top: auto; }
+.era__l { margin-bottom: 8px; }
