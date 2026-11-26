@@ -287,6 +287,12 @@
      "url": "https://www.ceskadigitalniknihovna.cz/uuid/uuid:de924eb0-d68f-11dc-81be-000d606f5dc6"
     },
     {
+     "n": "Cesta míru (1952)",
+     "d": "Týdeník Krajského výboru KSČ v Liberci – oficiální verze procesu se skauty.",
+     "key": "Cesta míru",
+     "where": "Česká digitální knihovna (DNNT)"
+    },
+    {
      "n": "Naše hory",
      "d": "český týdeník vycházející v Horním Růžodole; rubriky o skautech a junácích",
      "where": "Kramerius KVK Liberec",
@@ -476,6 +482,13 @@
      "d": "Proces s libereckými skauty 1952, životopisy obžalovaných, rozhovory s pamětníky, spisy ABS a NA.",
      "key": "Krupauerová",
      "where": "TUL"
+    },
+    {
+     "n": "J. Zachariáš: Soudní proces s tzv. ilegálním ústředím Junáka aneb Karel Průcha a spol. (1952), ÚDV 2005",
+     "d": "Hlavní proces s Mikšovičem a dokumenty StB k liberecké odnoži.",
+     "key": "Zachariáš",
+     "where": "policie.gov.cz (PDF)",
+     "url": "https://policie.gov.cz/soubor/soudni-proces-s-tzv-ilegalnim-ustredim-junaka-aneb-karel-prucha-a-spol-1952-pdf.aspx"
     },
     {
      "n": "J. Vít, M. Vlasatá, Š. Vašátková",
