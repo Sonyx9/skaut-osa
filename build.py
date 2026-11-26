@@ -454,6 +454,7 @@ def build(data, out, robots, production, base="", people_path=None, places_path=
             ehero = hero_html
         t = (home_tpl.replace("{{PERIOD_NAV}}", "".join(bubble(p, f'#p{p["from"]}') for p in eps if prows(p)))
              .replace("{{PERIODS}}", period_blocks(eps))
+             .replace("{{E_STATUS}}", f' <span class="status-tag">{html.escape(er["status"])}</span>' if er.get("status") else "")
              .replace("{{E_N}}", str(i)).replace("{{E_YEARS}}", f'{er["from"]}–{er["to"]}')
              .replace("{{E_TITLE}}", html.escape(er["title"])).replace("{{E_LEAD}}", html.escape(er.get("page_lead", er["lead"])))
              .replace("{{E_COUNT}}", str(len(erows))).replace("{{E_SPAN}}", str(int(er["to"]) - int(er["from"]) + 1))
@@ -470,8 +471,9 @@ def build(data, out, robots, production, base="", people_path=None, places_path=
         yrs = f'{er["from"]}–{er["to"]}'
         if er.get("href"):
             img = picture(fe, er["img"], "(min-width: 900px) 360px, 100vw", base=base) if er.get("img") else ""
+            st = f'<span class="era__status">{html.escape(er["status"])}</span>' if er.get("status") else ""
             era_tiles.append(f'<li class="era era--open"><a href="{er["href"]}">{img}<span class="era__body">'
-                             f'<span class="era__n">{i}. epocha</span><span class="era__y">{yrs}</span>'
+                             f'<span class="era__n">{i}. epocha{st}</span><span class="era__y">{yrs}</span>'
                              f'<span class="era__t">{html.escape(er["title"])}</span><span class="era__l">{html.escape(er["lead"])}</span>'
                              f'<span class="era__go">Otevřít epochu</span></span></a></li>')
         else:
