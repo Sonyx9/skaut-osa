@@ -454,7 +454,8 @@ def build(data, out, robots, production, base="", people_path=None, places_path=
             ehero = hero_html
         t = (home_tpl.replace("{{PERIOD_NAV}}", "".join(bubble(p, f'#p{p["from"]}') for p in eps if prows(p)))
              .replace("{{PERIODS}}", period_blocks(eps))
-             .replace("{{E_STATUS}}", f' <span class="status-tag">{html.escape(er["status"])}</span>' if er.get("status") else "")
+             .replace("{{E_STATUS}}", f' <span class="status-tag">{html.escape(er["status"])}</span>' if er.get("status") else " · pracovní verze")
+             .replace("{{E_NOTE}}", f'<p class="status-note">{html.escape(er.get("status_note", ""))}</p>' if er.get("status_note") else "")
              .replace("{{E_N}}", str(i)).replace("{{E_YEARS}}", f'{er["from"]}–{er["to"]}')
              .replace("{{E_TITLE}}", html.escape(er["title"])).replace("{{E_LEAD}}", html.escape(er.get("page_lead", er["lead"])))
              .replace("{{E_COUNT}}", str(len(erows))).replace("{{E_SPAN}}", str(int(er["to"]) - int(er["from"]) + 1))

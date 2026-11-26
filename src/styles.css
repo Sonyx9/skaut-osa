@@ -417,3 +417,7 @@ h1 { margin: 0 0 24px; font: 800 clamp(52px, 8vw, 84px)/.95 var(--display); text
 .era__n { display: flex; align-items: center; min-height: 22px; }
 .era__go, .era__tag { margin-top: auto; }
 .era__l { margin-bottom: 8px; }
+
+.eyebrow .status-tag { margin-left: 8px; font-size: 12px; }
+.status-note { display: flex; gap: 12px; align-items: flex-start; margin: 0 0 24px; padding: 14px 16px; background: #fdf6dc; border-left: 4px solid var(--accent); font-size: 15px; line-height: 1.5; }
+.status-note .status-tag { margin: 1px 0 0; flex: none; }
