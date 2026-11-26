@@ -52,6 +52,11 @@ svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width:
 .brand__mark { width: 44px; height: 44px; border: 3px solid var(--ink); display: flex; align-items: center; justify-content: center; font: 800 15px/1 var(--display); }
 .brand__name, .site-nav a { font: 700 15px/1.15 var(--display); letter-spacing: .08em; text-transform: uppercase; }
 .site-nav { display: flex; gap: 28px; }
+.head-right { display: flex; align-items: center; gap: 28px; }
+.nav-cta { display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; background: var(--accent); color: #111; font: 700 15px/1 var(--display); letter-spacing: .08em; text-transform: uppercase; text-decoration: none; white-space: nowrap; }
+.nav-cta:hover { background: #e9b949; }
+.nav-cta:focus-visible { outline: 3px solid #111; outline-offset: 2px; }
+#vite-vic { scroll-margin-top: 24px; }
 .site-nav a { text-decoration: none; padding: 12px 0; }
 
 /* Úvod */
@@ -179,6 +184,7 @@ h1 { margin: 0 0 24px; font: 800 clamp(52px, 8vw, 84px)/.95 var(--display); text
 @media (max-width: 599px) {
   .wrap { padding: 0 20px; }
   .site-nav { display: none; }
+  .nav-cta { min-height: 40px; padding: 0 12px; font-size: 13px; }
   .hero { padding-top: 8px; padding-bottom: 48px; }
   .hero__img { padding: 0 0 32px 24px; }
   .hero__small--1 { right: 0; top: -16px; }
@@ -192,7 +198,7 @@ h1 { margin: 0 0 24px; font: 800 clamp(52px, 8vw, 84px)/.95 var(--display); text
 }
 
 @media print {
-  .filters, .years-nav, .chapters, .skip, .site-nav { display: none !important; }
+  .filters, .years-nav, .chapters, .skip, .site-nav, .nav-cta { display: none !important; }
   .ev { break-inside: avoid; }
 }
 
