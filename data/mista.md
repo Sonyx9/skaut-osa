@@ -412,6 +412,15 @@ Místo = sekce `## Název`. Pole: id, typ (heim, klubovna, tábor, sraz, výlet,
 - typ: sraz
 - proud: cz-svaz
 - souřadnice: 
-- přesnost: přibližně (Jizerské hory nad Libercem, na žluté značce mezi Strážním bukem a Mlynářovým křížem – souřadnice doplnit)
+- přesnost: přibližně (Jizerské hory nad Libercem, pod Strážným bukem na žluté značce směrem k Mlynářovu kříži – souřadnice doplnit)
 - hledat: Skautsk[áé] studánk
 - popis: 🤖 Lesní studánku s dřevěnou stříškou obnovil v roce 1968 ruprechtický oddíl Josefa Chrousta – Brouka, nad ni osadil betonovou dlaždici se skautskou lilií. Za normalizace místo ilegálních setkání, 3. 3. 1990 tu padly první polistopadové sliby a vůdci tu slibují dodnes. (DP 2021; Marečková 2012) ❓ Souřadnice doplnit.
+
+## Klubovna 1. oddílu v Leninově ulici
+- id: klubovna-1-oddil-leninova
+- typ: klubovna
+- proud: cz-svaz
+- souřadnice: 
+- přesnost: obec (Liberec I, Leninova 459/20, suterén – dnešní název ulice dohledat)
+- hledat: Leninova
+- popis: 🤖 Dvě suterénní místnosti, které MěNV 16. 7. 1968 propůjčil 1. oddílu Junáka (od 1. 10. 1968 za 14 Kčs měsíčně); po konci Junáka 1970 je chtěl horolezecký oddíl. ❓ Souřadnice a dnešní adresa.

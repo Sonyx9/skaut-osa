@@ -546,9 +546,9 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - přezdívka: Zet
 - proud: cz-svaz
 - období: 1963–1970
-- role: vůdce oddílu, autor časopisu Rádce skautské družiny
+- role: vůdce 12. oddílu, autor časopisu Rádce skautské družiny
 - hledat: Zapletal|Zet\b
-- popis: 📘 V roce 1963 zakládá na liberecké škole „turistický kroužek“ – skautský oddíl pod jiným jménem. V létě 1968 chystá založení oddílu, puťák po Střele přeruší okupace; oddíl přesto vznikne. V letech 1968–70 píše většinu kapesního časopisu Rádce skautské družiny, po zákazu působí v TOM. (DP 2021 podle I. Jiráska, Zet – pět životů, 2010; Marečková 2012)
+- popis: 📘 V roce 1963 zakládá na liberecké škole „turistický kroužek“ – skautský oddíl pod jiným jménem. V létě 1968 chystá založení oddílu, puťák po Střele přeruší okupace; oddíl přesto vznikne. V letech 1968–70 píše většinu kapesního časopisu Rádce skautské družiny, po zákazu působí v TOM. (DP 2021 podle I. Jiráska, Zet – pět životů, 2010; Marečková 2012) V roce 1968 zakládá s Miloslavem Nevrlým – Náčelníkem 12. skautský oddíl, který za normalizace přežívá jako TOM se znakem francouzských skautů (klubovna v Lidových sadech). (rozhovor 2008, Publikace 00009)
 
 ## Jan Šolc
 - id: jan-solc-kol
@@ -558,3 +558,20 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - role: vůdce 2. oddílu skautů
 - hledat: Jan Šolc – Kol|Šolc – Kol
 - popis: 📘 Ročník 1938, v letech 1968–70 vede 2. oddíl skautů (do zákazu 40 členů). Po listopadu 1989 poslanec za OF, v 90. letech v Kanceláři prezidenta republiky. Nezaměňovat s MUDr. Janem Šolcem (1947). (DP 2021; Paměť národa)
+
+## Miloslav Nevrlý
+- id: miloslav-nevrly
+- přezdívka: Náčelník
+- proud: cz-svaz
+- období: 1968–1970
+- role: spoluzakladatel 12. oddílu, přírodovědec a spisovatel
+- hledat: Nevrlý|Nevrlého|Náčelník\b
+- popis: 🤖 V roce 1968 zakládá s Milošem Zapletalem 12. skautský oddíl, po roce 1970 působí v TOM. (rozhovor se Zapletalem 2008; Marečková 2012)
+
+## Karel Pospíšil
+- id: karel-pospisil
+- proud: cz-svaz
+- období: 1970
+- role: zástupce 1. oddílu při předání majetku 1970
+- hledat: Karel Pospíšil|K. Pospíšil
+- popis: 🤖 S Jindřichem Slezákem předává 22. 9. 1970 majetek 1. oddílu okresnímu výboru SSM. (protokol, Muzeum DSC_2179)
