@@ -528,10 +528,10 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 ## Vladimír Cvrček
 - id: vladimir-cvrcek
 - proud: cz-svaz
-- období: 1947–1976
-- role: vodní skaut, vůdce vlčat Majáku, „Vezír“
+- období: 1947–2026
+- role: vodní skaut, vůdce vlčat Majáku, hlavní kapitán VS, „Vezír“
 - hledat: Cvrček|Vezír
-- popis: 🤖 Narozen 1939, od 1947 u vodních skautů; 1968–70 vede vlčata přístavu Maják, 1970 měl rozhodovat zrušený celostátní závod vlčat; autor kroniky „50 let vodních skautů v Liberci“ (1996); 1976 hlavní lodivod Flotily. (Paměť národa, Flotila)
+- popis: 🤖 * 20. 4. 1939 Turnov, † 12. 11. 2026. Od 1947 v družině Želviček 1. vodního oddílu; 1968 u obnovy a založení přístavu Hrdý maják, vede vlčata; 1970 měl rozhodovat zrušený první čs. závod vlčat v Potštejně, k Pionýru nepřešel. Po dvou letech vede vlčata pod TJ Lokomotiva, pak pod DDM jako Flotila (1976 hlavní lodivod), expedice do Polska, Maďarska a delty Dunaje. Autor kroniky „50 let vodních skautů v Liberci“ (1996). Po 1990 dlouholetý hlavní kapitán vodních skautů, člen náčelnictva a Ústřední rady, duchovní otec Navigamu (1994). (Paměť národa; nekrolog vodni.skauting.cz 11/2026; Flotila)
 
 ## Zdeněk Kratochvíl
 - id: zdenek-kratochvil
@@ -545,10 +545,10 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - id: milos-zapletal
 - přezdívka: Zet
 - proud: cz-svaz
-- období: 1963–1970
+- období: 1963–2025
 - role: vůdce 12. oddílu, autor časopisu Rádce skautské družiny
 - hledat: Zapletal|Zet\b
-- popis: 📘 V roce 1963 zakládá na liberecké škole „turistický kroužek“ – skautský oddíl pod jiným jménem. V létě 1968 chystá založení oddílu, puťák po Střele přeruší okupace; oddíl přesto vznikne. V letech 1968–70 píše většinu kapesního časopisu Rádce skautské družiny, po zákazu působí v TOM. (DP 2021 podle I. Jiráska, Zet – pět životů, 2010; Marečková 2012) V roce 1968 zakládá s Miloslavem Nevrlým – Náčelníkem 12. skautský oddíl, který za normalizace přežívá jako TOM se znakem francouzských skautů (klubovna v Lidových sadech). (rozhovor 2008, Publikace 00009)
+- popis: 📘 V roce 1963 zakládá na liberecké škole „turistický kroužek“ – skautský oddíl pod jiným jménem. V létě 1968 chystá založení oddílu, puťák po Střele přeruší okupace; oddíl přesto vznikne. V letech 1968–70 píše většinu kapesního časopisu Rádce skautské družiny, po zákazu působí v TOM. (DP 2021 podle I. Jiráska, Zet – pět životů, 2010; Marečková 2012) Zemřel 8. 5. 2025 ve věku 95 let. (kraj-lbc.cz 2025) V roce 1968 zakládá s Miloslavem Nevrlým – Náčelníkem 12. skautský oddíl, který za normalizace přežívá jako TOM se znakem francouzských skautů (klubovna v Lidových sadech). (rozhovor 2008, Publikace 00009)
 
 ## Jan Šolc
 - id: jan-solc-kol
@@ -557,7 +557,7 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - období: 1968–1970
 - role: vůdce 2. oddílu skautů
 - hledat: Jan Šolc – Kol|Šolc – Kol
-- popis: 📘 Ročník 1938, v letech 1968–70 vede 2. oddíl skautů (do zákazu 40 členů). Po listopadu 1989 poslanec za OF, v 90. letech v Kanceláři prezidenta republiky. Nezaměňovat s MUDr. Janem Šolcem (1947). (DP 2021; Paměť národa)
+- popis: 📘 Ročník 1938, skautem od dětství; 1961–67 pionýrský vedoucí na liberecké základní škole, v letech 1968–70 vede 2. oddíl skautů (do zákazu 40 členů). Po okupaci propuštěn z místa zástupce ředitele školy, od 1971 asi dvacet let stavební montér. Po listopadu 1989 poslanec za OF, v 90. letech v Kanceláři prezidenta republiky. Nezaměňovat s MUDr. Janem Šolcem (1947). (DP 2021; Paměť národa)
 
 ## Miloslav Nevrlý
 - id: miloslav-nevrly
@@ -575,3 +575,11 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - role: zástupce 1. oddílu při předání majetku 1970
 - hledat: Karel Pospíšil|K. Pospíšil
 - popis: 🤖 S Jindřichem Slezákem předává 22. 9. 1970 majetek 1. oddílu okresnímu výboru SSM. (protokol, Muzeum DSC_2179)
+
+## Miloslav Dvorský
+- id: miloslav-dvorsky
+- proud: cz-svaz
+- období: 1968–1990
+- role: vůdce oddílu v Českém Dubu
+- hledat: Dvorský
+- popis: 🤖 * 1935 Nový Bydžov, 1945–48 vlče v Novém Bydžově, od 1958 v Českém Dubu (náčelník Sokola). 1968 u obnovy skautingu v Českém Dubu, 1970 vede tábor a převádí oddíl pod Pionýra, kde ho vede do roku 1989; 1990 u obnovy. (Paměť národa)
