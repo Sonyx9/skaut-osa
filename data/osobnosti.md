@@ -179,10 +179,10 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - id: zdislav-mazacek
 - přezdívka: Trhan
 - proud: cz-svaz
-- období: 1920–?
-- role: obnovitel skautingu v Jičíně, od 1920 v Růžodole
+- období: 1920–1938
+- role: obnovitel skautingu v Jičíně, od 1920 učitel v Horním Růžodole
 - hledat: Mazáč
-- popis: 🤖 Válečný invalida, který v roce 1919 na pozvání Slávy Řeháka obnovil skautský oddíl v Jičíně. Na podzim 1919 přešel do Dolního Bousova a v roce 1920 byl přeložen do (Horního) Růžodolu u Liberce. Odborný učitel, známý turista a horolezec (na vrcholy Prachovských skal upevňoval české praporky). Že „v roce 1920 odešel do Liberce“, potvrzuje i Řehák (1937) citovaný Vlasatou (BP TUL 2013). Co v Liberci dělal, zatím nevíme – v dosud přepsaných částech Drbohlava a Mareše ani v libereckém tisku se nevyskytuje.
+- popis: 🤖 Válečný invalida, který v roce 1919 na pozvání Slávy Řeháka obnovil skautský oddíl v Jičíně. Na podzim 1919 přešel do Dolního Bousova a v roce 1920 byl přeložen do (Horního) Růžodolu u Liberce. Odborný učitel, známý turista a horolezec (na vrcholy Prachovských skal upevňoval české praporky). Že „v roce 1920 odešel do Liberce“, potvrzuje i Řehák (1937) citovaný Vlasatou (BP TUL 2013). V Horním Růžodole učil na české škole až do záboru: v září 1938 zapsal do kroniky „Všichni jsme byli na útěku“ a 6. 10. 1938 zachránil vybavení školy, které na nákladním autě odvezl do Turnova (Vít, BP UHK 2022, podle kroniky H. Růžodolu). ❓ Zda vedl i skautský oddíl v Růžodole, zatím nevíme – v Drbohlavovi ani Marešovi není.
 
 ## Heinz Rutha
 - id: heinz-rutha
