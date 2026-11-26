@@ -337,9 +337,10 @@ h1 { margin: 0 0 24px; font: 800 clamp(52px, 8vw, 84px)/.95 var(--display); text
 }
 
 /* Pruh podpory */
-.support { margin: 0 auto; padding-top: 20px; padding-bottom: 0; font-size: 14px; color: var(--ink); display: block; text-align: center; }
+.support { margin: 0 auto; padding-top: 32px; padding-bottom: 32px; font-size: 17px; line-height: 1.5; color: var(--ink); display: block; text-align: center; }
 .support span { display: block; }
-.support__wip { margin-top: 2px; color: var(--muted); }
+.support__wip { margin-top: 6px; font-size: 15px; color: var(--muted); }
+.band .support + .chapters { border-top: 1px solid #e3dccb; padding-top: 32px; }
 .filters--home { padding-top: 8px; }
 .filters--home .fbtn--more { text-decoration: underline; text-underline-offset: 3px; }
 .filters--home .fbtn--more::after { transform: rotate(-45deg); }
