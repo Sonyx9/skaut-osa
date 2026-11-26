@@ -420,3 +420,91 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - role: vedoucí dívčího střediska
 - hledat: sestra Nováková
 - popis: 🤖 Podle Severáku (2. 3. 1946) vedoucí dívčího střediska vedle br. Unčovského. ❓ Křestní jméno.
+
+## Emil Lehký
+- id: emil-lehky
+- proud: cz-svaz
+- období: 1945–1946
+- role: vedoucí I. střediska Liberec
+- hledat: Lehk
+- popis: 🤖 První doložený střediskový vedoucí Junáka v Liberci (21. 11. 1945); svěřil Janu Šmídovi založení 11. oddílu, 1946 přijímá přihlášky do 15. klubu oldskautů. Později ho ve středisku vystřídal Jaroslav Čapek – Dag. (Mareš 2007)
+
+## Vladimír Naňka
+- id: vladimir-nanka
+- proud: cz-svaz
+- období: 1945–1947
+- role: akela 14. a 16. smečky vlčat, „Krtek“
+- hledat: Naňk|Krtek
+- popis: 🤖 Přezdívka Krtek; 1945 svolává rádce střediska Podještědí, 1946 zakládá 14. smečku vlčat U Vápenky, pak vede 16. smečku adoptovanou 15. klubem O.S. (do 1947). (Mareš 2007)
+
+## Bohuslav Forman
+- id: bohuslav-forman
+- proud: cz-svaz
+- období: 1946–1948
+- role: velitel Severočeské lesní školy
+- hledat: Forman
+- popis: 🤖 Učitel z České Lípy, velitel I.–III. Severočeské lesní školy u Máchova jezera (1946–1948), člen zkušební komise oblasti. (Mareš 2007)
+
+## Josef Černohorský
+- id: josef-cernohorsky
+- proud: cz-svaz
+- období: 1946–1948
+- role: oblastní činovník, „Bacil“
+- hledat: Černohorsk|Bacil
+- popis: 🤖 Přednáší na čekatelských kurzech, tajemník zkušební komise 1946, o lesních školách mluví 27. 11. 1946; od května 1948 organizační zpravodaj krajské junácké rady. (Mareš 2007)
+
+## Karel Marks
+- id: karel-marks
+- proud: cz-svaz
+- období: 1945–1947
+- role: zakladatel a vůdce 5. oddílu, „Kory“
+- hledat: Marks|Kory
+- popis: 🤖 Na přelomu května a června 1945 přišel z Jičína a založil 5. oddíl; po Schnirchově odchodu na vojnu (1946) ho vede znovu, v dubnu 1947 má oddíl 22 členů. (Mareš 2007)
+
+## Josef Chroust
+- id: josef-chroust
+- proud: cz-svaz
+- období: 1946–1947
+- role: vůdce 9. oddílu v Ruprechticích, „Brouk“
+- hledat: Chroust|Brouk
+- popis: 🤖 Skautoval od 1930, do Liberce přišel 1946 s manželkou Miroslavou (Majka, učitelka); vedl 9. oddíl při ruprechtické škole, tábor 1947 v Raspenavě. (Mareš 2007)
+
+## Miroslav Knytl
+- id: miroslav-knytl
+- proud: cz-svaz
+- období: 1947–1949
+- role: vůdce oddílu z Horního Hanychova
+- hledat: Knytl
+- popis: 🤖 Technický úředník, vede hanychovský oddíl 1947–1949; 1948 v čele tábora Okresní péče o mládež ve Starých Splavech, 1949 na Oravě. (Mareš 2007)
+
+## Zdeněk Jarý
+- id: zdenek-jary
+- proud: cz-svaz
+- období: 1946–1947
+- role: vůdce 7. oddílu roverů, okrskový instruktor
+- hledat: Jarý
+- popis: 🤖 1946 vede 7. oddíl roverů (sraz v Turnově), v dubnu 1947 i II. středisko (?), koncem 1947 okrskový instruktor. (Mareš 2007)
+
+## Barcalík
+- id: barcalik
+- proud: cz-svaz
+- období: 1945–1946
+- role: junácký referent v místním výboru SČM
+- hledat: Barcalík
+- popis: 🤖 21. 6. 1945 zvolen jako junácký referent do místního výboru SČM v Liberci; koncem 1946 přistupuje do 13. klubu oldskautů. ❓ Křestní jméno. (Mareš 2007)
+
+## Zdeněk Brož
+- id: zdenek-broz
+- proud: cz-svaz
+- období: 1948
+- role: starosta krajské junácké rady
+- hledat: Brož
+- popis: 🤖 Býv. oblastní velitel na Vsetíně, v květnu 1948 ve Varnsdorfu zvolen starostou krajské junácké rady Liberec; jeho žena Marie krajskou náčelní pro skautky. (Mareš 2007)
+
+## Jindřich Slezák
+- id: jindrich-slezak
+- proud: cz-svaz
+- období: 1947–1949
+- role: zástupce vůdce 1. oddílu, „Jindra“
+- hledat: Slezák
+- popis: 🤖 1947 hledá a připravuje tábořiště v Tatrách, 1948–49 zástupce vůdce 1. oddílu, 1. 10. 1949 narukoval; po zákazu horolezec, vodák a lyžař. (Mareš 2007)

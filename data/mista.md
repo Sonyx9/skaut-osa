@@ -352,3 +352,48 @@ Místo = sekce `## Název`. Pole: id, typ (heim, klubovna, tábor, sraz, výlet,
 - přesnost: obec
 - hledat: Vráž
 - popis: 🤖 Tábor 1. dívčího oddílu v létě 1949.
+
+## Staré Splavy – Severočeská lesní škola
+- id: stare-splavy-ls
+- typ: kurz
+- proud: cz-svaz
+- souřadnice: 50.5940, 14.6380
+- přesnost: obec
+- hledat: Staré Splavy|lesní škol
+- popis: 🤖 I.–III. Severočeská lesní škola 1946–1948 u Máchova jezera; 1948 i tábor Okresní péče o mládež. (Mareš 2007)
+
+## Chata 13. klubu O.S. v Bedřichově
+- id: bedrichov-13-klub
+- typ: klubovna
+- proud: cz-svaz
+- souřadnice: 50.7930, 15.1420
+- přesnost: obec
+- hledat: Bedřichov
+- popis: 🤖 Dům čp. 26 v Bedřichově koupený 13. klubem oldskautů 1946 (Mikulášská 7. 12. 1946, vykraden 2/1947); vlastní domek tu má i 11. oddíl. ❓ Přesná poloha čp. 26 – ověřit v terénu.
+
+## Raspenava – Hadí vrch a Farská louka
+- id: raspenava
+- typ: tábor
+- proud: cz-svaz
+- souřadnice: 50.9120, 15.1130
+- přesnost: přibližně
+- hledat: Raspenav|Hadí|Farsk
+- popis: 🤖 Tábory 1946–1947: 5. oddíl na Farské louce, 11. oddíl u Hadího vrchu na Lomnici, 1947 9. oddíl ve Stolpichově boudě. (Mareš 2007)
+
+## Klubovna 2. oddílu, ul. Josefa Blažka 9
+- id: klubovna-blazkova-9
+- typ: klubovna
+- proud: cz-svaz
+- souřadnice: 50.7671, 15.0562
+- přesnost: přibližně
+- hledat: Blažka
+- popis: 🤖 Otevřena 30. 3. 1947. ❓ Dnešní název ulice a souřadnice – ověřit.
+
+## Jizera u Mnichova Hradiště – kormidelní kolo
+- id: mnichovo-hradiste-kolo
+- typ: tábor
+- proud: cz-svaz
+- souřadnice: 50.5270, 14.9710
+- přesnost: přibližně
+- hledat: Mnichov|kormidel
+- popis: 🤖 Tábor 7. (vodního) oddílu 1948; ve skále je podle Mareše dodnes vytesané kormidelní kolo – ověřit v terénu. 1948 tu tábořil i 3. roj světlušek (Klášter Hradiště).

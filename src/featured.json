@@ -1,570 +1,570 @@
 {
- "_info": "Milníky s velkým blokem, obrázky a kapitoly. Klíč = datum řádku v tabulce přesně jak je v prvním sloupci.",
- "images": {
-  "tabor-1932": {
-   "alt": "Kresba skautského tábora v lese s letopočtem 1932",
-   "w": 1400,
-   "h": 933
+  "_info": "Milníky s velkým blokem, obrázky a kapitoly. Klíč = datum řádku v tabulce přesně jak je v prvním sloupci.",
+  "images": {
+    "tabor-1932": {
+      "alt": "Kresba skautského tábora v lese s letopočtem 1932",
+      "w": 1400,
+      "h": 933
+    },
+    "lilie-1936": {
+      "alt": "Kresba skautské lilie s nápisem 1936 Buď připraven",
+      "w": 1400,
+      "h": 933
+    },
+    "racci-1937": {
+      "alt": "Titulní list Družina Racků 1937, Riegrova župa",
+      "w": 933,
+      "h": 1400
+    },
+    "racci-1930": {
+      "alt": "Kronika družiny Racků, zápis o první schůzce oddílu",
+      "w": 1400,
+      "h": 933
+    },
+    "jamboree-1931": {
+      "alt": "Kronika s rukopisným zápisem o jamboree v Praze",
+      "w": 1400,
+      "h": 933
+    },
+    "navarov-1932": {
+      "alt": "Kronika s nákresem rozložení tábora u Navarova",
+      "w": 1400,
+      "h": 933
+    },
+    "sotci-1932": {
+      "alt": "Titulní list Kronika Šotků, 1. D. Horní Růžodol, 1932",
+      "w": 933,
+      "h": 1400
+    },
+    "rz-1913": {
+      "alt": "Reichenberger Zeitung 13. 6. 1913: zpráva o založení Pfadfinderkorps v Liberci",
+      "w": 900,
+      "h": 675,
+      "credit": "Reichenberger Zeitung 13. 6. 1913, s. 4 (Kramerius KVK Liberec)"
+    },
+    "svojsik-1922": {
+      "alt": "Program skautského večera s A. B. Svojsíkem 20. 5. 1922, opis v Drobečcích V. Drbohlava – Rozity",
+      "w": 1037,
+      "h": 778,
+      "credit": "V. Drbohlav – Rozita, Drobečky z historie skautingu na Liberecku, 18. pokr. (1995)"
+    },
+    "oldscouts-1924": {
+      "alt": "Program kabaretu Klubu Old-Scouts 3. 5. 1924 podle letáku, opis v Drobečcích V. Drbohlava – Rozity",
+      "w": 943,
+      "h": 707,
+      "credit": "V. Drbohlav – Rozita, Drobečky z historie skautingu na Liberecku, 31. pokr. (1996)"
+    },
+    "almanach-1933": {
+      "alt": "Almanach Župní sraz Riegrovy župy v Liberci 1933 – obálka a titulní list s věnováním Ervína Dlouhého",
+      "w": 1400,
+      "h": 1050,
+      "credit": "Župní sraz Riegrovy župy v Liberci 1933 (E-knihovna Archivu Junáka)"
+    },
+    "svojsik-portret": {
+      "alt": "Portrét A. B. Svojsíka, náčelníka Svazu junáků-skautů",
+      "w": 960,
+      "h": 1280,
+      "credit": "A. B. Svojsík. Foto: neznámý autor, Album representantů všech oborů veřejného života Česko-Slovenského (Praha 1927); volné dílo (PD-anon-70-EU), Wikimedia Commons"
+    },
+    "kamen-1947": {
+      "alt": "Kámen vítězů v Lidových sadech – žulový kámen s lilií, deskou „Kámen vítězů – Scouting Liberec“ a letopočtem 1947",
+      "w": 1063,
+      "h": 1602,
+      "credit": "Kámen vítězů (1947) v Lidových sadech. Foto: archiv L. Kouly (DP 2021, příloha 8)"
+    }
   },
-  "lilie-1936": {
-   "alt": "Kresba skautské lilie s nápisem 1936 Buď připraven",
-   "w": 1400,
-   "h": 933
+  "credit": "Kronika dívčí družiny Racků, Horní Růžodol · Severočeské muzeum v Liberci",
+  "hero": {
+    "main": "tabor-1932",
+    "small": [
+      "lilie-1936",
+      "racci-1937"
+    ]
   },
-  "racci-1937": {
-   "alt": "Titulní list Družina Racků 1937, Riegrova župa",
-   "w": 933,
-   "h": 1400
+  "features": {
+    "1913-06-01": {
+      "title": "Vzniká Reichenberger Pfadfinderkorps"
+    },
+    "1919": {
+      "title": "Kolem Jaroslava Tomsy se schází první čeští junáci",
+      "match": "Tomsy"
+    },
+    "1920-08-24": {
+      "title": "Řádně založen dívčí oddíl"
+    },
+    "1922-05-20": {
+      "title": "Náčelník Svojsík v Liberci",
+      "program_title": "Program skautského večera, Národní dům, 20. 5. 1922 ve 20 h",
+      "program": [
+        "Výchova občana republiky skautováním – projev A. B. Svojsíka",
+        "A. Dvořák: Slovanský tanec č. 1 C dur (skautský orchestr)",
+        "K. Haak: „Ven“ (skautský smíšený sbor)",
+        "Dobrou noc – rytmický rej se šátky (sestry ze Železného Brodu)",
+        "Zahrajem si na vojáky (vlčata)",
+        "J. Suk: „Jaro“ – sólo pro klavír",
+        "Motýli – rej (Menuet, Beethoven; sestry ze Železného Brodu)",
+        "Veselý výstup",
+        "M. W. Balfe: Cikánka (skautský orchestr)"
+      ],
+      "quote": "Nechť zástava Vaší cti, prapor Váš vesele vlaje nad Vašimi hlavami, zdobte jej povždy svěžími vavříny mužných ušlechtilých činů. Buďte připraveni!",
+      "quote_src": "A. B. Svojsík v dopise 1. oddílu k rozvinutí praporu, Liberec 21. 5. 1922 (opis u V. Drbohlava – Rozity)"
+    },
+    "1930-12-10": {
+      "title": "Skautky v Horním Růžodole",
+      "img": "racci-1930"
+    },
+    "1931-06-28": {
+      "title": "Na jamboree v Praze s Riegrovou župou",
+      "img": "jamboree-1931"
+    },
+    "1932": {
+      "title": "Kronika Šotků",
+      "img": "sotci-1932",
+      "match": "Šotků"
+    },
+    "1932-07-17": {
+      "title": "Tábor u Navarova na Kamenici",
+      "img": "navarov-1932",
+      "match": "Návarova"
+    },
+    "1938-09-23": {
+      "title": "„Nenechte nikdy zaniknout skautskou myšlenku!“"
+    }
   },
-  "racci-1930": {
-   "alt": "Kronika družiny Racků, zápis o první schůzce oddílu",
-   "w": 1400,
-   "h": 933
+  "chapters": {
+    "1913": {
+      "label": "Pfadfinder",
+      "title": "Pfadfinder barona Liebiega"
+    },
+    "1919": {
+      "label": "junáci",
+      "title": "První čeští junáci"
+    },
+    "1920": {
+      "label": "skautky",
+      "title": "Skautky, sbor a dělničtí skauti"
+    },
+    "1923": {
+      "label": "sbor",
+      "title": "Sbor pod vedením R. Válka"
+    },
+    "1930": {
+      "label": "Růžodol",
+      "title": "Dívčí oddíl v Horním Růžodole"
+    },
+    "1938": {
+      "label": "Mnichov",
+      "title": "Rok 1938: mobilizace a Mnichov",
+      "dark": true
+    },
+    "1939": {
+      "label": "konec",
+      "title": "Konec činnosti v Liberci",
+      "dark": true
+    }
   },
-  "jamboree-1931": {
-   "alt": "Kronika s rukopisným zápisem o jamboree v Praze",
-   "w": 1400,
-   "h": 933
-  },
-  "navarov-1932": {
-   "alt": "Kronika s nákresem rozložení tábora u Navarova",
-   "w": 1400,
-   "h": 933
-  },
-  "sotci-1932": {
-   "alt": "Titulní list Kronika Šotků, 1. D. Horní Růžodol, 1932",
-   "w": 933,
-   "h": 1400
-  },
-  "rz-1913": {
-   "alt": "Reichenberger Zeitung 13. 6. 1913: zpráva o založení Pfadfinderkorps v Liberci",
-   "w": 900,
-   "h": 675,
-   "credit": "Reichenberger Zeitung 13. 6. 1913, s. 4 (Kramerius KVK Liberec)"
-  },
-  "svojsik-1922": {
-   "alt": "Program skautského večera s A. B. Svojsíkem 20. 5. 1922, opis v Drobečcích V. Drbohlava – Rozity",
-   "w": 1037,
-   "h": 778,
-   "credit": "V. Drbohlav – Rozita, Drobečky z historie skautingu na Liberecku, 18. pokr. (1995)"
-  },
-  "oldscouts-1924": {
-   "alt": "Program kabaretu Klubu Old-Scouts 3. 5. 1924 podle letáku, opis v Drobečcích V. Drbohlava – Rozity",
-   "w": 943,
-   "h": 707,
-   "credit": "V. Drbohlav – Rozita, Drobečky z historie skautingu na Liberecku, 31. pokr. (1996)"
-  },
-  "almanach-1933": {
-   "alt": "Almanach Župní sraz Riegrovy župy v Liberci 1933 – obálka a titulní list s věnováním Ervína Dlouhého",
-   "w": 1400,
-   "h": 1050,
-   "credit": "Župní sraz Riegrovy župy v Liberci 1933 (E-knihovna Archivu Junáka)"
-  },
-  "svojsik-portret": {
-   "alt": "Portrét A. B. Svojsíka, náčelníka Svazu junáků-skautů",
-   "w": 960,
-   "h": 1280,
-   "credit": "A. B. Svojsík. Foto: neznámý autor, Album representantů všech oborů veřejného života Česko-Slovenského (Praha 1927); volné dílo (PD-anon-70-EU), Wikimedia Commons"
-  },
-  "kamen-1947": {
-   "alt": "Kámen vítězů v Lidových sadech – žulový kámen s lilií, deskou „Kámen vítězů – Scouting Liberec“ a letopočtem 1947",
-   "w": 1063,
-   "h": 1602,
-   "credit": "Kámen vítězů (1947) v Lidových sadech. Foto: archiv L. Kouly (DP 2021, příloha 8)"
-  }
- },
- "credit": "Kronika dívčí družiny Racků, Horní Růžodol · Severočeské muzeum v Liberci",
- "hero": {
-  "main": "tabor-1932",
-  "small": [
-   "lilie-1936",
-   "racci-1937"
+  "periods": [
+    {
+      "from": 1911,
+      "to": 1918,
+      "label": "Pfadfinder",
+      "title": "Pfadfinder barona Liebiega",
+      "date": "1913-06-01",
+      "img": "rz-1913",
+      "text": "Baron Theodor von Liebieg a učitel Karl Weyde zakládají v Liberci sbor Pfadfinderů – první skauty ve městě.",
+      "era": 1
+    },
+    {
+      "from": 1919,
+      "to": 1922,
+      "label": "první junáci",
+      "title": "První čeští junáci a skautky",
+      "date": "1922-05-20",
+      "img": "svojsik-portret",
+      "text": "Do Liberce přijíždí náčelník Svazu A. B. Svojsík. Skauti a skautky mu v Národním domě připravili odpolední besídky a večer s orchestrem, pěveckým sborem a vlčaty.",
+      "portrait": true,
+      "era": 1
+    },
+    {
+      "from": 1923,
+      "to": 1927,
+      "label": "sbor",
+      "title": "Sbor, oldskauti a dělničtí skauti",
+      "date": "1924-05-03",
+      "img": "oldscouts-1924",
+      "text": "Klub Old-Scouts pořádá v Národním domě kabaret s hudbou, scénkami a tancem – jediná zpráva o prvorepublikových oldskautech v Liberci.",
+      "era": 1
+    },
+    {
+      "from": 1928,
+      "to": 1932,
+      "label": "Riegrova župa",
+      "title": "Štafety, Riegrova župa a skautky z Růžodolu",
+      "date": "1931-06-28",
+      "img": "jamboree-1931",
+      "text": "Skautky z Horního Růžodolu jdou na Všeslovanském jamboree v Praze v průvodu na Hrad spolu s Riegrovou župou.",
+      "era": 1
+    },
+    {
+      "from": 1933,
+      "to": 1937,
+      "label": "župní sraz",
+      "title": "Župní sraz a skauting v pohraničí",
+      "date": "1933-06-03",
+      "img": "almanach-1933",
+      "text": "Liberec hostí župní sraz Riegrovy župy: akademie v biografu Lípa, závody o vlajku vítěze, průvod městem s více než 450 krojovanými a táborový oheň.",
+      "era": 1
+    },
+    {
+      "from": 1938,
+      "to": 1945,
+      "label": "Mnichov",
+      "title": "Mobilizace, Mnichov a konec",
+      "date": "1938-09-23",
+      "dark": true,
+      "text": "Při mobilizaci rukuje vůdce 1. oddílu Jan Poštolka a posílá oddílu vzkaz na útržku z notesu: „Nenechte nikdy zaniknout skautskou myšlenku!“",
+      "era": 1,
+      "end": "1945-05"
+    },
+    {
+      "era": 2,
+      "from": 1945,
+      "to": 1945,
+      "start": "1945-05",
+      "label": "Obnova",
+      "title": "Návrat junáků do Liberce",
+      "date": "1945-07-22",
+      "text": "Pár týdnů po válce se v dřevěném baráku ve Svojsíkově ulici schází 22 chlapců – obnovuje se 1. oddíl. Liberec se stává sídlem oblastního velitele, vzniká druhé středisko Podještědí, vodáci, vlčata a slib skládá i 1. dívčí oddíl."
+    },
+    {
+      "era": 2,
+      "from": 1946,
+      "to": 1947,
+      "label": "Rozkvět",
+      "title": "Svojsíkův rok a vrchol Junáka",
+      "date": "1947-05-22",
+      "img": "kamen-1947",
+      "portrait": true,
+      "text": "V dubnu 1946 dostávají junáci Junácký domov na náměstí Práce, na Liberecku je jich kolem 2 500. Vrcholem je oblastní sraz v červnu 1947 s polskými hosty – a Kámen vítězů v Lidových sadech s lilií a letopočtem 1947."
+    },
+    {
+      "era": 2,
+      "from": 1948,
+      "to": 1950,
+      "label": "Pod SČM",
+      "title": "Únor, Svaz mládeže a konec registrací",
+      "date": "1948-09-07",
+      "text": "Po únoru 1948 odevzdávají činovníci legitimace a oddíly přecházejí pod Svaz české mládeže. Na podzim 1949 se do Junáka už nedá registrovat; oddíly přežívají pod Sokolem nebo se rozcházejí."
+    },
+    {
+      "era": 2,
+      "from": 1951,
+      "to": 1952,
+      "label": "Zákaz",
+      "title": "Zákaz a proces",
+      "date": "1952-06-27",
+      "dark": true,
+      "text": "Za vůdcovské zkoušky na chatě v Polesí u Rynoltic stojí liberečtí skautští vedoucí 27. června 1952 před Státním soudem v kauze „Jaroslav Tomsa a spol.“ Tomsa dostal čtyři roky za velezradu; rozsudky zrušily soudy až v letech 1968–1973."
+    }
+  ],
+  "sources": [
+    {
+      "h": "Dobový tisk",
+      "lead": "Noviny z let 1912–1952 v digitálních knihovnách. Většina libereckých titulů je volně v Krameriu Krajské vědecké knihovny v Liberci.",
+      "items": [
+        {
+          "n": "Stráž severu (1945–1952)",
+          "d": "Deník Národní fronty v pohraničí, vydávaný v Liberci; pravidelná rubrika „Junák hlásí“. Hlavní pramen k obnově Junáka po roce 1945.",
+          "key": "Stráž severu",
+          "where": "Kramerius KVK Liberec",
+          "url": "https://kramerius.kvkli.cz/uuid/uuid:2cdf4578-ae6c-410f-8152-7089df24c757"
+        },
+        {
+          "n": "Severák (1945–1946)",
+          "d": "Týdeník Krajského výboru SČM v Liberci; junácké rubriky „Junák hlásí“ a „Buď připraven!“ (řídí Aja). Dostupné po přihlášení (DNNT).",
+          "key": "Severák",
+          "where": "Česká digitální knihovna",
+          "url": "https://www.ceskadigitalniknihovna.cz/uuid/uuid:de924eb0-d68f-11dc-81be-000d606f5dc6"
+        },
+        {
+          "n": "Cesta míru (1952)",
+          "d": "Týdeník Krajského výboru KSČ v Liberci – oficiální verze procesu se skauty.",
+          "key": "Cesta míru",
+          "where": "Česká digitální knihovna (DNNT)"
+        },
+        {
+          "n": "Naše hory",
+          "d": "český týdeník vycházející v Horním Růžodole; rubriky o skautech a junácích",
+          "where": "Kramerius KVK Liberec",
+          "url": "https://kramerius.kvkli.cz",
+          "key": "Naše hory"
+        },
+        {
+          "n": "Reichenberger Zeitung",
+          "d": "liberecký německý deník; Pfadfinder, Wandervogel, spolkové zprávy",
+          "where": "Kramerius KVK Liberec",
+          "url": "https://kramerius.kvkli.cz",
+          "key": "Reichenberger Zeitung"
+        },
+        {
+          "n": "Reichenberger Tagesbote",
+          "d": "německý deník; pohled většinové společnosti na české skauty",
+          "where": "Kramerius KVK Liberec",
+          "url": "https://kramerius.kvkli.cz",
+          "key": "Reichenberger Tagesbote"
+        },
+        {
+          "n": "Gablonzer Tagblatt, Friedländer Zeitung, Grenzland-Zeitung a další regionální německé listy",
+          "where": "Kramerius KVK Liberec",
+          "url": "https://kramerius.kvkli.cz",
+          "key": "Gablonzer|Friedländer|Grenzland|Deutsches Volksblatt|Die Wahrheit|Teplitz"
+        },
+        {
+          "n": "Pojizerské listy, Hlasy Pojizerské",
+          "d": "turnovský a pojizerský tisk",
+          "where": "Kramerius KVK Liberec",
+          "url": "https://kramerius.kvkli.cz",
+          "key": "Pojizersk"
+        },
+        {
+          "n": "Národní listy, Národní osvobození, Večerní České slovo, Rudý večerník",
+          "where": "Národní digitální knihovna",
+          "url": "https://ndk.cz",
+          "key": "Národní listy|Národní osvobození|Večerní České|Rudý večerník"
+        },
+        {
+          "n": "Jüdische Zeitung, Jüdische Rundschau",
+          "d": "židovský tisk o Blau-Weiß a Makkabi",
+          "where": "Compact Memory, UB Frankfurt",
+          "url": "https://sammlungen.ub.uni-frankfurt.de/cm",
+          "key": "Jüdische"
+        },
+        {
+          "n": "Krkonoše – Jizerské hory: J. Marečková, Český skauting na Liberecku (9/2012)",
+          "d": "Přehled od počátků po 90. léta; Kámen vítězů, Skautská studánka.",
+          "key": "Marečková",
+          "where": "web časopisu",
+          "url": "https://krkonose.krnap.cz/apex/f?p=104:4:::NO:RP,4:P4_ID,P4_CP:2012-09-25,2"
+        },
+        {
+          "n": "Mladá fronta, Pojizerské listy a další regionální a celostátní tisk 1945–1952",
+          "d": "Jednotlivé zprávy o libereckých junácích.",
+          "key": "Mladá fronta|Pojizerské listy, \\[",
+          "where": "Česká digitální knihovna / Kramerius KVK"
+        }
+      ]
+    },
+    {
+      "h": "Skautský tisk",
+      "lead": "Časopisy Svazu junáků-skautů a dalších skautských organizací.",
+      "items": [
+        {
+          "n": "Junák",
+          "d": "časopis pro skauty a skautky, 1915–1940",
+          "where": "MZK (DNNT) a E-knihovna Archivu Junáka",
+          "url": "https://www.digitalniknihovna.cz/mzk",
+          "key": "Junák \\(|Junák,|^Junák"
+        },
+        {
+          "n": "Vůdce / Činovník",
+          "d": "činovnický časopis Svazu 1919–1940: jmenování, pocty, zápisy Náčelnictva",
+          "where": "E-knihovna Archivu Junáka",
+          "key": "Vůdce"
+        },
+        {
+          "n": "Oheň",
+          "d": "časopis Skautů práce (komunistický skauting) 1922–1925",
+          "where": "E-knihovna Archivu Junáka",
+          "key": "Oheň"
+        },
+        {
+          "n": "Rozkvět",
+          "where": "Národní digitální knihovna",
+          "url": "https://ndk.cz",
+          "key": "Rozkvět"
+        }
+      ]
+    },
+    {
+      "h": "Adresáře, ročenky a úřední tisky",
+      "items": [
+        {
+          "n": "Jahrbuch und Wohnungs-Anzeiger der Stadt Reichenberg",
+          "d": "liberecké adresáře se spolkovým rejstříkem",
+          "where": "Kramerius KVK Liberec",
+          "url": "https://kramerius.kvkli.cz",
+          "key": "Jahrbuch und Wohnungs"
+        },
+        {
+          "n": "Výroční zprávy škol, ročenky Gebirgsvereinu, vlastivědné sborníky, Amtsblatt",
+          "where": "Kramerius KVK Liberec",
+          "url": "https://kramerius.kvkli.cz",
+          "key": "Jahres-Bericht|Gebirgsvereines|Heimatkunde|Neuer Führer|Amtsblatt"
+        }
+      ]
+    },
+    {
+      "h": "Almanachy a dokumenty",
+      "items": [
+        {
+          "n": "Župní sraz Riegrovy župy v Liberci 1933",
+          "d": "almanach se statí 13 let skautingu na Liberecku",
+          "where": "E-knihovna Archivu Junáka",
+          "url": "https://drive.google.com/file/d/1BgE1meyHGTgVwwgXYjLzGMWWXNZ2XfLJ/view",
+          "key": "Župní sraz Riegrovy"
+        },
+        {
+          "n": "F. Kučera (ed.): Skauting v menšinách, Louny 1931",
+          "d": "almanach Župy Přemysla Oráče se statí J. Břeně Skauting na Liberecku",
+          "where": "E-knihovna Archivu Junáka",
+          "url": "https://drive.google.com/file/d/1J_C_9JNNW3CAEbcArQhlGU9K-tqkdaNJ/view",
+          "key": "Skauting v menšinách|F. Kučera"
+        },
+        {
+          "n": "Oddíly registrované ve Svazu skautů RČS k 1. květnu 1922",
+          "where": "E-knihovna Archivu Junáka",
+          "url": "https://drive.google.com/file/d/1QDEabkST1MZBAqDc8g31sM-SCKL-ZHGS/view",
+          "key": "Oddíly registrované"
+        },
+        {
+          "n": "Branný sraz skautské župy Riegrovy v Jičíně 1937",
+          "where": "E-knihovna Archivu Junáka",
+          "url": "https://drive.google.com/file/d/1_p1RNdv6W5iaptvJXngDLAY0Iroh1QMc/view",
+          "key": "Branný sraz"
+        },
+        {
+          "n": "Sraz župy Riegerovy, Mladá Boleslav 1935; Župní sraz Riegrovy župy v Hořicích 1936",
+          "where": "E-knihovna Archivu Junáka",
+          "key": "Sraz župy Riegerovy|Hořicích 1936"
+        },
+        {
+          "n": "S. Špindler: Severočeská skautská župa Přemysla Oráče 1919–1938 (2003)",
+          "where": "E-knihovna Archivu Junáka",
+          "url": "https://drive.google.com/file/d/1BwNn83x3LzMhkYncK88mdBJW1ueUY1WK/view",
+          "key": "Špindler"
+        }
+      ]
+    },
+    {
+      "h": "Kroniky, zápisy a vzpomínky",
+      "items": [
+        {
+          "n": "V. Drbohlav – Rozita: Drobečky z historie skautingu na Liberecku",
+          "d": "vzpomínky a výpisy z dobových dokumentů, 1995–1998 (3. klub oldskautů Liberec)",
+          "key": "Drbohlav"
+        },
+        {
+          "n": "Kronika dívčího oddílu (družina Racků) Horní Růžodol 1930–1937",
+          "where": "Severočeské muzeum v Liberci",
+          "key": "Kronika dívčího oddílu"
+        },
+        {
+          "n": "Zápisy schůzí I. dívčího oddílu 1920–1922 a skautský deník M. Horáčkové 1921–22",
+          "key": "Zápisy schůzí|Horáčkové"
+        }
+      ]
+    },
+    {
+      "h": "Odborné práce a literatura",
+      "items": [
+        {
+          "n": "L. Koula: Vznik a vývoj skautských organizací v Liberci a okolí od roku 1920 po současnost",
+          "d": "diplomová práce, TUL 2021 – výchozí verze, kterou osa rozšiřuje a ověřuje",
+          "key": "DP 2021"
+        },
+        {
+          "n": "J. Mareš: Junák v Liberci 1920–1952",
+          "d": "středoškolská odborná práce (Gymnázium Jeronýmova, Liberec), 2007 – nevydaná, online není; čteno z fotografií exempláře v SOkA Liberec. Hlavní souhrn poválečného Junáka po oddílech a pramen, z něhož čerpá DP 2021.",
+          "key": "Mareš"
+        },
+        {
+          "n": "I. Krupauerová: Politické procesy 50. let – kauza Jaroslav Tomsa a spol. (DP TUL 2013)",
+          "d": "Proces s libereckými skauty 1952, životopisy obžalovaných, rozhovory s pamětníky, spisy ABS a NA.",
+          "key": "Krupauerová",
+          "where": "TUL"
+        },
+        {
+          "n": "J. Zachariáš: Soudní proces s tzv. ilegálním ústředím Junáka aneb Karel Průcha a spol. (1952), ÚDV 2005",
+          "d": "Hlavní proces s Mikšovičem a dokumenty StB k liberecké odnoži.",
+          "key": "Zachariáš",
+          "where": "policie.gov.cz (PDF)",
+          "url": "https://policie.gov.cz/soubor/soudni-proces-s-tzv-ilegalnim-ustredim-junaka-aneb-karel-prucha-a-spol-1952-pdf.aspx"
+        },
+        {
+          "n": "J. Vít, M. Vlasatá, Š. Vašátková",
+          "d": "bakalářské práce TUL o skautingu, Jičínsku a trampingu",
+          "url": "https://dspace.tul.cz",
+          "where": "DSpace TUL",
+          "key": "J. Vít|Vlasatá|Vašátková"
+        },
+        {
+          "n": "J. Jiráň: Skauting v meziválečném období (disertace 2023); H. Černá: YMCA 1919–1951 (DP 2009); T. Jelínek: Výchova v přírodě a německé organizace skautského typu (disertace)",
+          "where": "E-knihovna Archivu Junáka",
+          "key": "Jiráň|Černá|Jelínek"
+        },
+        {
+          "n": "R. Karpaš a kol.: Kniha o Liberci (2004); P. D. Vinklát; B. Hurikán; M. Lhotová; V. Stanislav; H. Gold",
+          "d": "literatura o Liberci, trampingu, turistice a židovské komunitě",
+          "key": "Karpaš|Vinklát|Hurikán|Lhotová|Stanislav|Gold"
+        },
+        {
+          "n": "Databáze Sochy a města",
+          "d": "Kámen vítězů v Lidových sadech (záznam 18984).",
+          "key": "Sochy a města",
+          "where": "sochyamesta.cz",
+          "url": "https://sochyamesta.cz/zaznam/18984"
+        }
+      ]
+    }
+  ],
+  "eras": [
+    {
+      "from": 1911,
+      "to": 1945,
+      "title": "Od Pfadfinderů po Mnichov a válku",
+      "lead": "Němečtí Pfadfinder a Wandervogel, první čeští junáci a skautky, dělničtí a židovští skauti – až po konec činnosti po Mnichovu.",
+      "href": "epocha-1911-1945.html",
+      "img": "rz-1913",
+      "page_lead": "Od Pfadfinderů barona Liebiega přes první české junáky, skautky z Horního Růžodolu a dělnické skauty až po konec činnosti po Mnichovu. U každého záznamu je zdroj a stav ověření."
+    },
+    {
+      "from": 1945,
+      "to": 1952,
+      "title": "Obnova a první zákaz",
+      "lead": "Návrat českých skautů do Liberce po válce, desítky nových oddílů a Kámen vítězů – až po zrušení Junáka a proces s vedoucími v roce 1952.",
+      "href": "epocha-1945-1952.html",
+      "img": "kamen-1947",
+      "hero": {
+        "main": "kamen-1947",
+        "small": []
+      },
+      "page_lead": "Obnova Junáka v Liberci po válce, oddíly, smečky a kluby oldskautů, vrchol v roce 1947, přechod pod Svaz mládeže a proces s libereckými vedoucími.",
+      "status": "V procesu",
+      "status_note": "Na epoše právě pracujeme. Kostra je převzatá z diplomové práce (2021), postupně ji ověřujeme a doplňujeme ze Stráže severu 1945–1951 a z diplomové práce Ivy Krupauerové o procesu 1952."
+    },
+    {
+      "from": 1952,
+      "to": 1970,
+      "title": "Mezi zákazy",
+      "lead": "Oddíly přežívající v turistice a Pionýru, obnova Junáka v roce 1968 a nový zákaz v roce 1970."
+    },
+    {
+      "from": 1970,
+      "to": 1989,
+      "title": "Druhý zákaz",
+      "lead": "Skautské oddíly pod jinou hlavičkou, tábory a předávání tradice dalším generacím."
+    },
+    {
+      "from": 1989,
+      "to": 1999,
+      "title": "Obnova Junáka",
+      "lead": "Obnova skautingu v Liberci po listopadu 1989, návrat starých vůdců a vznik nových středisek."
+    },
+    {
+      "from": 2000,
+      "to": "dnes",
+      "title": "Současnost",
+      "lead": "Liberecká střediska, krajská rada a skauting dnes."
+    }
   ]
- },
- "features": {
-  "1913-06-01": {
-   "title": "Vzniká Reichenberger Pfadfinderkorps"
-  },
-  "1919": {
-   "title": "Kolem Jaroslava Tomsy se schází první čeští junáci",
-   "match": "Tomsy"
-  },
-  "1920-08-24": {
-   "title": "Řádně založen dívčí oddíl"
-  },
-  "1922-05-20": {
-   "title": "Náčelník Svojsík v Liberci",
-   "program_title": "Program skautského večera, Národní dům, 20. 5. 1922 ve 20 h",
-   "program": [
-    "Výchova občana republiky skautováním – projev A. B. Svojsíka",
-    "A. Dvořák: Slovanský tanec č. 1 C dur (skautský orchestr)",
-    "K. Haak: „Ven“ (skautský smíšený sbor)",
-    "Dobrou noc – rytmický rej se šátky (sestry ze Železného Brodu)",
-    "Zahrajem si na vojáky (vlčata)",
-    "J. Suk: „Jaro“ – sólo pro klavír",
-    "Motýli – rej (Menuet, Beethoven; sestry ze Železného Brodu)",
-    "Veselý výstup",
-    "M. W. Balfe: Cikánka (skautský orchestr)"
-   ],
-   "quote": "Nechť zástava Vaší cti, prapor Váš vesele vlaje nad Vašimi hlavami, zdobte jej povždy svěžími vavříny mužných ušlechtilých činů. Buďte připraveni!",
-   "quote_src": "A. B. Svojsík v dopise 1. oddílu k rozvinutí praporu, Liberec 21. 5. 1922 (opis u V. Drbohlava – Rozity)"
-  },
-  "1930-12-10": {
-   "title": "Skautky v Horním Růžodole",
-   "img": "racci-1930"
-  },
-  "1931-06-28": {
-   "title": "Na jamboree v Praze s Riegrovou župou",
-   "img": "jamboree-1931"
-  },
-  "1932": {
-   "title": "Kronika Šotků",
-   "img": "sotci-1932",
-   "match": "Šotků"
-  },
-  "1932-07-17": {
-   "title": "Tábor u Navarova na Kamenici",
-   "img": "navarov-1932",
-   "match": "Návarova"
-  },
-  "1938-09-23": {
-   "title": "„Nenechte nikdy zaniknout skautskou myšlenku!“"
-  }
- },
- "chapters": {
-  "1913": {
-   "label": "Pfadfinder",
-   "title": "Pfadfinder barona Liebiega"
-  },
-  "1919": {
-   "label": "junáci",
-   "title": "První čeští junáci"
-  },
-  "1920": {
-   "label": "skautky",
-   "title": "Skautky, sbor a dělničtí skauti"
-  },
-  "1923": {
-   "label": "sbor",
-   "title": "Sbor pod vedením R. Válka"
-  },
-  "1930": {
-   "label": "Růžodol",
-   "title": "Dívčí oddíl v Horním Růžodole"
-  },
-  "1938": {
-   "label": "Mnichov",
-   "title": "Rok 1938: mobilizace a Mnichov",
-   "dark": true
-  },
-  "1939": {
-   "label": "konec",
-   "title": "Konec činnosti v Liberci",
-   "dark": true
-  }
- },
- "periods": [
-  {
-   "from": 1911,
-   "to": 1918,
-   "label": "Pfadfinder",
-   "title": "Pfadfinder barona Liebiega",
-   "date": "1913-06-01",
-   "img": "rz-1913",
-   "text": "Baron Theodor von Liebieg a učitel Karl Weyde zakládají v Liberci sbor Pfadfinderů – první skauty ve městě.",
-   "era": 1
-  },
-  {
-   "from": 1919,
-   "to": 1922,
-   "label": "první junáci",
-   "title": "První čeští junáci a skautky",
-   "date": "1922-05-20",
-   "img": "svojsik-portret",
-   "text": "Do Liberce přijíždí náčelník Svazu A. B. Svojsík. Skauti a skautky mu v Národním domě připravili odpolední besídky a večer s orchestrem, pěveckým sborem a vlčaty.",
-   "portrait": true,
-   "era": 1
-  },
-  {
-   "from": 1923,
-   "to": 1927,
-   "label": "sbor",
-   "title": "Sbor, oldskauti a dělničtí skauti",
-   "date": "1924-05-03",
-   "img": "oldscouts-1924",
-   "text": "Klub Old-Scouts pořádá v Národním domě kabaret s hudbou, scénkami a tancem – jediná zpráva o prvorepublikových oldskautech v Liberci.",
-   "era": 1
-  },
-  {
-   "from": 1928,
-   "to": 1932,
-   "label": "Riegrova župa",
-   "title": "Štafety, Riegrova župa a skautky z Růžodolu",
-   "date": "1931-06-28",
-   "img": "jamboree-1931",
-   "text": "Skautky z Horního Růžodolu jdou na Všeslovanském jamboree v Praze v průvodu na Hrad spolu s Riegrovou župou.",
-   "era": 1
-  },
-  {
-   "from": 1933,
-   "to": 1937,
-   "label": "župní sraz",
-   "title": "Župní sraz a skauting v pohraničí",
-   "date": "1933-06-03",
-   "img": "almanach-1933",
-   "text": "Liberec hostí župní sraz Riegrovy župy: akademie v biografu Lípa, závody o vlajku vítěze, průvod městem s více než 450 krojovanými a táborový oheň.",
-   "era": 1
-  },
-  {
-   "from": 1938,
-   "to": 1945,
-   "label": "Mnichov",
-   "title": "Mobilizace, Mnichov a konec",
-   "date": "1938-09-23",
-   "dark": true,
-   "text": "Při mobilizaci rukuje vůdce 1. oddílu Jan Poštolka a posílá oddílu vzkaz na útržku z notesu: „Nenechte nikdy zaniknout skautskou myšlenku!“",
-   "era": 1,
-   "end": "1945-05"
-  },
-  {
-   "era": 2,
-   "from": 1945,
-   "to": 1945,
-   "start": "1945-05",
-   "label": "Obnova",
-   "title": "Návrat junáků do Liberce",
-   "date": "1945-07-22",
-   "text": "Pár týdnů po válce se v dřevěném baráku ve Svojsíkově ulici schází 22 chlapců – obnovuje se 1. oddíl. Liberec se stává sídlem oblastního velitele, vzniká druhé středisko Podještědí, vodáci, vlčata a slib skládá i 1. dívčí oddíl."
-  },
-  {
-   "era": 2,
-   "from": 1946,
-   "to": 1947,
-   "label": "Rozkvět",
-   "title": "Svojsíkův rok a vrchol Junáka",
-   "date": "1947-05-22",
-   "img": "kamen-1947",
-   "portrait": true,
-   "text": "V dubnu 1946 dostávají junáci Junácký domov na náměstí Práce, na Liberecku je jich kolem 2 500. Vrcholem je oblastní sraz v červnu 1947 s polskými hosty – a Kámen vítězů v Lidových sadech s lilií a letopočtem 1947."
-  },
-  {
-   "era": 2,
-   "from": 1948,
-   "to": 1950,
-   "label": "Pod SČM",
-   "title": "Únor, Svaz mládeže a konec registrací",
-   "date": "1948-09-07",
-   "text": "Po únoru 1948 odevzdávají činovníci legitimace a oddíly přecházejí pod Svaz české mládeže. Na podzim 1949 se do Junáka už nedá registrovat; oddíly přežívají pod Sokolem nebo se rozcházejí."
-  },
-  {
-   "era": 2,
-   "from": 1951,
-   "to": 1952,
-   "label": "Zákaz",
-   "title": "Zákaz a proces",
-   "date": "1952-06-27",
-   "dark": true,
-   "text": "Za vůdcovské zkoušky na chatě v Polesí u Rynoltic stojí liberečtí skautští vedoucí 27. června 1952 před Státním soudem v kauze „Jaroslav Tomsa a spol.“ Tomsa dostal čtyři roky za velezradu; rozsudky zrušily soudy až v letech 1968–1973."
-  }
- ],
- "sources": [
-  {
-   "h": "Dobový tisk",
-   "lead": "Noviny z let 1912–1952 v digitálních knihovnách. Většina libereckých titulů je volně v Krameriu Krajské vědecké knihovny v Liberci.",
-   "items": [
-    {
-     "n": "Stráž severu (1945–1952)",
-     "d": "Deník Národní fronty v pohraničí, vydávaný v Liberci; pravidelná rubrika „Junák hlásí“. Hlavní pramen k obnově Junáka po roce 1945.",
-     "key": "Stráž severu",
-     "where": "Kramerius KVK Liberec",
-     "url": "https://kramerius.kvkli.cz/uuid/uuid:2cdf4578-ae6c-410f-8152-7089df24c757"
-    },
-    {
-     "n": "Severák (1945–1946)",
-     "d": "Týdeník Krajského výboru SČM v Liberci; junácké rubriky „Junák hlásí“ a „Buď připraven!“ (řídí Aja). Dostupné po přihlášení (DNNT).",
-     "key": "Severák",
-     "where": "Česká digitální knihovna",
-     "url": "https://www.ceskadigitalniknihovna.cz/uuid/uuid:de924eb0-d68f-11dc-81be-000d606f5dc6"
-    },
-    {
-     "n": "Cesta míru (1952)",
-     "d": "Týdeník Krajského výboru KSČ v Liberci – oficiální verze procesu se skauty.",
-     "key": "Cesta míru",
-     "where": "Česká digitální knihovna (DNNT)"
-    },
-    {
-     "n": "Naše hory",
-     "d": "český týdeník vycházející v Horním Růžodole; rubriky o skautech a junácích",
-     "where": "Kramerius KVK Liberec",
-     "url": "https://kramerius.kvkli.cz",
-     "key": "Naše hory"
-    },
-    {
-     "n": "Reichenberger Zeitung",
-     "d": "liberecký německý deník; Pfadfinder, Wandervogel, spolkové zprávy",
-     "where": "Kramerius KVK Liberec",
-     "url": "https://kramerius.kvkli.cz",
-     "key": "Reichenberger Zeitung"
-    },
-    {
-     "n": "Reichenberger Tagesbote",
-     "d": "německý deník; pohled většinové společnosti na české skauty",
-     "where": "Kramerius KVK Liberec",
-     "url": "https://kramerius.kvkli.cz",
-     "key": "Reichenberger Tagesbote"
-    },
-    {
-     "n": "Gablonzer Tagblatt, Friedländer Zeitung, Grenzland-Zeitung a další regionální německé listy",
-     "where": "Kramerius KVK Liberec",
-     "url": "https://kramerius.kvkli.cz",
-     "key": "Gablonzer|Friedländer|Grenzland|Deutsches Volksblatt|Die Wahrheit|Teplitz"
-    },
-    {
-     "n": "Pojizerské listy, Hlasy Pojizerské",
-     "d": "turnovský a pojizerský tisk",
-     "where": "Kramerius KVK Liberec",
-     "url": "https://kramerius.kvkli.cz",
-     "key": "Pojizersk"
-    },
-    {
-     "n": "Národní listy, Národní osvobození, Večerní České slovo, Rudý večerník",
-     "where": "Národní digitální knihovna",
-     "url": "https://ndk.cz",
-     "key": "Národní listy|Národní osvobození|Večerní České|Rudý večerník"
-    },
-    {
-     "n": "Jüdische Zeitung, Jüdische Rundschau",
-     "d": "židovský tisk o Blau-Weiß a Makkabi",
-     "where": "Compact Memory, UB Frankfurt",
-     "url": "https://sammlungen.ub.uni-frankfurt.de/cm",
-     "key": "Jüdische"
-    },
-    {
-     "n": "Krkonoše – Jizerské hory: J. Marečková, Český skauting na Liberecku (9/2012)",
-     "d": "Přehled od počátků po 90. léta; Kámen vítězů, Skautská studánka.",
-     "key": "Marečková",
-     "where": "web časopisu",
-     "url": "https://krkonose.krnap.cz/apex/f?p=104:4:::NO:RP,4:P4_ID,P4_CP:2012-09-25,2"
-    },
-    {
-     "n": "Mladá fronta, Pojizerské listy a další regionální a celostátní tisk 1945–1952",
-     "d": "Jednotlivé zprávy o libereckých junácích.",
-     "key": "Mladá fronta|Pojizerské listy, \\[",
-     "where": "Česká digitální knihovna / Kramerius KVK"
-    }
-   ]
-  },
-  {
-   "h": "Skautský tisk",
-   "lead": "Časopisy Svazu junáků-skautů a dalších skautských organizací.",
-   "items": [
-    {
-     "n": "Junák",
-     "d": "časopis pro skauty a skautky, 1915–1940",
-     "where": "MZK (DNNT) a E-knihovna Archivu Junáka",
-     "url": "https://www.digitalniknihovna.cz/mzk",
-     "key": "Junák \\(|Junák,|^Junák"
-    },
-    {
-     "n": "Vůdce / Činovník",
-     "d": "činovnický časopis Svazu 1919–1940: jmenování, pocty, zápisy Náčelnictva",
-     "where": "E-knihovna Archivu Junáka",
-     "key": "Vůdce"
-    },
-    {
-     "n": "Oheň",
-     "d": "časopis Skautů práce (komunistický skauting) 1922–1925",
-     "where": "E-knihovna Archivu Junáka",
-     "key": "Oheň"
-    },
-    {
-     "n": "Rozkvět",
-     "where": "Národní digitální knihovna",
-     "url": "https://ndk.cz",
-     "key": "Rozkvět"
-    }
-   ]
-  },
-  {
-   "h": "Adresáře, ročenky a úřední tisky",
-   "items": [
-    {
-     "n": "Jahrbuch und Wohnungs-Anzeiger der Stadt Reichenberg",
-     "d": "liberecké adresáře se spolkovým rejstříkem",
-     "where": "Kramerius KVK Liberec",
-     "url": "https://kramerius.kvkli.cz",
-     "key": "Jahrbuch und Wohnungs"
-    },
-    {
-     "n": "Výroční zprávy škol, ročenky Gebirgsvereinu, vlastivědné sborníky, Amtsblatt",
-     "where": "Kramerius KVK Liberec",
-     "url": "https://kramerius.kvkli.cz",
-     "key": "Jahres-Bericht|Gebirgsvereines|Heimatkunde|Neuer Führer|Amtsblatt"
-    }
-   ]
-  },
-  {
-   "h": "Almanachy a dokumenty",
-   "items": [
-    {
-     "n": "Župní sraz Riegrovy župy v Liberci 1933",
-     "d": "almanach se statí 13 let skautingu na Liberecku",
-     "where": "E-knihovna Archivu Junáka",
-     "url": "https://drive.google.com/file/d/1BgE1meyHGTgVwwgXYjLzGMWWXNZ2XfLJ/view",
-     "key": "Župní sraz Riegrovy"
-    },
-    {
-     "n": "F. Kučera (ed.): Skauting v menšinách, Louny 1931",
-     "d": "almanach Župy Přemysla Oráče se statí J. Břeně Skauting na Liberecku",
-     "where": "E-knihovna Archivu Junáka",
-     "url": "https://drive.google.com/file/d/1J_C_9JNNW3CAEbcArQhlGU9K-tqkdaNJ/view",
-     "key": "Skauting v menšinách|F. Kučera"
-    },
-    {
-     "n": "Oddíly registrované ve Svazu skautů RČS k 1. květnu 1922",
-     "where": "E-knihovna Archivu Junáka",
-     "url": "https://drive.google.com/file/d/1QDEabkST1MZBAqDc8g31sM-SCKL-ZHGS/view",
-     "key": "Oddíly registrované"
-    },
-    {
-     "n": "Branný sraz skautské župy Riegrovy v Jičíně 1937",
-     "where": "E-knihovna Archivu Junáka",
-     "url": "https://drive.google.com/file/d/1_p1RNdv6W5iaptvJXngDLAY0Iroh1QMc/view",
-     "key": "Branný sraz"
-    },
-    {
-     "n": "Sraz župy Riegerovy, Mladá Boleslav 1935; Župní sraz Riegrovy župy v Hořicích 1936",
-     "where": "E-knihovna Archivu Junáka",
-     "key": "Sraz župy Riegerovy|Hořicích 1936"
-    },
-    {
-     "n": "S. Špindler: Severočeská skautská župa Přemysla Oráče 1919–1938 (2003)",
-     "where": "E-knihovna Archivu Junáka",
-     "url": "https://drive.google.com/file/d/1BwNn83x3LzMhkYncK88mdBJW1ueUY1WK/view",
-     "key": "Špindler"
-    }
-   ]
-  },
-  {
-   "h": "Kroniky, zápisy a vzpomínky",
-   "items": [
-    {
-     "n": "V. Drbohlav – Rozita: Drobečky z historie skautingu na Liberecku",
-     "d": "vzpomínky a výpisy z dobových dokumentů, 1995–1998 (3. klub oldskautů Liberec)",
-     "key": "Drbohlav"
-    },
-    {
-     "n": "Kronika dívčího oddílu (družina Racků) Horní Růžodol 1930–1937",
-     "where": "Severočeské muzeum v Liberci",
-     "key": "Kronika dívčího oddílu"
-    },
-    {
-     "n": "Zápisy schůzí I. dívčího oddílu 1920–1922 a skautský deník M. Horáčkové 1921–22",
-     "key": "Zápisy schůzí|Horáčkové"
-    }
-   ]
-  },
-  {
-   "h": "Odborné práce a literatura",
-   "items": [
-    {
-     "n": "L. Koula: Vznik a vývoj skautských organizací v Liberci a okolí od roku 1920 po současnost",
-     "d": "diplomová práce, TUL 2021 – výchozí verze, kterou osa rozšiřuje a ověřuje",
-     "key": "DP 2021"
-    },
-    {
-     "n": "J. Mareš: Junák v Liberci 1920–1952",
-     "d": "středoškolská odborná práce, 2007 (SOkA Liberec)",
-     "key": "Mareš"
-    },
-    {
-     "n": "I. Krupauerová: Politické procesy 50. let – kauza Jaroslav Tomsa a spol. (DP TUL 2013)",
-     "d": "Proces s libereckými skauty 1952, životopisy obžalovaných, rozhovory s pamětníky, spisy ABS a NA.",
-     "key": "Krupauerová",
-     "where": "TUL"
-    },
-    {
-     "n": "J. Zachariáš: Soudní proces s tzv. ilegálním ústředím Junáka aneb Karel Průcha a spol. (1952), ÚDV 2005",
-     "d": "Hlavní proces s Mikšovičem a dokumenty StB k liberecké odnoži.",
-     "key": "Zachariáš",
-     "where": "policie.gov.cz (PDF)",
-     "url": "https://policie.gov.cz/soubor/soudni-proces-s-tzv-ilegalnim-ustredim-junaka-aneb-karel-prucha-a-spol-1952-pdf.aspx"
-    },
-    {
-     "n": "J. Vít, M. Vlasatá, Š. Vašátková",
-     "d": "bakalářské práce TUL o skautingu, Jičínsku a trampingu",
-     "url": "https://dspace.tul.cz",
-     "where": "DSpace TUL",
-     "key": "J. Vít|Vlasatá|Vašátková"
-    },
-    {
-     "n": "J. Jiráň: Skauting v meziválečném období (disertace 2023); H. Černá: YMCA 1919–1951 (DP 2009); T. Jelínek: Výchova v přírodě a německé organizace skautského typu (disertace)",
-     "where": "E-knihovna Archivu Junáka",
-     "key": "Jiráň|Černá|Jelínek"
-    },
-    {
-     "n": "R. Karpaš a kol.: Kniha o Liberci (2004); P. D. Vinklát; B. Hurikán; M. Lhotová; V. Stanislav; H. Gold",
-     "d": "literatura o Liberci, trampingu, turistice a židovské komunitě",
-     "key": "Karpaš|Vinklát|Hurikán|Lhotová|Stanislav|Gold"
-    },
-    {
-     "n": "Databáze Sochy a města",
-     "d": "Kámen vítězů v Lidových sadech (záznam 18984).",
-     "key": "Sochy a města",
-     "where": "sochyamesta.cz",
-     "url": "https://sochyamesta.cz/zaznam/18984"
-    }
-   ]
-  }
- ],
- "eras": [
-  {
-   "from": 1911,
-   "to": 1945,
-   "title": "Od Pfadfinderů po Mnichov a válku",
-   "lead": "Němečtí Pfadfinder a Wandervogel, první čeští junáci a skautky, dělničtí a židovští skauti – až po konec činnosti po Mnichovu.",
-   "href": "epocha-1911-1945.html",
-   "img": "rz-1913",
-   "page_lead": "Od Pfadfinderů barona Liebiega přes první české junáky, skautky z Horního Růžodolu a dělnické skauty až po konec činnosti po Mnichovu. U každého záznamu je zdroj a stav ověření."
-  },
-  {
-   "from": 1945,
-   "to": 1952,
-   "title": "Obnova a první zákaz",
-   "lead": "Návrat českých skautů do Liberce po válce, desítky nových oddílů a Kámen vítězů – až po zrušení Junáka a proces s vedoucími v roce 1952.",
-   "href": "epocha-1945-1952.html",
-   "img": "kamen-1947",
-   "hero": {
-    "main": "kamen-1947",
-    "small": []
-   },
-   "page_lead": "Obnova Junáka v Liberci po válce, oddíly, smečky a kluby oldskautů, vrchol v roce 1947, přechod pod Svaz mládeže a proces s libereckými vedoucími.",
-   "status": "V procesu",
-   "status_note": "Na epoše právě pracujeme. Kostra je převzatá z diplomové práce (2021), postupně ji ověřujeme a doplňujeme ze Stráže severu 1945–1951 a z diplomové práce Ivy Krupauerové o procesu 1952."
-  },
-  {
-   "from": 1952,
-   "to": 1970,
-   "title": "Mezi zákazy",
-   "lead": "Oddíly přežívající v turistice a Pionýru, obnova Junáka v roce 1968 a nový zákaz v roce 1970."
-  },
-  {
-   "from": 1970,
-   "to": 1989,
-   "title": "Druhý zákaz",
-   "lead": "Skautské oddíly pod jinou hlavičkou, tábory a předávání tradice dalším generacím."
-  },
-  {
-   "from": 1989,
-   "to": 1999,
-   "title": "Obnova Junáka",
-   "lead": "Obnova skautingu v Liberci po listopadu 1989, návrat starých vůdců a vznik nových středisek."
-  },
-  {
-   "from": 2000,
-   "to": "dnes",
-   "title": "Současnost",
-   "lead": "Liberecká střediska, krajská rada a skauting dnes."
-  }
- ]
 }
