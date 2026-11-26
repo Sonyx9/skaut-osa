@@ -1,4 +1,4 @@
-# Místa libereckého skautingu 1913–1939
+# Místa libereckého skautingu 1913–1952
 
 Místo = sekce `## Název`. Pole: id, typ (heim, klubovna, tábor, sraz, výlet, oddíl, událost), proud, souřadnice (lat, lon; prázdné = místo zatím neumíme přesně určit), přesnost (přesně / obec / přibližně), hledat (regulární výraz pro přiřazení záznamů z osy), popis. 🤖 = sepsal Claude z osy, ke kontrole.
 
@@ -116,8 +116,8 @@ Místo = sekce `## Název`. Pole: id, typ (heim, klubovna, tábor, sraz, výlet,
 - proud: cz-svaz
 - souřadnice: 50.5452, 15.3089
 - přesnost: obec
-- hledat: Veselé u Rovenska
-- popis: 🤖 II. česká lesní škola v červenci 1938, mezi absolventy členové libereckého 1. oddílu.
+- hledat: Veselé u Rovenska|ve Veselé
+- popis: 🤖 II. česká lesní škola v červenci 1938, mezi absolventy členové libereckého 1. oddílu. V létě 1946 tu tábořily 1. chlapecký a 1. dívčí oddíl – první poválečné tábory.
 
 ## Hrádek nad Nisou
 - id: hradek
@@ -253,3 +253,102 @@ Místo = sekce `## Název`. Pole: id, typ (heim, klubovna, tábor, sraz, výlet,
 - přesnost: neurčeno
 - hledat: Královsk\w+ výšin
 - popis: 🤖 Start každoroční honby na lišku 1. oddílu v Jizerských horách; výlety skautek.
+
+## Kámen vítězů v Lidových sadech
+- id: kamen-vitezu
+- typ: událost
+- proud: cz-svaz
+- souřadnice: 50.7765, 15.0782
+- přesnost: přesně
+- hledat: Kámen vítězů|Kamene vítězů|Junácká stezka|Junáckou stezku
+- popis: 🤖 Žulový pomník (260 × 100 × 60 cm, 1,5 t) postavený k oblastnímu srazu 1947, návrh Svatopluk Technik. Odtud vedla zeleně značená Junácká stezka na Žulový vrch a do Kristiánova. Znovu odhalen 9. 5. 1990.
+
+## Junácký domov Pod Branou
+- id: junacky-domov-pod-branou
+- typ: klubovna
+- proud: cz-svaz
+- souřadnice: 
+- přesnost: obec
+- hledat: Junáck\w+ domov|Junáckém domově
+- popis: 🤖 Hlavní poválečná základna libereckých junáků: nejdřív barák ve Svojsíkově (Körnerově) třídě, od dubna 1946 bývalá budova filmového ústavu (Marečková: náměstí Pod Branou; Stráž severu: náměstí Práce). 1951 přidělen Textilaně. ❓ Přesná adresa a souřadnice.
+
+## Dům mládeže na Šaldově náměstí
+- id: dum-mladeze-saldovo
+- typ: klubovna
+- proud: cz-svaz
+- souřadnice: 
+- přesnost: obec
+- hledat: Domě mládeže|Šaldově náměstí
+- popis: 🤖 Okrsková místnost Junáka v Domě mládeže, Šaldovo náměstí čp. 352 (1946), sídlo 15. klubu oldskautů.
+
+## Domov II. střediska U Vápenky
+- id: vapenka
+- typ: klubovna
+- proud: cz-svaz
+- souřadnice: 
+- přesnost: obec
+- hledat: Vápenk|Vápence
+- popis: 🤖 Junácký domov 2. střediska Podještědí nad stanicí tramvaje č. 3 „U Vápenky“ (1945), klubovna i vodních skautů.
+
+## Chata v Polesí u Rynoltic
+- id: polesi-rynoltice
+- typ: klubovna
+- proud: cz-svaz
+- souřadnice: 50.7980, 14.8260
+- přesnost: obec
+- hledat: Polesí
+- popis: 🤖 Skautská chata (později v majetku Hlaváčkových), kde se v březnu 1951 konaly ilegální vůdcovské zkoušky – záminka procesu „Jaroslav Tomsa a spol.“. 1951 sem jezdily i skautky.
+
+## Stará Lesná / Tatranská Lomnice
+- id: stara-lesna
+- typ: tábor
+- proud: cz-svaz
+- souřadnice: 49.1517, 20.2933
+- přesnost: obec
+- hledat: Tatransk\w+ Lomnic|Staré Lesné|Stará Lesná|Vysokých Tatr
+- popis: 🤖 Tábory 1. chlapeckého a 1. dívčího oddílu v létě 1947 (dvě louky vedle sebe, společná kuchyně) a 1. oddílu 1948.
+
+## Orava – Párnica
+- id: parnica
+- typ: tábor
+- proud: cz-svaz
+- souřadnice: 49.2033, 19.2386
+- přesnost: obec
+- hledat: Párnic|Oravě|Orav
+- popis: 🤖 Hromadný tábor libereckých oddílů v létě 1949 (až 250 účastníků), v roce 1950 tábor s pionýry.
+
+## Souš
+- id: sous
+- typ: tábor
+- proud: cz-svaz
+- souřadnice: 50.7889, 15.3186
+- přesnost: přibližně
+- hledat: Souš
+- popis: 🤖 Pracovní tábor II. střediska v létě 1946 a tábor střediska vodních skautů.
+
+## Turnov
+- id: turnov
+- typ: sraz
+- proud: cz-svaz
+- souřadnice: 50.5874, 15.1569
+- přesnost: obec
+- hledat: Turnov
+- popis: 🤖 Sraz Riegrovy oblasti 8.–9. 6. 1946, kam přijelo 395 junáků a skautek z Podještědí.
+
+## Varnsdorf
+- id: varnsdorf
+- typ: sraz
+- proud: cz-svaz
+- souřadnice: 50.9116, 14.6182
+- přesnost: obec
+- hledat: Varnsdorf(?!u)
+- popis: 🤖 Krajský sjezd junáků bývalé Podještědské oblasti o Svatodušních svátcích 1948.
+
+## Vráž u Písku
+- id: vraz
+- typ: tábor
+- proud: cz-svaz
+- souřadnice: 49.3840, 14.1300
+- přesnost: obec
+- hledat: Vráž
+- popis: 🤖 Tábor 1. dívčího oddílu v létě 1949.

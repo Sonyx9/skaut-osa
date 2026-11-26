@@ -270,8 +270,15 @@
  "sources": [
   {
    "h": "Dobový tisk",
-   "lead": "Noviny z let 1912–1940 v digitálních knihovnách. Většina libereckých titulů je volně v Krameriu Krajské vědecké knihovny v Liberci.",
+   "lead": "Noviny z let 1912–1952 v digitálních knihovnách. Většina libereckých titulů je volně v Krameriu Krajské vědecké knihovny v Liberci.",
    "items": [
+    {
+     "n": "Stráž severu (1945–1952)",
+     "d": "Deník Národní fronty v pohraničí, vydávaný v Liberci; pravidelná rubrika „Junák hlásí“. Hlavní pramen k obnově Junáka po roce 1945.",
+     "key": "Stráž severu",
+     "where": "Kramerius KVK Liberec",
+     "url": "https://kramerius.kvkli.cz/uuid/uuid:2cdf4578-ae6c-410f-8152-7089df24c757"
+    },
     {
      "n": "Naše hory",
      "d": "český týdeník vycházející v Horním Růžodole; rubriky o skautech a junácích",
@@ -318,6 +325,13 @@
      "where": "Compact Memory, UB Frankfurt",
      "url": "https://sammlungen.ub.uni-frankfurt.de/cm",
      "key": "Jüdische"
+    },
+    {
+     "n": "Krkonoše – Jizerské hory: J. Marečková, Český skauting na Liberecku (9/2012)",
+     "d": "Přehled od počátků po 90. léta; Kámen vítězů, Skautská studánka.",
+     "key": "Marečková",
+     "where": "web časopisu",
+     "url": "https://krkonose.krnap.cz/apex/f?p=104:4:::NO:RP,4:P4_ID,P4_CP:2012-09-25,2"
     }
    ]
   },
@@ -445,6 +459,12 @@
      "key": "Mareš"
     },
     {
+     "n": "I. Krupauerová: Politické procesy 50. let – kauza Jaroslav Tomsa a spol. (DP TUL 2013)",
+     "d": "Proces s libereckými skauty 1952, životopisy obžalovaných, rozhovory s pamětníky, spisy ABS a NA.",
+     "key": "Krupauerová",
+     "where": "TUL"
+    },
+    {
      "n": "J. Vít, M. Vlasatá, Š. Vašátková",
      "d": "bakalářské práce TUL o skautingu, Jičínsku a trampingu",
      "url": "https://dspace.tul.cz",
@@ -460,6 +480,13 @@
      "n": "R. Karpaš a kol.: Kniha o Liberci (2004); P. D. Vinklát; B. Hurikán; M. Lhotová; V. Stanislav; H. Gold",
      "d": "literatura o Liberci, trampingu, turistice a židovské komunitě",
      "key": "Karpaš|Vinklát|Hurikán|Lhotová|Stanislav|Gold"
+    },
+    {
+     "n": "Databáze Sochy a města",
+     "d": "Kámen vítězů v Lidových sadech (záznam 18984).",
+     "key": "Sochy a města",
+     "where": "sochyamesta.cz",
+     "url": "https://sochyamesta.cz/zaznam/18984"
     }
    ]
   }

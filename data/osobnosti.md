@@ -1,4 +1,4 @@
-# Osobnosti libereckého skautingu 1913–1939
+# Osobnosti libereckého skautingu 1913–1952
 
 Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-svaz, cz-soc, zid, kontext), období, role, hledat (regulární výraz – podle něj se k osobě automaticky přiřadí záznamy z časové osy), popis (jen to, co doloží osa; 🤖 = sepsal Claude z osy, ke kontrole).
 
@@ -38,10 +38,10 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - id: jaroslav-tomsa
 - přezdívka: Tom
 - proud: cz-svaz
-- období: 1919–1933
-- role: zakladatel, rádce, jednatel sboru, vůdce vlčat, zástupce okresního zpravodaje
+- období: 1919–1952
+- role: zakladatel, rádce, jednatel sboru, vůdce vlčat, zástupce okresního zpravodaje; 1945–1948 oblastní velitel Podještědské oblasti a II. zemský místonáčelník
 - hledat: Jaroslava? Tomsa|Jaroslava Tomsy|Jar\. Tomsa|J\. Tomsa|prof\. Tomsa|br\. Tomsa|Tomsy \(Toma
-- popis: 🤖 Kolem čtrnáctiletého „Toma“ se koncem roku 1919 zformovala první česká skautská skupina v Liberci; od něj také pocházejí první zprávy o skautingu ve městě. Byl rádcem 1. oddílu, pomáhal zakládat oddíly v Lomnici a v Hrádku, dirigoval skautský orchestr a byl jednatelem sboru. V roce 1924 se stal vůdcem smečky vlčat. V letech 1926–1933 studoval v Praze, v roce 1930 je doložen jako zástupce okresního zpravodaje.
+- popis: 🤖 Kolem čtrnáctiletého „Toma“ se koncem roku 1919 zformovala první česká skautská skupina v Liberci; od něj také pocházejí první zprávy o skautingu ve městě. Byl rádcem 1. oddílu, pomáhal zakládat oddíly v Lomnici a v Hrádku, dirigoval skautský orchestr a byl jednatelem sboru. V roce 1924 se stal vůdcem smečky vlčat. V letech 1926–1933 studoval v Praze, v roce 1930 je doložen jako zástupce okresního zpravodaje. Po válce jako ředitel průmyslové školy vede obnovený Junák na Liberecku: oblastní velitel Podještědské oblasti (od 1945), II. zemský místonáčelník (1946), zkouší vůdce, získává povolení ke Kameni vítězů (1947). Po únoru 1948 je zbaven funkcí oblastního velitele i ředitele školy. 1949 ještě vede vlčata na táboře na Oravě. 29. 1. 1952 zatčen, 27. 6. 1952 odsouzen v procesu „Jaroslav Tomsa a spol.“ na 4 roky (Valdice do 1956). Na jaře 1968 svolává obnovu Junáka v Liberci.
 
 ## Ladislav Tomsa
 - id: ladislav-tomsa
@@ -55,10 +55,10 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - id: lila-tomsova
 - přezdívka: Lila
 - proud: cz-svaz
-- období: 1920–1921
-- role: první vůdkyně 1. dívčího oddílu
+- období: 1920–1946
+- role: první vůdkyně 1. dívčího oddílu; 1946 vůdkyně roje světlušek
 - hledat: Tomsov
-- popis: 🤖 Vedla dívky, které se od července 1920 scházely v 1. dívčím oddíle. Jako vůdkyně je doložena ještě v srpnu 1921.
+- popis: 🤖 Vedla dívky, které se od července 1920 scházely v 1. dívčím oddíle. Jako vůdkyně je doložena ještě v srpnu 1921. V listopadu 1946 přebírá roj světlušek.
 
 ## Slávka Dlouhá
 - id: slavka-dlouha
@@ -232,3 +232,174 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - role: zakladatel Wandervogelu v Liberci
 - hledat: Jungbauer
 - popis: 🤖 Pozdější univerzitní profesor. Na jaře 1911 jako učitel v Liberci založil místní Wandervogel; místním vedoucím byl prof. Hans Baer. V roce 1912 měli liberečtí Wandervögel tři oddíly.
+
+## Ivan Mikšovič
+- id: ivan-miksovic
+- proud: cz-svaz
+- období: 1945–1952
+- role: redaktor Stráže severu, organizátor Junáka v pohraničí, zástupce oblastního velitele
+- hledat: Mikšovi
+- popis: 🤖 Redaktor ze Železného Brodu, v červnu 1945 pověřený velitelstvím Junáka organizovat oddíly v severním pohraničí. Zástupce oblastního velitele Podještědské oblasti, 1947 tiskový referent výpravy na jamboree v Moissonu. V březnu 1951 zkouší vůdce na chatě v Polesí u Rynoltic. V květnu 1952 odsouzen v procesu „Karel Průcha a spol.“ na 10 let; 1966 rehabilitován, 1968 tiskový mluvčí Junáka.
+
+## Karel Hlaváček st.
+- id: karel-hlavacek-st
+- proud: cz-svaz
+- období: 1945–1952
+- role: člen oblastního velitelství, zkoušející vůdcovských zkoušek
+- hledat: Hlaváček st|Hlaváčka st|ředitel Karel Hlaváček
+- popis: 🤖 Ředitel, člen oblastního velitelství Junáka (1945), zkouší při vůdcovských zkouškách 1946. Po únoru 1948 zatčen, v lednu 1952 znovu; v procesu „Jaroslav Tomsa a spol.“ odsouzen na 18 měsíců, propuštěn po amnestii. Rehabilitován 1968.
+
+## Karel Hlaváček ml.
+- id: karel-hlavacek-ml
+- přezdívka: Nibowaka
+- proud: cz-svaz
+- období: 1945–1952
+- role: zástupce vůdce a od 1947 vůdce 1. oddílu
+- hledat: Nibowaka|Hlaváček ml|Hlaváčka ml|1\. \(Karel Hlaváček\)|hlavní vedoucí Karel Hlaváček|Hlaváček narukoval|po Karlu Hlaváčkovi
+- popis: 🤖 Od července 1945 zástupce vůdce 1. oddílu, v lednu 1947 přebírá oddíl po Jaroslavu Čapkovi. 1949 hlavní vedoucí hromadného tábora na Oravě, na podzim předává oddíl Emilu Wiesnerovi. V lednu 1952 zatčen, odsouzen na 1 rok podmíněně; po návratu obnovuje s O. Bechem turistické značení v KČT. Rehabilitován 1968.
+
+## Hana Hlaváčková
+- id: hana-hlavackova
+- proud: cz-svaz
+- období: 1945–1952
+- role: vůdkyně 1. dívčího oddílu, zástupkyně okrskového velitele
+- hledat: Hlaváčkov|Šimonov
+- popis: 🤖 Od srpna 1945 v 1. dívčím oddíle, jeho vůdkyní 1946–1948 (❓ od února, nebo podzimu 1946). 1947 vede dívčí okres a je zástupkyní okrskového velitele. Tábory oddílu: Veselá, Tatry, pod Deštnou, Vráž. V procesu 1952 odsouzena, po odvolání podmíněně; rehabilitována 1969. Po roce 1968 okresní výchovná zpravodajka, 1990 spoluzakládá středisko Vlasta.
+
+## Oldřich Bech
+- id: oldrich-bech
+- proud: cz-svaz
+- období: 1945–1952
+- role: junácký tajemník ČSM 1948
+- hledat: Bech
+- popis: 🤖 Skaut z Jičína, v Liberci od 1945. Vůdcovské zkoušky na jaře 1947 u J. Tomsy. Květen–září 1948 junácký tajemník krajského sekretariátu ČSM, pak v pionýrské radě. V lednu 1952 zatčen a odsouzen v procesu „Jaroslav Tomsa a spol.“; poté s K. Hlaváčkem ml. v KČT.
+
+## Jaroslav Čapek
+- id: jaroslav-capek
+- přezdívka: Dag
+- proud: cz-svaz
+- období: 1945–1952
+- role: vůdce 1. oddílu, střediskový velitel I. střediska
+- hledat: Čapek|Čapka|Daga?\b
+- popis: 🤖 Původně lomnický skaut; 22. 7. 1945 obnovuje 1. oddíl a je jeho vůdcem, od ledna 1947 střediskový velitel I. střediska (vede i pěvecký soubor). Vyrobil chodský čakan, putovní cenu Svojsíkova závodu. Podle Krupauerové za normalizace zaměstnával v Saurerových dílnách propuštěné skauty.
+
+## Oleg Kovářík
+- id: oleg-kovarik
+- přezdívka: Kápi
+- proud: cz-svaz
+- období: 1946–1949
+- role: kapitán vodních skautů
+- hledat: Kovářík
+- popis: 🤖 Kapitán libereckého vodáckého oddílu (Bobři), který v roce 1946 vyhrál Svojsíkův závod; s vodním skautingem spojen až do 90. let.
+
+## Karel Ptáček
+- id: karel-ptacek
+- přezdívka: Racek
+- proud: cz-svaz
+- období: 1946–1949
+- role: zakladatel vodních skautů Bobři
+- hledat: Ptáček|Racek
+- popis: 🤖 Mezi zakladateli družiny vodních skautů Bobři v lednu 1946 (Marečková 2012).
+
+## Miroslav Havránek
+- id: miroslav-havranek
+- přezdívka: Žebro
+- proud: cz-svaz
+- období: 1946–1948
+- role: okresní (okrskový) velitel Liberec
+- hledat: Havránk
+- popis: 🤖 Architekt, okresní velitel Junáka v Liberci (1947), na rok 1948 okrskový velitel. V září 1948 stojí v čele Junáckého klubu ve skupině SČM Liberec I a je zvolen místopředsedou okresního výboru SČM.
+
+## František Hercík
+- id: frantisek-hercik
+- proud: cz-svaz
+- období: 1945
+- role: první poválečný okresní velitel
+- hledat: Hercík
+- popis: 🤖 V červnu 1945 vede školu vedoucích Junáka, 31. 7. 1945 je prvním okresním velitelem a vede týdenní kurz vedoucích.
+
+## Unčovský
+- id: uncovsky
+- proud: cz-svaz
+- období: 1945–1946
+- role: velitel II. střediska Podještědí
+- hledat: Unčovsk
+- popis: 🤖 Zakladatel 2. střediska „Podještědí“ (listopad 1945, domov U Vápenky), 1946 vede pracovní tábor na Souši. ❓ Křestní jméno.
+
+## Jindra Kňourková
+- id: jindra-knourkova
+- proud: cz-svaz
+- období: 1946–1947
+- role: vůdkyně 2. dívčího oddílu, střediskové velitelka
+- hledat: Kňourk
+- popis: 🤖 Vede 2. dívčí oddíl vzniklý v srpnu 1946, v dubnu 1947 zvolena střediskovou velitelkou skautek.
+
+## Jiří Grus
+- id: jiri-grus
+- proud: cz-svaz
+- období: 1946–1948
+- role: předseda oblastního akčního výboru Junáka
+- hledat: Grus
+- popis: 🤖 Ing., po únoru 1948 v čele oblastního akčního výboru 17. junácké oblasti a místopředseda SČM; mluví na krajském sjezdu ve Varnsdorfu v květnu 1948.
+
+## Jaroslav Schnirch
+- id: jaroslav-schnirch
+- přezdívka: Selim
+- proud: cz-svaz
+- období: 1945–1948
+- role: vůdce 5. a 2. oddílu
+- hledat: Schnirch|Selim
+- popis: 🤖 Od září 1945 vede 5. oddíl, v dubnu 1947 po návratu z vojny přebírá 2. oddíl po V. Drbohlavovi.
+
+## Václav Drbohlav
+- id: vaclav-drbohlav
+- přezdívka: Rozita
+- proud: cz-svaz
+- období: 1946–1947
+- role: vůdce 2. oddílu, kronikář
+- hledat: Rozit|Drbohlavovi
+- popis: 🤖 Vůdce 2. oddílu do dubna 1947, autor zpráv do Stráže severu. Později autor seriálu „Drobečky z historie skautingu na Liberecku“, hlavního pramene k dějinám libereckého skautingu.
+
+## Emil Wiesner
+- id: emil-wiesner
+- přezdívka: Ema
+- proud: cz-svaz
+- období: 1949–1950
+- role: vůdce 1. oddílu
+- hledat: Wiesner
+- popis: 🤖 Na podzim 1949 přebírá 1. oddíl po Karlu Hlaváčkovi ml.
+
+## Jindřich Sezima
+- id: jindrich-sezima
+- proud: cz-svaz
+- období: 1946–1948
+- role: vůdce 15. klubu oldskautů, zástupce okrskového velitele
+- hledat: Sezim
+- popis: 🤖 Vůdce 15. klubu oldskautů (1946), který pečuje o 16. smečku vlčat; na rok 1948 zástupce okrskového velitele.
+
+## Jan Šmíd
+- id: jan-smid
+- přezdívka: Handy
+- proud: cz-svaz
+- období: 1946
+- role: zakladatel 11. oddílu
+- hledat: Šmíd|Handy
+- popis: 🤖 V dubnu 1946 zakládá 11. oddíl.
+
+## Svatopluk Technik
+- id: svatopluk-technik
+- přezdívka: Sváťa
+- proud: cz-svaz
+- období: 1947
+- role: architekt, autor návrhu Kamene vítězů
+- hledat: Technik
+- popis: 🤖 Liberecký architekt a skaut, autor grafického návrhu Kamene vítězů v Lidových sadech (1947).
+
+## Zdeněk Ježek
+- id: zdenek-jezek
+- přezdívka: Muskwa
+- proud: cz-svaz
+- období: 1946–1952
+- role: člen 1. oddílu, obžalovaný v procesu 1952
+- hledat: Ježek|Muskwa
+- popis: 🤖 Člen 1. oddílu J. Čapka. V procesu „Jaroslav Tomsa a spol.“ 1952 odsouzen, odvolací soud ho zprostil. Později epidemiolog WHO; jeho vzpomínky (s I. Jirků) jsou pramenem Krupauerové.
