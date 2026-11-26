@@ -520,6 +520,20 @@
           "key": "Almanach prvního oblastního",
           "where": "E-knihovna Skautského institutu",
           "url": "https://drive.google.com/file/d/1PnQjjJvPHcQhSPuBE0i8rgRFXO5Qfz9p/view"
+        },
+        {
+          "n": "Historie 11. oddílu skautů WOSA",
+          "d": "web oddílu, výpisy z kroniky 1946",
+          "key": "WOSA",
+          "where": "wosa.skautlib.cz",
+          "url": "https://wosa.skautlib.cz/historie/"
+        },
+        {
+          "n": "Historie přístavu Maják Liberec",
+          "d": "web přístavu – vodní skauti od 1946, tábory Souš a Jizera",
+          "key": "Maják Liberec",
+          "where": "majak-liberec.cz",
+          "url": "https://www.majak-liberec.cz/o-nas/"
         }
       ]
     }

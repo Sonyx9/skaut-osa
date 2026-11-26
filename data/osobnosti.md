@@ -264,7 +264,7 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - období: 1945–1952
 - role: vůdkyně 1. dívčího oddílu, zástupkyně okrskového velitele
 - hledat: Hlaváčkov|Šimonov
-- popis: 🤖 Od srpna 1945 v 1. dívčím oddíle, jeho vůdkyní 1946–1948 (❓ od února, nebo podzimu 1946). 1947 vede dívčí okres a je zástupkyní okrskového velitele. Tábory oddílu: Veselá, Tatry, pod Deštnou, Vráž. V procesu 1952 odsouzena, po odvolání podmíněně; rehabilitována 1969. Po roce 1968 okresní výchovná zpravodajka, 1990 spoluzakládá středisko Vlasta.
+- popis: 🤖 Od srpna 1945 v 1. dívčím oddíle, jeho vůdkyní 1946–1948 (❓ od února, nebo podzimu 1946). 1947 vede dívčí okres a je zástupkyní okrskového velitele. Tábory oddílu: Veselá, Tatry, pod Deštnou, Vráž. V procesu 1952 odsouzena, po odvolání podmíněně; rehabilitována 1969. Po roce 1968 okresní výchovná zpravodajka, 1990 spoluzakládá středisko Vlasta. Provdaná Šimonová, nar. 31. 12. 1929, zemřela 12. 7. 2022 (so-novinky.obadalek.cz); oddíl vedla, „když jí ještě nebylo sedmnáct let“.
 
 ## Oldřich Bech
 - id: oldrich-bech
@@ -290,7 +290,7 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - období: 1946–1949
 - role: kapitán vodních skautů
 - hledat: Kovářík
-- popis: 🤖 Kapitán libereckého vodáckého oddílu (Bobři), který v roce 1946 vyhrál Svojsíkův závod; s vodním skautingem spojen až do 90. let.
+- popis: 🤖 Kapitán libereckého vodáckého oddílu (Bobři), který v roce 1946 vyhrál Svojsíkův závod; s vodním skautingem spojen až do 90. let. Do Liberce přišel z Nymburka, kde vedl vodní skauty; tábor 1947 na Souši vedl už jako kapitán, po táboře 1948 narukoval. 1970 vede tábor Majáku na Orlíku, 1990 znovu kapitánem. (Maják Liberec, web)
 
 ## Karel Ptáček
 - id: karel-ptacek
