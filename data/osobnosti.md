@@ -358,7 +358,7 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - období: 1946–1947
 - role: vůdce 2. oddílu, kronikář
 - hledat: Rozit|Drbohlavovi
-- popis: 🤖 Vůdce 2. oddílu do dubna 1947, autor zpráv do Stráže severu. Později autor seriálu „Drobečky z historie skautingu na Liberecku“, hlavního pramene k dějinám libereckého skautingu.
+- popis: 🤖 Vůdce 2. oddílu do dubna 1947, autor zpráv do Stráže severu. Později autor seriálu „Drobečky z historie skautingu na Liberecku“, hlavního pramene k dějinám libereckého skautingu – vycházel v měsíčníku 3. klubu oldskautů Liberec (klubovna Zadní ul. 1) v letech 1994–2004 (Krupauerová 2013); na disku máme č. 1–119 (do dubna 2004). Narozen asi 1928/29 (v březnu 1945 šestnáctiletý učeň, Drobečky 57); v roce 2007 ještě žil – měl u sebe kroniku 2. oddílu a poskytoval ústní vzpomínky (Mareš 2007). ❓ Datum úmrtí se online dohledat nepodařilo (26. 11. 2026) – zeptat se ve 3. klubu OS.
 
 ## Emil Wiesner
 - id: emil-wiesner
