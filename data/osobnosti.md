@@ -105,10 +105,10 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 ## Ervín Dlouhý
 - id: ervin-dlouhy
 - proud: cz-svaz
-- období: 1932–1935
-- role: zástupce okresního zpravodaje
-- hledat: Ervín Dlouhý|E\. Dlouhý|z\. o\. z\. Dlouhého
-- popis: 🤖 Zástupce okresního zpravodaje na začátku 30. let. Kontroloval oddíly, vedl delegaci do Jičína (1932) a podle Junáka vedl i nově založený 2. chlapecký oddíl.
+- období: 1920–1936
+- role: rádce, zástupce okresního zpravodaje, okresní zpravodaj
+- hledat: Ervín Dlouhý|E\. Dlouhý|z\. o\. z\. Dlouhého|O\. Dlouhý|Ervin Dlouhý
+- popis: 🤖 JUC. Ervín Dlouhý byl rádcem už v prvním libereckém oddíle 1920. Svaz mu udělil odznak Lvího skauta (1928) a bronzovou svastiku (1930). Od prosince 1930 zástupce okresního zpravodaje, od října 1933 okresní zpravodaj pro Liberec. S prof. Jaroslavem Tomsou sestavil almanach k župnímu srazu v Liberci 1933 a na srazu v Mladé Boleslavi 1935 vedl závody hlídek. ❓ Zda je „O. Dlouhý“ ze slibu 1921 tatáž osoba.
 
 ## František Toman
 - id: frantisek-toman
@@ -146,10 +146,10 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 ## Ladislav Drůbek
 - id: ladislav-drubek
 - proud: cz-svaz
-- období: 1922–1932
+- období: 1920–1932
 - role: okresní zpravodaj
 - hledat: Drůb
-- popis: 🤖 Dr. Ladislav Drůbek, okresní zpravodaj Svazu (doložen 1922, v kronice Racků ještě 1932).
+- popis: 🤖 Prof. Dr. Ladislav Drůbek z libereckého reálného gymnázia byl okresním zpravodajem Svazu od začátku 20. let – v roce 1921 měl na starost Liberec, Jablonec, Chrastavu, Frýdlant a Nové Město p. S. v rámci mladoboleslavské župy. V roce 1928 mu Náčelnictvo svěřilo i jablonecký okres. V kronice Racků je doložen ještě 1932.
 
 ## Sláva Řehák
 - id: slava-rehak
@@ -200,3 +200,35 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - role: zakladatel a vůdce Blau-Weiß Reichenberg
 - hledat: Tausig
 - popis: 🤖 Narozen 28. 12. 1897 v Liberci. Jako středoškolák založil v roce 1914 místní skupinu židovského Wanderbundu Blau-Weiß a vedl její výpravy (Krkonoše, červenec 1914). Za války byl několikrát raněn a padl do zajetí, kde se začal učit hebrejsky. Potom vystudoval medicínu a žil v Izraeli jako Dr. Ernst Eliahu Tausig. Zemřel náhle 8. 12. 1964. Zdroj: Jüdische Zeitung 1914 a nekrolog v MB (Tel Aviv) 15. 1. 1965, Compact Memory.
+
+## A. B. Svojsík
+- id: ab-svojsik
+- proud: cz-svaz
+- období: 1922
+- role: náčelník Svazu junáků-skautů
+- hledat: Svojsík
+- popis: 🤖 Zakladatel českého skautingu. Do Liberce přijel 20. května 1922: odpoledne besídky, večer skautský večer v Národním domě, který zahájil projevem „Výchova občana republiky skautováním“. Na rozvinutí praporu 1. oddílu druhý den už nezůstal a poslal oddílu dopis.
+
+## Josef Břeň
+- id: josef-bren
+- proud: cz-svaz
+- období: 1930–1931
+- role: zástupce župního zpravodaje
+- hledat: Břeň|Břeně|Břeněm
+- popis: 🤖 Profesor z Liberce, zástupce župního zpravodaje. V almanachu „Skauting v menšinách“ (1931) napsal stať Skauting na Liberecku: liberecký skauting má podle něj „ráz a příchuť mezinárodnosti“. Na fotografii ze srazu na Pláních pod Ještědem 1930.
+
+## Theo Keil
+- id: theo-keil
+- proud: de
+- období: 1919
+- role: gauwart Wandervogelu
+- hledat: Theo Keil|Keil
+- popis: 🤖 Liberečan, kterého si v červnu 1919 zvolila župa Wandervogel v Čechách (61 společenství, 1 400 členů) za gauwarta. Dívčí gauwartkou se stala Hilde Rösler, rovněž z Liberce.
+
+## Gustav Jungbauer
+- id: gustav-jungbauer
+- proud: de
+- období: 1911–1912
+- role: zakladatel Wandervogelu v Liberci
+- hledat: Jungbauer
+- popis: 🤖 Pozdější univerzitní profesor. Na jaře 1911 jako učitel v Liberci založil místní Wandervogel; místním vedoucím byl prof. Hans Baer. V roce 1912 měli liberečtí Wandervögel tři oddíly.
