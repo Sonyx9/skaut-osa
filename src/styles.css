@@ -259,3 +259,13 @@ h1 { margin: 0 0 24px; font: 800 clamp(52px, 8vw, 84px)/.95 var(--display); text
 .legend--compact dd { font-size: 14px; }
 .ev__meta { align-content: start; }
 .legend--compact div { flex-direction: column; align-items: flex-start; gap: 2px; }
+
+/* poděkování a CTA v patičce */
+.foot-credit { max-width: var(--text); margin: 0 0 12px; font-size: 15px; color: #111; }
+.foot-credit a { color: inherit; }
+.foot-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; margin-bottom: 20px; }
+.foot-cta .foot-credit { margin: 0; flex: 1 1 420px; }
+.cta-mail { display: inline-flex; align-items: center; min-height: 44px; margin-top: 14px; padding: 0 22px; border-radius: 0; background: var(--accent); color: #111; font: 700 15px/1 var(--display); letter-spacing: .08em; text-transform: uppercase; text-decoration: none; }
+.foot-cta .cta-mail { margin-top: 0; }
+.cta-mail:hover { background: #e9b949; }
+.cta-mail:focus-visible { outline: 3px solid #111; outline-offset: 2px; }
