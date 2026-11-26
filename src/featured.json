@@ -65,6 +65,12 @@
    "w": 960,
    "h": 1280,
    "credit": "A. B. Svojsík. Foto: neznámý autor, Album representantů všech oborů veřejného života Česko-Slovenského (Praha 1927); volné dílo (PD-anon-70-EU), Wikimedia Commons"
+  },
+  "kamen-1947": {
+   "alt": "Kámen vítězů v Lidových sadech – žulový kámen s lilií, deskou „Kámen vítězů – Scouting Liberec“ a letopočtem 1947",
+   "w": 1063,
+   "h": 1602,
+   "credit": "Kámen vítězů (1947) v Lidových sadech. Foto: archiv L. Kouly (DP 2021, příloha 8)"
   }
  },
  "credit": "Kronika dívčí družiny Racků, Horní Růžodol · Severočeské muzeum v Liberci",
@@ -165,7 +171,8 @@
    "title": "Pfadfinder barona Liebiega",
    "date": "1913-06-01",
    "img": "rz-1913",
-   "text": "Baron Theodor von Liebieg a učitel Karl Weyde zakládají v Liberci sbor Pfadfinderů – první skauty ve městě."
+   "text": "Baron Theodor von Liebieg a učitel Karl Weyde zakládají v Liberci sbor Pfadfinderů – první skauty ve městě.",
+   "era": 1
   },
   {
    "from": 1919,
@@ -175,7 +182,8 @@
    "date": "1922-05-20",
    "img": "svojsik-portret",
    "text": "Do Liberce přijíždí náčelník Svazu A. B. Svojsík. Skauti a skautky mu v Národním domě připravili odpolední besídky a večer s orchestrem, pěveckým sborem a vlčaty.",
-   "portrait": true
+   "portrait": true,
+   "era": 1
   },
   {
    "from": 1923,
@@ -184,7 +192,8 @@
    "title": "Sbor, oldskauti a dělničtí skauti",
    "date": "1924-05-03",
    "img": "oldscouts-1924",
-   "text": "Klub Old-Scouts pořádá v Národním domě kabaret s hudbou, scénkami a tancem – jediná zpráva o prvorepublikových oldskautech v Liberci."
+   "text": "Klub Old-Scouts pořádá v Národním domě kabaret s hudbou, scénkami a tancem – jediná zpráva o prvorepublikových oldskautech v Liberci.",
+   "era": 1
   },
   {
    "from": 1928,
@@ -193,7 +202,8 @@
    "title": "Štafety, Riegrova župa a skautky z Růžodolu",
    "date": "1931-06-28",
    "img": "jamboree-1931",
-   "text": "Skautky z Horního Růžodolu jdou na Všeslovanském jamboree v Praze v průvodu na Hrad spolu s Riegrovou župou."
+   "text": "Skautky z Horního Růžodolu jdou na Všeslovanském jamboree v Praze v průvodu na Hrad spolu s Riegrovou župou.",
+   "era": 1
   },
   {
    "from": 1933,
@@ -202,7 +212,8 @@
    "title": "Župní sraz a skauting v pohraničí",
    "date": "1933-06-03",
    "img": "almanach-1933",
-   "text": "Liberec hostí župní sraz Riegrovy župy: akademie v biografu Lípa, závody o vlajku vítěze, průvod městem s více než 450 krojovanými a táborový oheň."
+   "text": "Liberec hostí župní sraz Riegrovy župy: akademie v biografu Lípa, závody o vlajku vítěze, průvod městem s více než 450 krojovanými a táborový oheň.",
+   "era": 1
   },
   {
    "from": 1938,
@@ -211,7 +222,49 @@
    "title": "Mobilizace, Mnichov a konec",
    "date": "1938-09-23",
    "dark": true,
-   "text": "Při mobilizaci rukuje vůdce 1. oddílu Jan Poštolka a posílá oddílu vzkaz na útržku z notesu: „Nenechte nikdy zaniknout skautskou myšlenku!“"
+   "text": "Při mobilizaci rukuje vůdce 1. oddílu Jan Poštolka a posílá oddílu vzkaz na útržku z notesu: „Nenechte nikdy zaniknout skautskou myšlenku!“",
+   "era": 1,
+   "end": "1945-05"
+  },
+  {
+   "era": 2,
+   "from": 1945,
+   "to": 1945,
+   "start": "1945-05",
+   "label": "Obnova",
+   "title": "Návrat junáků do Liberce",
+   "date": "1945-07-22",
+   "text": "Pár týdnů po válce se v dřevěném baráku ve Svojsíkově ulici schází 22 chlapců – obnovuje se 1. oddíl. Do konce roku vzniká okresní velitelství, vodáci, vlčata a skládá slib i 1. dívčí oddíl."
+  },
+  {
+   "era": 2,
+   "from": 1946,
+   "to": 1947,
+   "label": "Rozkvět",
+   "title": "Svojsíkův rok a vrchol Junáka",
+   "date": "1947-05-22",
+   "img": "kamen-1947",
+   "portrait": true,
+   "text": "V Lidových sadech staví junáci z daru města Kámen vítězů s lilií a letopočtem 1947. Liberec má v tom roce nejméně jedenáct chlapeckých a devět dívčích oddílů, smečky, roje i dva kluby oldskautů."
+  },
+  {
+   "era": 2,
+   "from": 1948,
+   "to": 1950,
+   "label": "Pod SČM",
+   "title": "Únor, Svaz mládeže a konec registrací",
+   "date": "1948-09-07",
+   "text": "Po únoru 1948 odevzdávají činovníci legitimace a oddíly přecházejí pod Svaz české mládeže. Na podzim 1949 se do Junáka už nedá registrovat; oddíly přežívají pod Sokolem nebo se rozcházejí."
+  },
+  {
+   "era": 2,
+   "from": 1951,
+   "to": 1952,
+   "label": "Zákaz",
+   "title": "Zákaz a proces",
+   "date": "1952-07-07",
+   "dark": true,
+   "text": "Za vůdcovské zkoušky na chatě v Polesí u Rýnovic jsou liberečtí skautští vedoucí souzeni v kauze „Jaroslav Tomsa a spol.“ Rozsudek zrušil soud až v roce 1968."
   }
  ],
  "sources": [
@@ -418,16 +471,24 @@
    "title": "Od Pfadfinderů po Mnichov a válku",
    "lead": "Němečtí Pfadfinder a Wandervogel, první čeští junáci a skautky, dělničtí a židovští skauti – až po konec činnosti po Mnichovu.",
    "href": "epocha-1911-1945.html",
-   "img": "rz-1913"
+   "img": "rz-1913",
+   "page_lead": "Od Pfadfinderů barona Liebiega přes první české junáky, skautky z Horního Růžodolu a dělnické skauty až po konec činnosti po Mnichovu. U každého záznamu je zdroj a stav ověření."
   },
   {
    "from": 1945,
-   "to": 1950,
+   "to": 1952,
    "title": "Obnova a první zákaz",
-   "lead": "Návrat českých skautů do Liberce po válce, nové oddíly a srazy – až do zrušení Junáka na počátku 50. let."
+   "lead": "Návrat českých skautů do Liberce po válce, desítky nových oddílů a Kámen vítězů – až po zrušení Junáka a proces s vedoucími v roce 1952.",
+   "href": "epocha-1945-1952.html",
+   "img": "kamen-1947",
+   "hero": {
+    "main": "kamen-1947",
+    "small": []
+   },
+   "page_lead": "Obnova Junáka v Liberci po válce, oddíly, smečky a kluby oldskautů, vrchol v roce 1947, přechod pod Svaz mládeže a proces s libereckými vedoucími. Záznamy zatím vycházejí hlavně z diplomové práce (2021) a čekají na ověření v pramenech."
   },
   {
-   "from": 1950,
+   "from": 1952,
    "to": 1970,
    "title": "Mezi zákazy",
    "lead": "Oddíly přežívající v turistice a Pionýru, obnova Junáka v roce 1968 a nový zákaz v roce 1970."

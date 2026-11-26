@@ -285,70 +285,78 @@ def build(data, out, robots, production, base="", people_path=None, places_path=
 
     year_nav = "".join(f'<li data-y="{y}"><a href="#r{y}">{y}</a></li>' for y in years)
     periods = fe.get("periods", [])
+    def prange(p):
+        return p.get("start", str(p["from"])), p.get("end", str(p["to"] + 1))
+    def prows(p):
+        a, b = prange(p)
+        return [r for r in rows if a <= r["date"] < b]
     def pyears(p):
-        return [y for y in years if p["from"] <= int(y) <= p["to"]]
+        return sorted({r["date"][:4] for r in prows(p)})
     def bubble(p, href):
         dark = " bubble--dark" if p.get("dark") else ""
-        lab = f'{p["from"]}–{str(p["to"])[2:]}'
+        lab = str(p["from"]) if p["from"] == p["to"] else f'{p["from"]}–{str(p["to"])[2:]}'
         return (f'<li data-p="{p["from"]}"><a class="bubble{dark}" href="{href}">'
                 f'<span class="bubble__y">{lab}</span><span class="bubble__l">{html.escape(p["label"])}</span></a></li>')
-    period_nav_home = "".join(bubble(p, f'#p{p["from"]}') for p in periods if pyears(p))
     period_nav_osa = "".join(bubble(p, f'#r{pyears(p)[0]}') for p in periods if pyears(p))
     by_date = {}
     for r in rows:
         by_date.setdefault(r["date"], r)
-    blocks = []
-    for i, p in enumerate(periods):
-        ys = pyears(p)
-        if not ys:
-            continue
-        r = by_date.get(p["date"])
-        if not r:
-            raise SystemExit(f"Období {p['from']}: řádek s datem {p['date']} v ose není.")
-        n = sum(len(years[y]) for y in ys)
-        fig = ""
-        if p.get("img"):
-            im = fe["images"][p["img"]]
-            fig = (f'<figure class="period__fig">{picture(fe, p["img"], "(min-width: 900px) 540px, 100vw", base=base)}'
-                   f'<figcaption>{html.escape(im.get("credit", fe["credit"]))}</figcaption></figure>')
-        f = feature_for(r, fe) or {}
-        cls = "period" + (" period--dark" if p.get("dark") else "") + (" period--rev" if i % 2 else "") + ("" if fig else " period--text") + (" period--portrait" if p.get("portrait") else "")
-        pool = [x for y in ys for x in years[y] if x is not r]
-        def score(x):
-            v = VERIFY.get(x["verify"], ("neovereno",))[0]
-            return ((3 if feature_for(x, fe) else 0) + (2 if v == "overeno" else 0)
-                    + (1 if x["precision"] == "událost" else 0) + (1 if x["line"] != "kontext" else 0))
-        if p.get("more"):
-            picks = [by_date[d] for d in p["more"] if d in by_date]
-        else:
-            ranked = sorted(pool, key=lambda x: (-score(x), x["date"]))
-            picks = []
-            while len(picks) < 4 and len(picks) < len(ranked):
-                used = {x["line"] for x in picks}
-                nxt = next((x for x in ranked if x not in picks and x["line"] not in used), None) \
-                    or next(x for x in ranked if x not in picks)
-                picks.append(nxt)
-                if len({x["line"] for x in picks}) == len({x["line"] for x in ranked}):
-                    used = set()
-            picks.sort(key=lambda x: x["date"])
-        rows_html = "".join(
-            f'<li class="prow" data-l="{x["line"]}"><a class="prow__d" href="osa.html#{x["id"]}">'
-            f'<span class="dot" data-l="{x["line"]}" aria-hidden="true"></span><time datetime="{iso(x)}">{human_date(x)}</time></a>'
-            f'<span class="prow__t">{html.escape(short_text(x["text"]))}</span><span class="prow__s">{short_src(x["source"])}</span></li>'
-            for x in picks)
-        more_html = (f'<section class="period__list" aria-label="Další záznamy {p["from"]}–{p["to"]}">'
-                     f'<h3 class="period__list-h">Další záznamy {p["from"]}–{p["to"]}</h3><ul>{rows_html}</ul>'
-                     f'</section>') if picks else ""
-        blocks.append(
-            f'<div class="period-wrap">'
-            f'<article class="{cls}" id="p{p["from"]}" aria-labelledby="ph{p["from"]}">{fig}<div class="period__body">'
-            f'<p class="period__kicker">{p["from"]}–{p["to"]} · {html.escape(p["title"])}</p>'
-            f'<h2 class="period__date" id="ph{p["from"]}"><time datetime="{iso(r)}">{human_date(r)}</time></h2>'
-            f'<p class="period__text">{inline_md(p.get("text") or r["text"])}</p>{extras(f) if p.get("extras") else ""}'
-            f'<p class="period__actions">{src_button(r["source"])}'
-            f'<a class="period__more" href="osa.html#r{ys[0]}">Celé období na časové ose ({n} záznamů)</a></p>'
-            f'</div></article>{more_html}</div>')
-    periods_html = "\n".join(blocks)
+
+    def period_blocks(eraps):
+        blocks = []
+        for i, p in enumerate(eraps):
+            pool_all = prows(p)
+            if not pool_all:
+                continue
+            ys = pyears(p)
+            r = by_date.get(p["date"])
+            if not r:
+                raise SystemExit(f"Období {p['from']}: řádek s datem {p['date']} v ose není.")
+            n = len(pool_all)
+            yl = str(p["from"]) if p["from"] == p["to"] else f'{p["from"]}–{p["to"]}'
+            fig = ""
+            if p.get("img"):
+                im = fe["images"][p["img"]]
+                fig = (f'<figure class="period__fig">{picture(fe, p["img"], "(min-width: 900px) 540px, 100vw", base=base)}'
+                       f'<figcaption>{html.escape(im.get("credit", fe["credit"]))}</figcaption></figure>')
+            f = feature_for(r, fe) or {}
+            cls = "period" + (" period--dark" if p.get("dark") else "") + (" period--rev" if i % 2 else "") + ("" if fig else " period--text") + (" period--portrait" if p.get("portrait") else "")
+            pool = [x for x in pool_all if x is not r]
+            def score(x):
+                v = VERIFY.get(x["verify"], ("neovereno",))[0]
+                return ((3 if feature_for(x, fe) else 0) + (2 if v == "overeno" else 0)
+                        + (1 if x["precision"] == "událost" else 0) + (1 if x["line"] != "kontext" else 0))
+            if p.get("more"):
+                picks = [by_date[d] for d in p["more"] if d in by_date]
+            else:
+                ranked = sorted(pool, key=lambda x: (-score(x), x["date"]))
+                picks = []
+                while len(picks) < 4 and len(picks) < len(ranked):
+                    used = {x["line"] for x in picks}
+                    nxt = next((x for x in ranked if x not in picks and x["line"] not in used), None) \
+                        or next(x for x in ranked if x not in picks)
+                    picks.append(nxt)
+                    if len({x["line"] for x in picks}) == len({x["line"] for x in ranked}):
+                        used = set()
+                picks.sort(key=lambda x: x["date"])
+            rows_html = "".join(
+                f'<li class="prow" data-l="{x["line"]}"><a class="prow__d" href="osa.html#{x["id"]}">'
+                f'<span class="dot" data-l="{x["line"]}" aria-hidden="true"></span><time datetime="{iso(x)}">{human_date(x)}</time></a>'
+                f'<span class="prow__t">{html.escape(short_text(x["text"]))}</span><span class="prow__s">{short_src(x["source"])}</span></li>'
+                for x in picks)
+            more_html = (f'<section class="period__list" aria-label="Další záznamy {yl}">'
+                         f'<h3 class="period__list-h">Další záznamy {yl}</h3><ul>{rows_html}</ul>'
+                         f'</section>') if picks else ""
+            blocks.append(
+                f'<div class="period-wrap">'
+                f'<article class="{cls}" id="p{p["from"]}" aria-labelledby="ph{p["from"]}">{fig}<div class="period__body">'
+                f'<p class="period__kicker">{yl} · {html.escape(p["title"])}</p>'
+                f'<h2 class="period__date" id="ph{p["from"]}"><time datetime="{iso(r)}">{human_date(r)}</time></h2>'
+                f'<p class="period__text">{inline_md(p.get("text") or r["text"])}</p>{extras(f) if p.get("extras") else ""}'
+                f'<p class="period__actions">{src_button(r["source"])}'
+                f'<a class="period__more" href="osa.html#r{ys[0]}">Celé období na časové ose ({n} záznamů)</a></p>'
+                f'</div></article>{more_html}</div>')
+        return "\n".join(blocks)
     chapter_nav = "".join(
         f'<li data-y="{y}"><a class="bubble{" bubble--dark" if c.get("dark") else ""}" href="#r{y}">'
         f'<span class="bubble__y">{y}</span><span class="bubble__l">{html.escape(c["label"])}</span></a></li>'
@@ -420,7 +428,7 @@ def build(data, out, robots, production, base="", people_path=None, places_path=
             .replace("{{NEW}}", str(new))
             .replace("{{CONFLICT}}", str(conflict))
             .replace("{{YEAR_NAV}}", year_nav)
-            .replace("{{CHAPTER_NAV}}", nav).replace("{{PERIOD_NAV}}", period_nav_home).replace("{{PERIODS}}", periods_html)
+            .replace("{{CHAPTER_NAV}}", nav)
             .replace("{{HERO_IMG}}", hero_html)
             .replace("{{CREDIT}}", html.escape(fe["credit"]))
             .replace("{{BASE}}", base)
@@ -430,7 +438,33 @@ def build(data, out, robots, production, base="", people_path=None, places_path=
             .replace("{{SECTIONS}}", sections)
             .replace("{{DATE}}", datetime.date.today().strftime("%-d. %-m. %Y")))
     page = fill(tpl, "OSA", period_nav_osa)
-    home = fill((ROOT / "src" / "home.html").read_text(encoding="utf-8"), "HOME", "")
+    home_tpl = (ROOT / "src" / "home.html").read_text(encoding="utf-8")
+    era_pages = {}
+    for i, er in enumerate(fe.get("eras", []), 1):
+        if not er.get("href"):
+            continue
+        eps = [p for p in periods if p.get("era", 1) == i]
+        erows = [x for p in eps for x in prows(p)]
+        ok = sum(VERIFY.get(x["verify"], ("neovereno",))[0] == "overeno" for x in erows)
+        hz = er.get("hero")
+        if hz:
+            ehero = picture(fe, hz["main"], "(min-width: 900px) 560px, 100vw", "hero__main", lazy=False, base=base) + "".join(
+                picture(fe, n, "200px", f"hero__small hero__small--{k}", base=base) for k, n in enumerate(hz.get("small", [])))
+        else:
+            ehero = hero_html
+        t = (home_tpl.replace("{{PERIOD_NAV}}", "".join(bubble(p, f'#p{p["from"]}') for p in eps if prows(p)))
+             .replace("{{PERIODS}}", period_blocks(eps))
+             .replace("{{E_N}}", str(i)).replace("{{E_YEARS}}", f'{er["from"]}–{er["to"]}')
+             .replace("{{E_TITLE}}", html.escape(er["title"])).replace("{{E_LEAD}}", html.escape(er.get("page_lead", er["lead"])))
+             .replace("{{E_COUNT}}", str(len(erows))).replace("{{E_SPAN}}", str(int(er["to"]) - int(er["from"]) + 1))
+             .replace("{{E_OK}}", str(ok)).replace("{{E_NEW}}", str(sum(x["dp"] == "ne" for x in erows)))
+             .replace("{{E_S4}}", (f'<div><dt>nových proti DP 2021</dt><dd>{sum(x["dp"] == "ne" for x in erows)}</dd></div>'
+                                   if any(x["dp"] == "ne" for x in erows) else
+                                   f'<div><dt>převzato z DP 2021</dt><dd>{sum(VERIFY.get(x["verify"], ("neovereno",))[0] == "dp" for x in erows)}</dd></div>'))
+             .replace("{{E_FIRST}}", erows[0]["date"][:4] if erows else "")
+             .replace("{{HERO_IMG}}", ehero))
+        era_pages[er["href"]] = fill(t, "HOME", "")
+    home = "".join(era_pages.values())
     era_tiles = []
     for i, er in enumerate(fe.get("eras", []), 1):
         yrs = f'{er["from"]}–{er["to"]}'
@@ -451,7 +485,8 @@ def build(data, out, robots, production, base="", people_path=None, places_path=
     out = Path(out)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(epochy, encoding="utf-8")
-    (out.parent / "epocha-1911-1945.html").write_text(home, encoding="utf-8")
+    for href, pg in era_pages.items():
+        (out.parent / href).write_text(pg, encoding="utf-8")
     (out.parent / "osa.html").write_text(page, encoding="utf-8")
     if not base:
         for d in ("img", "fonts"):
