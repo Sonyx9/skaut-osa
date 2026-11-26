@@ -26,6 +26,8 @@ LINES = {
     "zid": "Židovští skauti",
     "kontext": "Kontext",
 }
+SHORT = {"cz-svaz": "Junáci (Svaz)", "cz-soc": "Dělničtí skauti", "de": "Pfadfinder",
+         "zid": "Židovští skauti", "kontext": "Kontext"}
 # značky z trezoru -> (klíč, text štítku)
 VERIFY = {
     "✅": ("overeno", "Ověřeno v prameni"),
@@ -134,7 +136,7 @@ def event_list(c):
     lis = []
     for r in c["events"]:
         txt = inline_md(re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", r["text"]))
-        lis.append(f'<li><a href="index.html#{r["id"]}"><time datetime="{iso(r)}">{human_date(r)}</time></a> {txt}</li>')
+        lis.append(f'<li><a href="osa.html#{r["id"]}"><time datetime="{iso(r)}">{human_date(r)}</time></a> {txt}</li>')
     n = len(lis)
     if not n:
         return '<p class="card__none">V časové ose zatím žádný záznam.</p>'
@@ -235,7 +237,7 @@ def render_event(r, fe, side, base):
         fig = ""
         if f.get("img"):
             fig = (f'<figure class="feat__fig">{picture(fe, f["img"], "(min-width: 900px) 540px, 100vw", base=base)}'
-                   f'<figcaption>{html.escape(fe["credit"])}</figcaption></figure>')
+                   f'<figcaption>{html.escape(fe["images"][f["img"]].get("credit", fe["credit"]))}</figcaption></figure>')
         cls = "feat" + (" feat--img" if fig else " feat--text") + (" feat--rev" if side else "")
         return (f'<li id="{r["id"]}" class="ev ev--{r["precision"]} {cls}" {attrs}>{fig}<div class="feat__body">'
                 f'<p class="feat__kicker" data-l="{r["line"]}">{dot}{LINES[r["line"]]} · {PREC.get(r["precision"], r["precision"])}</p>'
@@ -262,6 +264,44 @@ def build(data, out, robots, production, base="", people_path=None, places_path=
         years.setdefault(r["date"][:4], []).append(r)
 
     year_nav = "".join(f'<li data-y="{y}"><a href="#r{y}">{y}</a></li>' for y in years)
+    periods = fe.get("periods", [])
+    def pyears(p):
+        return [y for y in years if p["from"] <= int(y) <= p["to"]]
+    def bubble(p, href):
+        dark = " bubble--dark" if p.get("dark") else ""
+        lab = f'{p["from"]}–{str(p["to"])[2:]}'
+        return (f'<li data-p="{p["from"]}"><a class="bubble{dark}" href="{href}">'
+                f'<span class="bubble__y">{lab}</span><span class="bubble__l">{html.escape(p["label"])}</span></a></li>')
+    period_nav_home = "".join(bubble(p, f'#p{p["from"]}') for p in periods if pyears(p))
+    period_nav_osa = "".join(bubble(p, f'#r{pyears(p)[0]}') for p in periods if pyears(p))
+    by_date = {}
+    for r in rows:
+        by_date.setdefault(r["date"], r)
+    blocks = []
+    for i, p in enumerate(periods):
+        ys = pyears(p)
+        if not ys:
+            continue
+        r = by_date.get(p["date"])
+        if not r:
+            raise SystemExit(f"Období {p['from']}: řádek s datem {p['date']} v ose není.")
+        n = sum(len(years[y]) for y in ys)
+        fig = ""
+        if p.get("img"):
+            im = fe["images"][p["img"]]
+            fig = (f'<figure class="period__fig">{picture(fe, p["img"], "(min-width: 900px) 540px, 100vw", base=base)}'
+                   f'<figcaption>{html.escape(im.get("credit", fe["credit"]))}</figcaption></figure>')
+        f = feature_for(r, fe) or {}
+        cls = "period" + (" period--dark" if p.get("dark") else "") + (" period--rev" if i % 2 else "") + ("" if fig else " period--text")
+        blocks.append(
+            f'<article class="{cls}" id="p{p["from"]}" aria-labelledby="ph{p["from"]}">{fig}<div class="period__body">'
+            f'<p class="period__kicker">{p["from"]}–{p["to"]} · {html.escape(p["title"])}</p>'
+            f'<h2 class="period__date" id="ph{p["from"]}"><time datetime="{iso(r)}">{human_date(r)}</time></h2>'
+            f'<p class="period__text">{inline_md(p.get("text") or r["text"])}</p>{extras(f) if p.get("extras") else ""}'
+            f'<p class="period__actions">{src_button(r["source"])}'
+            f'<a class="period__more" href="osa.html#r{ys[0]}">Celé období na časové ose ({n} záznamů)</a></p>'
+            f'</div></article>')
+    periods_html = "\n".join(blocks)
     chapter_nav = "".join(
         f'<li data-y="{y}"><a class="bubble{" bubble--dark" if c.get("dark") else ""}" href="#r{y}">'
         f'<span class="bubble__y">{y}</span><span class="bubble__l">{html.escape(c["label"])}</span></a></li>'
@@ -299,14 +339,14 @@ def build(data, out, robots, production, base="", people_path=None, places_path=
     first, last = rows[0]["date"][:4], rows[-1]["date"][:4]
 
     line_buttons = "".join(
-        f'<button type="button" class="fbtn" data-group="l" data-key="{k}" aria-pressed="true">'
+        f'<button type="button" class="fbtn fbtn--org" data-group="l" data-key="{k}" data-l="{k}" aria-pressed="false">'
         f'<span class="dot" data-l="{k}" aria-hidden="true"></span>{v}</button>'
-        for k, v in LINES.items())
+        for k, v in SHORT.items())
     verify_buttons = "".join(
         f'<button type="button" class="fbtn" data-group="v" data-key="{k}" aria-pressed="true">{v}</button>'
         for k, v in (("overeno", "Ověřeno"), ("dp", "Z DP 2021"), ("neovereno", "Neověřeno")))
 
-    tpl = (ROOT / "src" / "index.html").read_text(encoding="utf-8")
+    tpl = (ROOT / "src" / "osa.html").read_text(encoding="utf-8")
     logo = (ROOT / "src" / "logo.svg.html").read_text(encoding="utf-8")
     header_tpl = (ROOT / "src" / "header.html").read_text(encoding="utf-8").replace("{{LOGO}}", logo).replace("{{BASE_PAGE}}", "")
 
@@ -319,9 +359,10 @@ def build(data, out, robots, production, base="", people_path=None, places_path=
     js = (ROOT / "src" / "app.js").read_text(encoding="utf-8")
     robots_meta = "" if production else '<meta name="robots" content="noindex, nofollow">\n'
 
-    page = (tpl
+    def fill(t, cur, nav):
+        return (t
             .replace("{{ROBOTS}}", robots_meta)
-            .replace("{{HEADER}}", header("OSA"))
+            .replace("{{HEADER}}", header(cur))
             .replace("{{CSS}}", css)
             .replace("{{JS}}", js)
             .replace("{{RANGE}}", f"{first}–{last}")
@@ -332,7 +373,7 @@ def build(data, out, robots, production, base="", people_path=None, places_path=
             .replace("{{NEW}}", str(new))
             .replace("{{CONFLICT}}", str(conflict))
             .replace("{{YEAR_NAV}}", year_nav)
-            .replace("{{CHAPTER_NAV}}", chapter_nav)
+            .replace("{{CHAPTER_NAV}}", nav).replace("{{PERIOD_NAV}}", period_nav_home).replace("{{PERIODS}}", periods_html)
             .replace("{{HERO_IMG}}", hero_html)
             .replace("{{CREDIT}}", html.escape(fe["credit"]))
             .replace("{{BASE}}", base)
@@ -341,12 +382,15 @@ def build(data, out, robots, production, base="", people_path=None, places_path=
             .replace("{{VERIFY_BUTTONS}}", verify_buttons)
             .replace("{{SECTIONS}}", sections)
             .replace("{{DATE}}", datetime.date.today().strftime("%-d. %-m. %Y")))
-    if "{{" in page:
+    page = fill(tpl, "OSA", period_nav_osa)
+    home = fill((ROOT / "src" / "home.html").read_text(encoding="utf-8"), "HOME", "")
+    if "{{" in page or "{{" in home:
         raise SystemExit("V šabloně zůstal nenahrazený zástupný text.")
 
     out = Path(out)
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(page, encoding="utf-8")
+    out.write_text(home, encoding="utf-8")
+    (out.parent / "osa.html").write_text(page, encoding="utf-8")
     if not base:
         for d in ("img", "fonts"):
             shutil.copytree(ROOT / "src" / d, out.parent / d, dirs_exist_ok=True)

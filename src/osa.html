@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{ROBOTS}}<title>Časová osa – Ve jménu lilie, skauting v Liberci {{RANGE}}</title>
+<meta name="description" content="Pracovní časová osa skautingu v Liberci a okolí {{RANGE}}: česká, německá a židovská linka, u každého záznamu zdroj a stav ověření.">
+<meta name="theme-color" content="#ffffff">
+<link rel="preload" href="{{BASE}}fonts/barlow-condensed-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="data:,">
+<style>
+{{CSS}}
+</style>
+</head>
+<body>
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <!-- Ikony: Lucide (lucide.dev), licence ISC -->
+  <symbol id="i-overeno" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-dp" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol>
+  <symbol id="i-neovereno" viewBox="0 0 24 24"><path d="M10.1 2.182a10 10 0 0 1 3.8 0"/><path d="M13.9 21.818a10 10 0 0 1-3.8 0"/><path d="M17.609 3.721a10 10 0 0 1 2.69 2.7"/><path d="M2.182 13.9a10 10 0 0 1 0-3.8"/><path d="M20.279 17.609a10 10 0 0 1-2.7 2.69"/><path d="M21.818 10.1a10 10 0 0 1 0 3.8"/><path d="M3.721 6.391a10 10 0 0 1 2.7-2.69"/><path d="M6.391 20.279a10 10 0 0 1-2.69-2.7"/></symbol>
+  <symbol id="i-otevrene" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></symbol>
+  <symbol id="i-pametnik" viewBox="0 0 24 24"><path d="M12 19v3"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><rect x="9" y="2" width="6" height="13" rx="3"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+</svg>
+
+<a class="skip" href="#osa">Přeskočit na časovou osu</a>
+
+{{HEADER}}
+
+<section class="osa-intro wrap" id="top">
+  <p class="eyebrow">{{RANGE}} · pracovní verze</p>
+  <h1>Časová osa</h1>
+  <p class="lead">Všechny záznamy o skautingu v Liberci a okolí po letech. U každého je zdroj a stav ověření. Filtrem si můžete nechat jen jeden proud skautingu.</p>
+  <dl class="stats">
+    <div><dt>záznamů</dt><dd>{{COUNT}}</dd></div>
+    <div><dt>let</dt><dd>{{YEARS}}</dd></div>
+    <div><dt>ověřeno v prameni</dt><dd>{{OK}}</dd></div>
+    <div><dt>nových proti DP 2021</dt><dd>{{NEW}}</dd></div>
+  </dl>
+</section>
+
+<div class="band">
+  <nav class="chapters wrap" aria-label="Kapitoly"><ol>{{CHAPTER_NAV}}</ol></nav>
+
+  <div class="filters" id="filters" hidden>
+    <div class="wrap filters__inner">
+      <div class="filters__row filters__orgs" role="group" aria-label="Proud skautingu">
+        <span class="filters__label">Zobrazit:</span>
+        <button type="button" class="fbtn fbtn--all" id="all" aria-pressed="true">Vše</button>
+        {{LINE_BUTTONS}}
+        <button type="button" class="fbtn fbtn--more" id="more-btn" aria-expanded="false" aria-controls="more">Další filtry</button>
+      </div>
+      <div class="filters__panel" id="more" hidden>
+        <div class="filters__row">
+          <label class="search" for="q">
+            <span class="visually-hidden">Hledat v záznamech</span>
+            <svg aria-hidden="true"><use href="#i-search"/></svg>
+            <input id="q" type="search" placeholder="Hledat jméno, místo nebo pramen" autocomplete="off">
+          </label>
+          <button type="button" class="fbtn fbtn--toggle" id="only-new" aria-pressed="false">Jen nové proti DP</button>
+        </div>
+        <div class="filters__row" role="group" aria-label="Stav ověření"><span class="filters__label">Ověření:</span>{{VERIFY_BUTTONS}}</div>
+        <div class="filters__row"><button type="button" class="fbtn fbtn--reset" id="reset">Zrušit filtry</button></div>
+      </div>
+      <p class="filters__count" id="count" aria-live="polite"></p>
+    </div>
+  </div>
+</div>
+
+<nav class="years-nav" aria-label="Roky">
+  <div class="wrap"><ol>{{YEAR_NAV}}</ol></div>
+</nav>
+
+<main id="osa" class="wrap timeline">
+{{SECTIONS}}
+  <p class="empty" id="empty" hidden>Filtru neodpovídá žádný záznam.</p>
+</main>
+
+<footer class="page-foot" id="zdroje">
+  <div class="wrap">
+    <div class="foot-cols">
+      <div>
+        <h3>Zdroje</h3>
+        <p>Naše hory, Reichenberger Zeitung, Reichenberger Tagesbote a adresáře Liberce (Kramerius KVK Liberec), časopis Junák (MZK, NDK), V. Drbohlav – Drobečky z historie skautingu na Liberecku, J. Mareš – Junák v Liberci 1920–1952, kroniky oddílů (Severočeské muzeum), H. Gold (1934), diplomová práce L. Kouly (TUL 2021).</p>
+      </div>
+      <div>
+        <h3>Značky ověření</h3>
+        <dl class="legend legend--compact">
+          <div><dt><span class="tag tag--overeno"><svg aria-hidden="true"><use href="#i-overeno"/></svg>Ověřeno v prameni</span></dt><dd>přečteno v plném znění</dd></div>
+          <div><dt><span class="tag tag--neovereno"><svg aria-hidden="true"><use href="#i-neovereno"/></svg>Neověřeno</span></dt><dd>z OCR nebo přepisu, čeká na kontrolu</dd></div>
+          <div><dt><span class="tag tag--dp"><svg aria-hidden="true"><use href="#i-dp"/></svg>Převzato z DP 2021</span></dt><dd>v prameni znovu neověřeno</dd></div>
+          <div><dt><span class="tag tag--dp-ne">Nové proti DP</span></dt><dd>v diplomové práci chybí</dd></div>
+        </dl>
+      </div>
+      <div id="vite-vic">
+        <h3>Víte víc?</h3>
+        <p>Fotky, kroniky, legitimace a vzpomínky na liberecký skauting do roku 1939 hledáme dál. Máte doplnění nebo opravu? Napište.</p>
+        <a class="cta-mail" href="mailto:lukas.koula@skaut.cz?subject=Ve%20jm%C3%A9nu%20lilie%20%E2%80%93%20dopln%C4%9Bn%C3%AD%20%C4%8Dasov%C3%A9%20osy">Doplnit nebo upřesnit</a>
+      </div>
+    </div>
+    <p class="foot-credit">Časová osa vzniká za podpory <strong>Krajské rady Junáka v Liberci</strong>. Autor: Mgr. Lukáš Koula, <a href="mailto:lukas.koula@skaut.cz">lukas.koula@skaut.cz</a>. Projekt Ve jménu lilie, Memoriae Loci.</p>
+    <p class="foot-note">Kresby a strany kronik: {{CREDIT}}. Písmo Barlow (SIL OFL). Sestaveno {{DATE}}.</p>
+  </div>
+</footer>
+
+<script>
+{{JS}}
+</script>
+<a class="to-top" href="#" aria-label="Zpět nahoru"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg></a>
+<script>
+(function () {
+  var b = document.querySelector(".to-top"); if (!b) return;
+  var on = function () { b.classList.toggle("is-on", window.scrollY > 700); };
+  window.addEventListener("scroll", on, { passive: true }); on();
+  b.addEventListener("click", function (e) { e.preventDefault(); window.scrollTo({ top: 0, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); history.replaceState(null, "", location.pathname); });
+  var nav = document.querySelector(".years-nav"); if (!nav || !("IntersectionObserver" in window)) return;
+  var links = {}; nav.querySelectorAll("a[href^='#r']").forEach(function (a) { links[a.getAttribute("href").slice(2)] = a; });
+  var cur = null;
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (!e.isIntersecting) return;
+      var a = links[e.target.id.slice(1)]; if (!a || a === cur) return;
+      if (cur) cur.classList.remove("is-cur"); cur = a; a.classList.add("is-cur");
+      var ol = a.closest("ol"); ol.scrollLeft = a.offsetLeft - ol.clientWidth / 2 + a.offsetWidth / 2; });
+  }, { rootMargin: "-60px 0px -75% 0px" });
+  document.querySelectorAll("section.year").forEach(function (s) { io.observe(s); });
+})();
+</script>
+</body>
+</html>

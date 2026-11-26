@@ -35,6 +35,30 @@
    "alt": "Titulní list Kronika Šotků, 1. D. Horní Růžodol, 1932",
    "w": 933,
    "h": 1400
+  },
+  "rz-1913": {
+   "alt": "Reichenberger Zeitung 13. 6. 1913: zpráva o založení Pfadfinderkorps v Liberci",
+   "w": 900,
+   "h": 675,
+   "credit": "Reichenberger Zeitung 13. 6. 1913, s. 4 (Kramerius KVK Liberec)"
+  },
+  "svojsik-1922": {
+   "alt": "Program skautského večera s A. B. Svojsíkem 20. 5. 1922, opis v Drobečcích V. Drbohlava – Rozity",
+   "w": 1037,
+   "h": 778,
+   "credit": "V. Drbohlav – Rozita, Drobečky z historie skautingu na Liberecku, 18. pokr. (1995)"
+  },
+  "oldscouts-1924": {
+   "alt": "Program kabaretu Klubu Old-Scouts 3. 5. 1924 podle letáku, opis v Drobečcích V. Drbohlava – Rozity",
+   "w": 943,
+   "h": 707,
+   "credit": "V. Drbohlav – Rozita, Drobečky z historie skautingu na Liberecku, 31. pokr. (1996)"
+  },
+  "almanach-1933": {
+   "alt": "Almanach Župní sraz Riegrovy župy v Liberci 1933 – obálka a titulní list s věnováním Ervína Dlouhého",
+   "w": 1400,
+   "h": 1050,
+   "credit": "Župní sraz Riegrovy župy v Liberci 1933 (E-knihovna Archivu Junáka)"
   }
  },
  "credit": "Kronika dívčí družiny Racků, Horní Růžodol · Severočeské muzeum v Liberci",
@@ -126,5 +150,61 @@
    "title": "Konec činnosti v Liberci",
    "dark": true
   }
- }
+ },
+ "periods": [
+  {
+   "from": 1912,
+   "to": 1918,
+   "label": "Pfadfinder",
+   "title": "Pfadfinder barona Liebiega",
+   "date": "1913-06-01",
+   "img": "rz-1913",
+   "text": "Baron Theodor von Liebieg a učitel Karl Weyde zakládají v Liberci sbor Pfadfinderů – první skauty ve městě."
+  },
+  {
+   "from": 1919,
+   "to": 1922,
+   "label": "první junáci",
+   "title": "První čeští junáci a skautky",
+   "date": "1922-05-20",
+   "img": "svojsik-1922",
+   "text": "Do Liberce přijíždí náčelník Svazu A. B. Svojsík. Skauti a skautky mu v Národním domě připravili odpolední besídky a večer s orchestrem, pěveckým sborem a vlčaty."
+  },
+  {
+   "from": 1923,
+   "to": 1927,
+   "label": "sbor",
+   "title": "Sbor, oldskauti a dělničtí skauti",
+   "date": "1924-05-03",
+   "img": "oldscouts-1924",
+   "text": "Klub Old-Scouts pořádá v Národním domě kabaret s hudbou, scénkami a tancem – jediná zpráva o prvorepublikových oldskautech v Liberci."
+  },
+  {
+   "from": 1928,
+   "to": 1932,
+   "label": "Riegrova župa",
+   "title": "Štafety, Riegrova župa a skautky z Růžodolu",
+   "date": "1931-06-28",
+   "img": "jamboree-1931",
+   "text": "Skautky z Horního Růžodolu jdou na Všeslovanském jamboree v Praze v průvodu na Hrad spolu s Riegrovou župou."
+  },
+  {
+   "from": 1933,
+   "to": 1937,
+   "label": "župní sraz",
+   "title": "Župní sraz a skauting v pohraničí",
+   "date": "1933-06-03",
+   "img": "almanach-1933",
+   "text": "Liberec hostí župní sraz Riegrovy župy: akademie v biografu Lípa, závody o vlajku vítěze, průvod městem s více než 450 krojovanými a táborový oheň."
+  },
+  {
+   "from": 1938,
+   "to": 1940,
+   "label": "Mnichov",
+   "title": "Mobilizace, Mnichov a konec",
+   "date": "1938-09-23",
+   "dark": true,
+   "text": "Při mobilizaci rukuje vůdce 1. oddílu Jan Poštolka a posílá oddílu vzkaz na útržku z notesu: „Nenechte nikdy zaniknout skautskou myšlenku!“"
+  }
+ ]
 }

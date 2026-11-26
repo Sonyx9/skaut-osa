@@ -15,7 +15,7 @@ PRODUCTION=1 python3 build.py    # produkce: bez noindex
 python3 build.py --data "Časová osa – události.md" --out "Časová osa.html" --no-robots   # lokální náhled v trezoru
 ```
 
-Zdrojáky jsou v `src/` (`index.html` šablona, `styles.css`, `app.js`); build je vloží do jednoho souboru a vedle něj zkopíruje `src/img/` (WebP 700 a 1400 px) a `src/fonts/` (Barlow, self-hosted). Milníky s velkým blokem, obrázky a kapitoly (bubliny, tmavé předěly) se nastavují v `src/featured.json` – klíčem je datum řádku z tabulky.
+Zdrojáky jsou v `src/` (`home.html` úvod s obdobími, `osa.html` celá osa, `styles.css`, `app.js`); build je vloží do jednoho souboru a vedle něj zkopíruje `src/img/` (WebP 700 a 1400 px) a `src/fonts/` (Barlow, self-hosted). Období na úvodu (`periods`), milníky s velkým blokem, obrázky a kapitoly se nastavují v `src/featured.json` – klíčem je datum řádku z tabulky.
 
 Náhled v trezoru bez kopírování obrázků: `--asset-base https://sonyx9.github.io/skaut-osa/`. Všechny události jsou ve statickém HTML, JavaScript jen filtruje.
 

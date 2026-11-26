@@ -5,14 +5,17 @@
   if (!panel) return;
   panel.hidden = false;
   var more = document.getElementById("more");
-  var wide = window.matchMedia("(min-width: 900px)");
-  function syncMore() { if (wide.matches) more.open = true; }
-  syncMore();
-  if (wide.addEventListener) wide.addEventListener("change", syncMore);
+  var moreBtn = document.getElementById("more-btn");
+  var allBtn = document.getElementById("all");
+  moreBtn.addEventListener("click", function () {
+    var open = more.hidden;
+    more.hidden = !open;
+    moreBtn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
 
   var events = Array.prototype.slice.call(document.querySelectorAll(".ev"));
   var years = Array.prototype.slice.call(document.querySelectorAll(".year"));
-  var navItems = Array.prototype.slice.call(document.querySelectorAll("li[data-y]"));
+  var navItems = Array.prototype.slice.call(document.querySelectorAll(".years-nav li[data-y]"));
   var buttons = Array.prototype.slice.call(panel.querySelectorAll(".fbtn[data-group]"));
   var q = document.getElementById("q");
   var onlyNew = document.getElementById("only-new");
@@ -28,6 +31,8 @@
 
   function apply() {
     var lines = active("l");
+    var allLines = lines.length === 0;
+    allBtn.setAttribute("aria-pressed", allLines ? "true" : "false");
     var verify = active("v");
     var needle = q.value.trim().toLowerCase();
     var newOnly = onlyNew.getAttribute("aria-pressed") === "true";
@@ -35,7 +40,7 @@
 
     events.forEach(function (ev) {
       var v = ev.dataset.v === "otevrene" || ev.dataset.v === "pametnik" ? "neovereno" : ev.dataset.v;
-      var ok = lines.indexOf(ev.dataset.l) !== -1 &&
+      var ok = (allLines || lines.indexOf(ev.dataset.l) !== -1) &&
         verify.indexOf(v) !== -1 &&
         (!newOnly || ev.dataset.dp === "ne") &&
         (!needle || ev.dataset.s.indexOf(needle) !== -1);
@@ -59,9 +64,19 @@
 
   buttons.concat(onlyNew).forEach(function (b) {
     b.addEventListener("click", function () {
-      b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") === "true" ? "false" : "true");
+      var on = b.getAttribute("aria-pressed") === "true";
+      if (b.dataset.group === "l") {
+        buttons.forEach(function (o) { if (o.dataset.group === "l") o.setAttribute("aria-pressed", "false"); });
+        if (!on) b.setAttribute("aria-pressed", "true");
+      } else {
+        b.setAttribute("aria-pressed", on ? "false" : "true");
+      }
       apply();
     });
+  });
+  allBtn.addEventListener("click", function () {
+    buttons.forEach(function (o) { if (o.dataset.group === "l") o.setAttribute("aria-pressed", "false"); });
+    apply();
   });
 
   q.addEventListener("input", function () {
@@ -70,7 +85,7 @@
   });
 
   document.getElementById("reset").addEventListener("click", function () {
-    buttons.forEach(function (b) { b.setAttribute("aria-pressed", "true"); });
+    buttons.forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.group === "l" ? "false" : "true"); });
     onlyNew.setAttribute("aria-pressed", "false");
     q.value = "";
     apply();

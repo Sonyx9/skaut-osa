@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{{ROBOTS}}<title>Ve jménu lilie – skauting v Liberci {{RANGE}}: časová osa</title>
+{{ROBOTS}}<title>Ve jménu lilie – skauting v Liberci {{RANGE}}</title>
 <meta name="description" content="Pracovní časová osa skautingu v Liberci a okolí {{RANGE}}: česká, německá a židovská linka, u každého záznamu zdroj a stav ověření.">
 <meta name="theme-color" content="#ffffff">
 <link rel="preload" href="{{BASE}}fonts/barlow-condensed-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -23,7 +23,7 @@
   <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
 </svg>
 
-<a class="skip" href="#osa">Přeskočit na časovou osu</a>
+<a class="skip" href="#obdobi">Přeskočit na období</a>
 
 {{HEADER}}
 
@@ -38,41 +38,18 @@
       <div><dt>ověřeno v prameni</dt><dd>{{OK}}</dd></div>
       <div><dt>nových proti DP 2021</dt><dd>{{NEW}}</dd></div>
     </dl>
+    <p class="hero__cta"><a class="cta-mail" href="osa.html">Celá časová osa</a></p>
   </div>
   <div class="hero__img">{{HERO_IMG}}</div>
 </section>
 
 <div class="band">
-  <nav class="chapters wrap" aria-label="Kapitoly"><ol>{{CHAPTER_NAV}}</ol></nav>
-
-  <div class="filters" id="filters" hidden>
-    <div class="wrap filters__inner">
-      <div class="filters__row">
-        <label class="search" for="q">
-          <span class="visually-hidden">Hledat v záznamech</span>
-          <svg aria-hidden="true"><use href="#i-search"/></svg>
-          <input id="q" type="search" placeholder="Hledat jméno, místo nebo pramen" autocomplete="off">
-        </label>
-        <button type="button" class="fbtn fbtn--toggle" id="only-new" aria-pressed="false">Jen nové proti DP</button>
-        <button type="button" class="fbtn fbtn--reset" id="reset">Zrušit filtry</button>
-      </div>
-      <details class="filters__more" id="more">
-        <summary>Filtrovat podle proudu a ověření</summary>
-        <div class="filters__row" role="group" aria-label="Proud skautingu">{{LINE_BUTTONS}}</div>
-        <div class="filters__row" role="group" aria-label="Stav ověření">{{VERIFY_BUTTONS}}</div>
-      </details>
-      <p class="filters__count" id="count" aria-live="polite"></p>
-    </div>
-  </div>
+  <nav class="chapters wrap" aria-label="Období"><ol>{{PERIOD_NAV}}</ol></nav>
 </div>
 
-<nav class="years-nav" aria-label="Roky">
-  <div class="wrap"><ol>{{YEAR_NAV}}</ol></div>
-</nav>
-
-<main id="osa" class="wrap timeline">
-{{SECTIONS}}
-  <p class="empty" id="empty" hidden>Filtru neodpovídá žádný záznam.</p>
+<main id="obdobi" class="wrap periods">
+{{PERIODS}}
+  <p class="periods__all"><a class="cta-mail" href="osa.html">Projít celou časovou osu ({{COUNT}} záznamů)</a></p>
 </main>
 
 <footer class="page-foot" id="zdroje">
