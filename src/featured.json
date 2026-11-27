@@ -77,6 +77,18 @@
       "w": 1024,
       "h": 768,
       "credit": "Skautská studánka nad Libercem, kterou v roce 1968 obnovili ruprechtičtí skauti Josefa Chrousta – Brouka. Foto: archiv L. Kouly (DP 2021, příloha 7)"
+    },
+    "mustang-teepee-1986": {
+      "alt": "Tábor v týpí na louce u lesa: jedno postavené týpí a vedle kostra z tyčí, kterou stavějí dva táborníci",
+      "w": 1390,
+      "h": 947,
+      "credit": "Tábor TOM Mustang (TJ Dynamo Liberec) na Farské louce u Raspenavy, 80. léta – stavění týpí. Foto: Kronika TOM Mustang, díl 30 (archiv střediska Mustang)"
+    },
+    "mustang-teepee-1990": {
+      "alt": "Tábořiště s desítkou malovaných týpí, uprostřed stožár a znak střediska",
+      "w": 1508,
+      "h": 1010,
+      "credit": "První tábor střediska Junáka Mustang po obnově, léto 1990 – týpí se znakem lilie. Foto: Kronika TOM Mustang, díl 34 (archiv střediska Mustang)"
     }
   },
   "credit": "Kronika dívčí družiny Racků, Horní Růžodol · Severočeské muzeum v Liberci",
@@ -300,6 +312,34 @@
       "date": "1970-08-31",
       "dark": true,
       "text": "V roce 1969 vzniká přístav Maják a Junák spolupracuje s Pionýrem. Po táborech v létě 1970 končí oddíly 31. srpna – část přechází do Pionýra a turistických oddílů tělovýchovy."
+    },
+    {
+      "era": 4,
+      "from": 1970,
+      "to": 1979,
+      "label": "TOM",
+      "title": "Skauting pod hlavičkou TOM",
+      "date": "1972-10-16",
+      "img": "mustang-teepee-1986",
+      "text": "Karel Švehla – Charlie zakládá pod TJ Dynamo oddíl TOM Mustang; vedle něj pracují tomíci Zapletala a Nevrlého a pod Lokomotivou Flotila. Tábory v týpí, celoroční hry a vlastní oddílové peníze – navenek turistika, uvnitř skautská výchova."
+    },
+    {
+      "era": 4,
+      "from": 1980,
+      "to": 1988,
+      "label": "80. léta",
+      "title": "Stovka Mustangů a festivaly",
+      "date": "1983-09",
+      "text": "Mustang roste na čtyři registrované oddíly TOM s více než stovkou členů, s Kolty pořádá festival Coltův ksicht a Flotila jezdí skautovat do Polska, Maďarska a Rumunska."
+    },
+    {
+      "era": 4,
+      "from": 1989,
+      "to": 1989,
+      "label": "Listopad",
+      "title": "Návrat k Junáku",
+      "date": "1989-12-19",
+      "text": "Po 17. listopadu se oddíly TOM hlásí ke skautingu: 8. prosince je obnovena okresní rada Junáka a 19. prosince vedení oddílů Dynama v Rochlici rozhoduje založit středisko Mustang."
     }
   ],
   "sources": [
@@ -693,7 +733,18 @@
       "from": 1970,
       "to": 1989,
       "title": "Druhý zákaz",
-      "lead": "Skautské oddíly pod jinou hlavičkou, tábory a předávání tradice dalším generacím."
+      "lead": "Skautské oddíly pod jinou hlavičkou, tábory a předávání tradice dalším generacím.",
+      "href": "epocha-1970-1989.html",
+      "status": "V procesu",
+      "img": "mustang-teepee-1986",
+      "hero": {
+        "main": "mustang-teepee-1986",
+        "small": [
+          "mustang-teepee-1990"
+        ]
+      },
+      "page_lead": "Po zákazu v roce 1970 přežívá skautská práce v turistických oddílech mládeže pod TJ Dynamo, Lokomotiva a Ještěd a ve vodácké Flotile. Navenek tomíci, uvnitř skauti – až do prosince 1989, kdy se oddíly hlásí zpátky k Junáku.",
+      "status_note": "Na epoše právě pracujeme. Zatím stojí hlavně na diplomové práci, kronikách TOM Mustang (1972–1990) a pamětnících z Paměti národa; chybí kroniky Stopy, Ještědu a Flotily."
     },
     {
       "from": 1989,
