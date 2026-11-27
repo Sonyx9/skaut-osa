@@ -579,7 +579,7 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 ## Miloslav Dvorský
 - id: miloslav-dvorsky
 - proud: cz-svaz
-- období: 1968–1990
+- období: 1968–2025
 - role: vůdce oddílu v Českém Dubu
 - hledat: Dvorský
-- popis: 🤖 * 1935 Nový Bydžov, 1945–48 vlče v Novém Bydžově, od 1958 v Českém Dubu (náčelník Sokola). 1968 u obnovy skautingu v Českém Dubu, 1970 vede tábor a převádí oddíl pod Pionýra, kde ho vede do roku 1989; 1990 u obnovy. (Paměť národa)
+- popis: 🤖 * 27. 7. 1935 Nový Bydžov, † 2025 (Paměť národa), 1945–48 vlče v Novém Bydžově, od 1958 v Českém Dubu (náčelník Sokola). 1968 u obnovy skautingu v Českém Dubu, 1970 vede tábor a převádí oddíl pod Pionýra, kde ho vede do roku 1989; 1990 u obnovy. (Paměť národa)
