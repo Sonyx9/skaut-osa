@@ -578,6 +578,23 @@
           "key": "frýdlantsk",
           "where": "Frýdlantský zpravodaj, online",
           "url": "https://www.mesto-frydlant.cz/filemanager/files/3209153.pdf"
+        },
+        {
+          "n": "Kronika TOM Mustang (TJ Dynamo Liberec), díly 1–34, 1972–1990",
+          "d": "Oddílová kronika Mustangů Karla Švehly – Charlieho od první schůzky 16. 10. 1972 po založení střediska Junáka v lednu 1990; s výstřižky z Československého sportu, Sedmičky pionýrů, Kultury a sportu Liberecka a Mladého světa.",
+          "key": "Kronika TOM Mustang",
+          "where": "archiv střediska Mustang (skeny L. Koula)"
+        },
+        {
+          "n": "Sborník 50 let 1. oddílu Junáka v Liberci (1995)",
+          "d": "Vzpomínky K. Hlaváčka ml. – Nibowaky, J. Slezáka – Jindry a dalších.",
+          "key": "ve sborníku 50 let|50 let 1. oddílu",
+          "where": "Severočeské muzeum v Liberci (foto)"
+        },
+        {
+          "n": "Rozhovor s Milošem Zapletalem (liberecký časopis, 2008)",
+          "key": "Rozhovor s Milošem Zapletalem",
+          "where": "výstřižek, archiv L. Kouly"
         }
       ]
     },
@@ -588,6 +605,13 @@
           "n": "L. Koula: Vznik a vývoj skautských organizací v Liberci a okolí od roku 1920 po současnost",
           "d": "diplomová práce, TUL 2021 – výchozí verze, kterou osa rozšiřuje a ověřuje",
           "key": "DP 2021"
+        },
+        {
+          "n": "A. Palán – M. Nevrlý: Náčelník. Rozhovor Aleše Palána s Miloslavem Nevrlým",
+          "d": "Knižní rozhovor s Miloslavem Nevrlým – 12. oddíl se Zapletalem 1968–70, TOM pod TJ Dynamo do roku 1989, tábory a puťáky.",
+          "key": "Náčelník",
+          "where": "Nakladatelství Kazda",
+          "url": "https://www.knihykazda.cz/nacelnik-rozhovor-alese-palana-s-miloslavem-nevrlym/"
         },
         {
           "n": "J. Mareš: Junák v Liberci 1920–1952",
@@ -686,6 +710,26 @@
           "key": "Knapík",
           "where": "Národní archiv",
           "url": "https://www.nacr.cz/wp-content/uploads/2024/04/PH_25_2_2017_Knapik.pdf"
+        }
+      ]
+    },
+    {
+      "h": "Pamětníci",
+      "lead": "Nahrané a sepsané vzpomínky. Údaje z automatického přepisu nahrávek jsou v ose označené a čekají na ověření poslechem.",
+      "items": [
+        {
+          "n": "Paměť národa – Vladimír Cvrček – Vezír, Miloslav Dvorský – Vor, Jan Šolc, Miloslav Nevrlý a další",
+          "d": "Rozhovory Post Bellum s libereckými skauty a vodními skauty.",
+          "key": "Paměť národa",
+          "where": "pametnaroda.cz",
+          "url": "https://www.pametnaroda.cz"
+        },
+        {
+          "n": "Příběhy našich sousedů – Michael Dománek – Micky",
+          "d": "Životopis jednoho ze zakládajících členů Mustangů (1972).",
+          "key": "Příběhy našich sousedů",
+          "where": "pribehynasichsousedu.cz",
+          "url": "https://www.pribehynasichsousedu.cz/media/ZIVOTOPIS-3.pdf"
         }
       ]
     }
