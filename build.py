@@ -494,6 +494,7 @@ def build(data, out, robots, production, base="", people_path=None, places_path=
     if not base:
         for d in ("img", "fonts"):
             shutil.copytree(ROOT / "src" / d, out.parent / d, dirs_exist_ok=True)
+        shutil.copy(ROOT / "src" / "favicon.ico", out.parent / "favicon.ico")
     page_tpl = (ROOT / "src" / "page.html").read_text(encoding="utf-8")
     groups = [(k, v) for k, v in LINES.items() if any(c.get("proud") == k for c in people)]
     people_main = "".join(
