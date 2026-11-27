@@ -89,6 +89,12 @@
       "w": 1508,
       "h": 1010,
       "credit": "První tábor střediska Junáka Mustang po obnově, léto 1990 – týpí se znakem lilie. Foto: Kronika TOM Mustang, díl 34 (archiv střediska Mustang)"
+    },
+    "rozkaz-1981": {
+      "alt": "Ručně kreslený denní rozkaz s týpí, totemem a programem dne, nahoře nápis TJ Dynamo Liberec 3 TOM Raspenava 1981",
+      "w": 1400,
+      "h": 919,
+      "credit": "Denní rozkaz z tábora 3. TOM TJ Dynamo Liberec (Mustang) na Farské louce u Raspenavy, 1981 – navenek turistický oddíl, uvnitř skautský tábor. Archiv střediska Mustang"
     }
   },
   "credit": "Kronika dívčí družiny Racků, Horní Růžodol · Severočeské muzeum v Liberci",
@@ -330,7 +336,8 @@
       "label": "80. léta",
       "title": "Stovka Mustangů a festivaly",
       "date": "1983-09",
-      "text": "Mustang roste na čtyři registrované oddíly TOM s více než stovkou členů, s Kolty pořádá festival Coltův ksicht a Flotila jezdí skautovat do Polska, Maďarska a Rumunska."
+      "text": "Mustang roste na čtyři registrované oddíly TOM s více než stovkou členů, s Kolty pořádá festival Coltův ksicht a Flotila jezdí skautovat do Polska, Maďarska a Rumunska.",
+      "img": "rozkaz-1981"
     },
     {
       "era": 4,

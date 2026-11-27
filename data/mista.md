@@ -533,11 +533,11 @@ Místo = sekce `## Název`. Pole: id, typ (heim, klubovna, tábor, sraz, výlet,
 - hledat: Na přehradě|na přehradě
 - popis: 🤖 Dřevěný objekt plovárny u přehrady, Mustangové 1981–85; konal se tu festival Coltův ksicht; pak ji převzala TJ Kardio. (Klubovny Mustangů, Skaut/Historie/Klubovny)
 
-## Klubovna tř. Dr. Milady Horákové 114
+## Klubovna tř. Dr. Milady Horákové 114 (Rochlice)
 - id: klubovna-horakova-114
 - typ: klubovna
 - proud: cz-svaz
 - souřadnice: 
 - přesnost: ulice (Liberec – souřadnice doplnit)
-- hledat: Horákov
-- popis: 🤖 Nebytový prostor, který Mustangové získali v roce 1985 a drželi do 2001 (nájem přes TJ Dynamo). (Klubovny Mustangů, Skaut/Historie/Klubovny)
+- hledat: Horákov|klubovně Mustangů v Rochlici
+- popis: 🤖 Nebytový prostor v Rochlici, který Mustangové získali v roce 1985 a drželi do 2001 (nájem přes TJ Dynamo); 19. 12. 1989 se tu rozhodlo o založení střediska Mustang (L. Koula: totéž místo jako „klubovna v Rochlici“ v DP). (Klubovny Mustangů, Skaut/Historie/Klubovny)
