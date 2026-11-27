@@ -424,3 +424,22 @@ Místo = sekce `## Název`. Pole: id, typ (heim, klubovna, tábor, sraz, výlet,
 - přesnost: obec (Liberec I, Leninova 459/20, suterén – dnešní název ulice dohledat)
 - hledat: Leninova
 - popis: 🤖 Dvě suterénní místnosti, které MěNV 16. 7. 1968 propůjčil 1. oddílu Junáka (od 1. 10. 1968 za 14 Kčs měsíčně); po konci Junáka 1970 je chtěl horolezecký oddíl. ❓ Souřadnice a dnešní adresa.
+
+## Rokle úmluvy na Ovčí hoře (Chrastava)
+- id: rokle-umluvy-chrastava
+- typ: sraz
+- proud: cz-svaz
+- souřadnice: 50.8167, 14.9690
+- přesnost: obec (Chrastava, Ovčí hora – přesné místo rokle doplnit)
+- hledat: rokli? Úmluvy|Ovčí ho
+- popis: 🤖 Místo první schůzky obnoveného chrastavského Junáka 25. 5. 1968, slibu 1. oddílu 26. 10. 1968 a slibu světlušek 24. 5. 1969. (Stavinohová 2023)
+
+## Lípa svobody ve frýdlantském parku
+- id: lipa-svobody-frydlant
+- typ: událost
+- proud: cz-svaz
+- souřadnice: 50.9214, 15.0797
+- přesnost: obec (Frýdlant, městský park – strom bez označení, přesné místo doplnit)
+- hledat: frýdlantsk|Frýdlant
+- popis: 🤖 Lípa, kterou 28. 10. 1968 zasadili skauti a skautky frýdlantského střediska k 50. výročí republiky; roste dodnes. (Jandečková-Stehlíková 2023)
+
