@@ -563,10 +563,10 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - id: miloslav-nevrly
 - přezdívka: Náčelník
 - proud: cz-svaz
-- období: 1968–1970
+- období: 1968–1989
 - role: spoluzakladatel 12. oddílu, přírodovědec a spisovatel
 - hledat: Nevrlý|Nevrlého|Náčelník\b
-- popis: 🤖 Biolog Severočeského muzea a okresní konzervátor státní ochrany přírody (Vpřed 1960–70, úryvky). V roce 1968 zakládá s Milošem Zapletalem 12. skautský oddíl, po roce 1970 působí v TOM. (rozhovor se Zapletalem 2008; Marečková 2012)
+- popis: 🤖 * 1933. Od 1957 do 2000 zoolog Severočeského muzea v Liberci, většinu doby vedoucí přírodovědeckého oddělení; okresní konzervátor státní ochrany přírody (Vpřed 1960–70, úryvky). Přezdívku Náčelník dostal jako skaut. (Náčelník – rozhovor A. Palána, Kazda) V roce 1968 zakládá s Milošem Zapletalem 12. skautský oddíl, po roce 1970 působí v TOM. (rozhovor se Zapletalem 2008; Marečková 2012)
 
 ## Karel Pospíšil
 - id: karel-pospisil
@@ -584,31 +584,3 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - role: vůdce oddílu v Českém Dubu
 - hledat: Dvorský
 - popis: 🤖 * 27. 7. 1935 Nový Bydžov, † 2025 (Paměť národa), 1945–48 vlče v Novém Bydžově, od 1958 v Českém Dubu (náčelník Sokola). 1968 u obnovy skautingu v Českém Dubu, 1970 vede tábor a převádí oddíl pod Pionýra, kde ho vede do roku 1989; 1990 u obnovy. (Paměť národa)
-
-## Mirek Krňák
-- id: mirek-krnak
-- přezdívka: Bručoun
-- proud: cz-svaz
-- období: 1968–1972
-- role: zakladatel a střediskový náčelník Junáka v Chrastavě
-- hledat: Krňák
-- popis: 🤖 V květnu 1968 svolává první schůzku obnoveného Junáka v Chrastavě v rokli Úmluvy na Ovčí hoře, 26. 10. 1968 přijímá slib 1. oddílu; klubovnu v Pobřežní ulici vyzdobil svými kresbami. (Stavinohová 2023)
-
-## Pavel Zákora
-- id: pavel-zakora
-- přezdívka: Akéla
-- proud: cz-svaz
-- období: 1968–2023
-- role: vedoucí chrastavského oddílu, ochránce přírody a fotograf
-- hledat: Zákor
-- popis: 🤖 * 1946, † 2023. Od května 1968 u obnovy skautingu v Chrastavě, při prvním slibu 26. 10. 1968 představuje nováčky; 1969 s bratrem Václavem vede první putovní tábor (Adršpach). Později žil i v Kanadě. (Stavinohová 2023; nekrolog Chrastavské listy 12/2023)
-
-## František Valenta
-- id: frantisek-valenta
-- přezdívka: Marbula
-- proud: cz-svaz
-- období: 1968–1970
-- role: obnovitel a vůdce frýdlantského střediska
-- hledat: Valenta|Marbula
-- popis: 🤖 V létě 1968 obnovuje skautské středisko ve Frýdlantu (s oddíly v Hejnicích a Dětřichově), do roku 1970 pět táborů; 28. 10. 1968 vede sázení Lípy svobody v městském parku. (Jandečková-Stehlíková 2023)
-
