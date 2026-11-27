@@ -261,10 +261,10 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 ## Hana Hlaváčková
 - id: hana-hlavackova
 - proud: cz-svaz
-- období: 1945–1952
-- role: vůdkyně 1. dívčího oddílu, zástupkyně okrskového velitele
+- období: 1945–1990
+- role: vůdkyně 1. dívčího oddílu, 1968 vůdkyně oddílu oldskautek
 - hledat: Hlaváčkov|Šimonov
-- popis: 🤖 Od srpna 1945 v 1. dívčím oddíle, jeho vůdkyní 1946–1948 (❓ od února, nebo podzimu 1946). 1947 vede dívčí okres a je zástupkyní okrskového velitele. Tábory oddílu: Veselá, Tatry, pod Deštnou, Vráž. V procesu 1952 odsouzena, po odvolání podmíněně; rehabilitována 1969. Po roce 1968 okresní výchovná zpravodajka, 1990 spoluzakládá středisko Vlasta. Provdaná Šimonová, nar. 31. 12. 1929, zemřela 12. 7. 2022 (so-novinky.obadalek.cz); oddíl vedla, „když jí ještě nebylo sedmnáct let“.
+- popis: 🤖 Od srpna 1945 v 1. dívčím oddíle, jeho vůdkyní 1946–1948 (❓ od února, nebo podzimu 1946). 1947 vede dívčí okres a je zástupkyní okrskového velitele. Tábory oddílu: Veselá, Tatry, pod Deštnou, Vráž. V procesu 1952 odsouzena, po odvolání podmíněně; rehabilitována 1969. 27. 4. 1968 zakládá oddíl oldskautek a vede ho (DP 2021); po roce 1968 okresní výchovná zpravodajka, 1990 spoluzakládá středisko Vlasta. Provdaná Šimonová, nar. 31. 12. 1929, zemřela 12. 7. 2022 (so-novinky.obadalek.cz); oddíl vedla, „když jí ještě nebylo sedmnáct let“.
 
 ## Oldřich Bech
 - id: oldrich-bech
