@@ -424,3 +424,120 @@ Místo = sekce `## Název`. Pole: id, typ (heim, klubovna, tábor, sraz, výlet,
 - přesnost: obec (Liberec I, Leninova 459/20, suterén – dnešní název ulice dohledat)
 - hledat: Leninova
 - popis: 🤖 Dvě suterénní místnosti, které MěNV 16. 7. 1968 propůjčil 1. oddílu Junáka (od 1. 10. 1968 za 14 Kčs měsíčně); po konci Junáka 1970 je chtěl horolezecký oddíl. ❓ Souřadnice a dnešní adresa.
+
+## Vápno – přední louka a vyvěračka (tábořiště Mustangů)
+- id: taboriste-vapno
+- typ: tábor
+- proud: cz-svaz
+- souřadnice: 50.62252, 14.90813
+- přesnost: přesně (GPS z přehledu táborů Mustangů, Mapy.cz)
+- hledat: Vápn
+- popis: 🤖 Tábořiště na Zábrdce u Vápna (Hlavice) – Mustangové tu tábořili poprvé 1982 a od roku 1986 skoro každé léto; podle přehledu táborů 26× přední louka a 26× vyvěračka (do 2012). (Tábory Mustangů – přehled, Skaut/Historie/tábořiště)
+
+## Střela – Malá Černá Hať
+- id: taboriste-strela
+- typ: tábor
+- proud: cz-svaz
+- souřadnice: 50.01095, 13.30381
+- přesnost: přesně (GPS z přehledu táborů Mustangů, Mapy.cz)
+- hledat: Střel|Černá Hať
+- popis: 🤖 Tábor Mustangů v týpí 1976 u Rabštejna nad Střelou. (Tábory Mustangů – přehled, Skaut/Historie/tábořiště)
+
+## Soběnov
+- id: taboriste-sobenov
+- typ: tábor
+- proud: cz-svaz
+- souřadnice: 48.74998, 14.55588
+- přesnost: přesně (GPS z přehledu táborů Mustangů, Mapy.cz)
+- hledat: Soběnov
+- popis: 🤖 Tábory Mustangů 1977 a 1978 na říčce Černé u Kaplice. (Tábory Mustangů – přehled, Skaut/Historie/tábořiště)
+
+## Lobendava – Vlčí prameny
+- id: taboriste-lobendava
+- typ: tábor
+- proud: cz-svaz
+- souřadnice: 51.01134, 14.33115
+- přesnost: přesně (GPS z přehledu táborů Mustangů, Mapy.cz)
+- hledat: Lobendav
+- popis: 🤖 Tábor Mustangů 1979 (s oddílem Odyssea). (Tábory Mustangů – přehled, Skaut/Historie/tábořiště)
+
+## Zvíkovec – Javornice (Kočkův mlýn)
+- id: taboriste-zvikovec
+- typ: tábor
+- proud: cz-svaz
+- souřadnice: 49.97017, 13.69615
+- přesnost: přesně (GPS z přehledu táborů Mustangů, Mapy.cz)
+- hledat: Zvíkovec|Javornic
+- popis: 🤖 Tábor Mustangů 1980 („Cesta krytých vozů“). (Tábory Mustangů – přehled, Skaut/Historie/tábořiště)
+
+## Vojkov u Sedlčan
+- id: taboriste-vojkov
+- typ: tábor
+- proud: cz-svaz
+- souřadnice: 49.65179, 14.50184
+- přesnost: přesně (GPS z přehledu táborů Mustangů, Mapy.cz)
+- hledat: Vojkov
+- popis: 🤖 Tábory Mustangů 1985 a 1986 na Mastníku. (Tábory Mustangů – přehled, Skaut/Historie/tábořiště)
+
+## Šluknov – údolí
+- id: taboriste-sluknov
+- typ: tábor
+- proud: cz-svaz
+- souřadnice: 50.98989, 14.48062
+- přesnost: přesně (GPS z přehledu táborů Mustangů, Mapy.cz)
+- hledat: Šluknov
+- popis: 🤖 Tábor Jedničky Mustangů 1986. (Tábory Mustangů – přehled, Skaut/Historie/tábořiště)
+
+## Malá Mohelka – Vrtky a Podhora
+- id: taboriste-mohelka
+- typ: tábor
+- proud: cz-svaz
+- souřadnice: 50.62487, 14.93666
+- přesnost: přesně (GPS z přehledu táborů Mustangů, Mapy.cz)
+- hledat: Mohelk
+- popis: 🤖 Tábory Jedničky a Trojky Mustangů 1987 (Vrtky) a 1988 (Podhora). (Tábory Mustangů – přehled, Skaut/Historie/tábořiště)
+
+## Klubovna TJ Dynamo v Truhlářské ulici („u soudu“)
+- id: klubovna-truhlarska
+- typ: klubovna
+- proud: cz-svaz
+- souřadnice: 
+- přesnost: ulice (Liberec – souřadnice doplnit)
+- hledat: Truhlářsk
+- popis: 🤖 První klubovna Mustangů 1972–74, předtím i potom klubovna TJ Dynamo (do konce 80. let), sklad materiálu Mustangů i Zapletalovy Dvojky; Švehla sem chodil na schůze Dynama do roku 1990. (Klubovny Mustangů, Skaut/Historie/Klubovny)
+
+## Klubovna v Lidových sadech u lukostřelců
+- id: klubovna-lidove-sady-lukostrelci
+- typ: klubovna
+- proud: cz-svaz
+- souřadnice: 
+- přesnost: ulice (Liberec – souřadnice doplnit)
+- hledat: u lukostřelců|v Lidových sadech u
+- popis: 🤖 Panelová klubovna na bývalém tanečním parketu PKO, kterou „načerno“ postavil Miloš Zapletal s rodiči Jedničky a Dvojky; Mustangové tu byli 1974–79; od 1990 středisko Šurean, slouží dodnes. (Klubovny Mustangů, Skaut/Historie/Klubovny)
+
+## „Sperho palác“ v Dělnické ulici
+- id: klubovna-sperho-palac
+- typ: klubovna
+- proud: cz-svaz
+- souřadnice: 
+- přesnost: ulice (Liberec – souřadnice doplnit)
+- hledat: Sperho
+- popis: 🤖 Klubovna na hřišti TJ Dynamo, opravená Nevrlého roverským spolkem SPERHO; Mustangové 1979–81; zanikla se stavbou sídliště. (Klubovny Mustangů, Skaut/Historie/Klubovny)
+
+## Klubovna „Na přehradě“ (bývalá plovárna)
+- id: klubovna-na-prehrade
+- typ: klubovna
+- proud: cz-svaz
+- souřadnice: 
+- přesnost: ulice (Liberec – souřadnice doplnit)
+- hledat: Na přehradě|na přehradě
+- popis: 🤖 Dřevěný objekt plovárny u přehrady, Mustangové 1981–85; konal se tu festival Coltův ksicht; pak ji převzala TJ Kardio. (Klubovny Mustangů, Skaut/Historie/Klubovny)
+
+## Klubovna tř. Dr. Milady Horákové 114
+- id: klubovna-horakova-114
+- typ: klubovna
+- proud: cz-svaz
+- souřadnice: 
+- přesnost: ulice (Liberec – souřadnice doplnit)
+- hledat: Horákov
+- popis: 🤖 Nebytový prostor, který Mustangové získali v roce 1985 a drželi do 2001 (nájem přes TJ Dynamo). (Klubovny Mustangů, Skaut/Historie/Klubovny)
