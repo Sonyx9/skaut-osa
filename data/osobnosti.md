@@ -564,9 +564,9 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - přezdívka: Náčelník
 - proud: cz-svaz
 - období: 1968–1989
-- role: spoluzakladatel 12. oddílu, přírodovědec a spisovatel
+- role: spoluvedoucí 12. oddílu (1968–70), vedoucí TOM (1970–89), přírodovědec a spisovatel
 - hledat: Nevrlý|Nevrlého|Náčelník\b
-- popis: 🤖 * 1933. Od 1957 do 2000 zoolog Severočeského muzea v Liberci, většinu doby vedoucí přírodovědeckého oddělení; okresní konzervátor státní ochrany přírody (Vpřed 1960–70, úryvky). Přezdívku Náčelník dostal jako skaut. (Náčelník – rozhovor A. Palána, Kazda) V roce 1968 zakládá s Milošem Zapletalem 12. skautský oddíl, po roce 1970 působí v TOM. (rozhovor se Zapletalem 2008; Marečková 2012)
+- popis: 🤖 * 1933. Od 1957 do 2000 zoolog Severočeského muzea v Liberci, většinu doby vedoucí přírodovědeckého oddělení; okresní konzervátor státní ochrany přírody (Vpřed 1960–70, úryvky). Přezdívku Náčelník dostal jako skaut. (Náčelník – rozhovor A. Palána, Kazda) 1968–1970 spoluvedoucí 12. skautského oddílu v Liberci, vedeného Milošem Zapletalem; 1970 ocenění Za věrnost skautingu (Krajská rada Junáka, Ústí n. L.); 1970–1989 vedoucí oddílu tomíků. (Náčelník, chronologie) (rozhovor se Zapletalem 2008; Marečková 2012)
 
 ## Karel Pospíšil
 - id: karel-pospisil
