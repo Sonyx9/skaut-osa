@@ -378,7 +378,7 @@ Místo = sekce `## Název`. Pole: id, typ (heim, klubovna, tábor, sraz, výlet,
 - souřadnice: 50.9120, 15.1130
 - přesnost: přibližně
 - hledat: Raspenav|Hadí|Farsk
-- popis: 🤖 Tábory 1946–1947: 5. oddíl na Farské louce, 11. oddíl u Hadího vrchu na Lomnici, 1947 9. oddíl ve Stolpichově boudě. (Mareš 2007)
+- popis: 🤖 Tábory 1946–1947: 5. oddíl na Farské louce, 11. oddíl u Hadího vrchu na Lomnici, 1947 9. oddíl ve Stolpichově boudě. (Mareš 2007) Za normalizace tábořiště TOM při TJ Dynamo: Mustangové tu tábořili 1973–75 a 1981 (roubená kuchyně, týpí). (Kronika TOM Mustang)
 
 ## Klubovna 2. oddílu, ul. Josefa Blažka 9
 - id: klubovna-blazkova-9

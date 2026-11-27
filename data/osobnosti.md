@@ -584,3 +584,12 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - role: vůdce oddílu v Českém Dubu
 - hledat: Dvorský
 - popis: 🤖 * 27. 7. 1935 Nový Bydžov, † 2025 (Paměť národa), 1945–48 vlče v Novém Bydžově, od 1958 v Českém Dubu (náčelník Sokola). 1968 u obnovy skautingu v Českém Dubu, 1970 vede tábor a převádí oddíl pod Pionýra, kde ho vede do roku 1989; 1990 u obnovy. (Paměť národa)
+
+## Karel Švehla
+- id: karel-svehla
+- přezdívka: Charlie (ve starších dokumentech i Padouch)
+- proud: cz-svaz
+- období: 1972–1990
+- role: zakladatel a vůdce TOM Mustang při TJ Dynamo Liberec (1972–1989), zakladatel střediska Mustang (1989/1990)
+- hledat: Švehl|Charlie\b
+- popis: 🤖 Předtím vedl oddíly v pražském 12. středisku Mustangů; po zákazu skautingu se přestěhoval do Liberce. 16. 10. 1972 založil pod TJ Dynamo Liberec oddíl TOM Mustang (3. TOM TJ Dynamo), který do roku 1989 vyrostl na čtyři registrované oddíly TOM se zhruba stovkou členů; oddíly vedl záměrně skautsky („celou dobu jsem pevně věřil, že přijde doba, kdy tyto oddíly obléknou skautský kroj“). V prosinci 1989 přivezl z Prahy sedmibodové prohlášení obnoveného Junáka a 19. 12. 1989 stál u rozhodnutí založit středisko Junáka Mustang; v lednu 1990 školil jeho vedení. (DP 2021; Kronika TOM Mustang, díly 01–34)
