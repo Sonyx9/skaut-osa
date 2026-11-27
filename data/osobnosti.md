@@ -566,7 +566,7 @@ Karta = sekce `## Jméno`. Pole: id (adresa karty), přezdívka, proud (de, cz-s
 - období: 1968–1989
 - role: spoluvedoucí 12. oddílu (1968–70), vedoucí TOM (1970–89), přírodovědec a spisovatel
 - hledat: Nevrlý|Nevrlého|Náčelník\b
-- popis: 🤖 * 1933. Od 1957 do 2000 zoolog Severočeského muzea v Liberci, většinu doby vedoucí přírodovědeckého oddělení; okresní konzervátor státní ochrany přírody (Vpřed 1960–70, úryvky). Přezdívku Náčelník dostal jako skaut. (Náčelník – rozhovor A. Palána, Kazda) 1968–1970 spoluvedoucí 12. skautského oddílu v Liberci, vedeného Milošem Zapletalem; 1970 ocenění Za věrnost skautingu (Krajská rada Junáka, Ústí n. L.); 1970–1989 vedoucí oddílu tomíků. (Náčelník, chronologie) (rozhovor se Zapletalem 2008; Marečková 2012)
+- popis: 🤖 * 1933. Od 1957 do 2000 zoolog Severočeského muzea v Liberci, většinu doby vedoucí přírodovědeckého oddělení; okresní konzervátor státní ochrany přírody (Vpřed 1960–70, úryvky). Přezdívku Náčelník dostal jako skaut. (Náčelník – rozhovor A. Palána, Kazda) 1968–1970 spoluvedoucí 12. skautského oddílu v Liberci, vedeného Milošem Zapletalem; 1970 ocenění Za věrnost skautingu (Krajská rada Junáka, Ústí n. L.); 1970–1989 vedoucí oddílu tomíků. (Náčelník, chronologie) (rozhovor se Zapletalem 2008; Marečková 2012) Podle PN (2017, 2023): Zapletala znal od válečných let z Pardubic; přezdívku Náčelník mu Zapletal dal na táboře v červenci 1970, když přišla zpráva o zákazu Junáka; po roce 1989 se k vedení dětí nevrátil, krátce se angažoval v Občanském fóru. Medaile Za zásluhy (prezident P. Pavel, 2023).
 
 ## Karel Pospíšil
 - id: karel-pospisil
